@@ -1,0 +1,21 @@
+{
+  "atom_id": "1f703b02a851b5ab42e5dcfb561799b7eca6ddd52246ddace14cd4d0845f6fa6",
+  "binary": "/mnt/data/goldatom-third-party/test/work/bitcoin/build/bin/bitcoind",
+  "binary_sha256": "8e3afd78738ebc6d59787fc232c4f0025b6a3dd1e2c59cee4fd1b5ed1ba3dba4",
+  "bundle": "/mnt/data/goldatom-0.0.3/examples/live-core-final-2026-09-02.goldatom.json",
+  "challenge_height": 105,
+  "claim_height": 102,
+  "kind": "live-bitcoin-core-regtest",
+  "mint_height": 106,
+  "negative_checks": {
+    "challenge_reorg_rejected": true,
+    "reconsider_restored_validity": true,
+    "tampered_challenge_rejected": true,
+    "tampered_work_rejected": true
+  },
+  "output_dir": "/mnt/data/goldatom-0.0.3/validation/live-core-final",
+  "status": "pass",
+  "tip_height": 107,
+  "version_first_line": "Bitcoin Core daemon version v31.99.0-031175197f1b bitcoind",
+  "warning": "Genuine Bitcoin Core execution, but this binary is a pre-release master build rather than the official 31.1 release binary."
+}

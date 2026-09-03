@@ -1,0 +1,50 @@
+$ python3 -m pip wheel --no-deps --no-build-isolation -w /mnt/data/goldatom-release-0.0.2 .
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/goldatom-0
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: goldatom
+  Building wheel for goldatom (pyproject.toml): started
+  Building wheel for goldatom (pyproject.toml): finished with status 'done'
+  Created wheel for goldatom: filename=goldatom-0.0.2-py3-none-any.whl size=29023 sha256=e3e914989fd98b87cf7e5e5b25b643b91a7668c9959b641b4e1dcd1e4928ba9e
+  Stored in directory: /tmp/pip-ephem-wheel-cache-spxxko0n/wheels/57/ab/40/7fdfdc02cd19b35e9552b94ff8d254f0d742c9874d6b00aa42
+Successfully built goldatom
+EXIT_STATUS=0
+
+$ python3 -m venv /mnt/data/goldatom-wheel-test-venv
+EXIT_STATUS=0
+
+$ pip install goldatom-0.0.2-py3-none-any.whl
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/goldatom-release-0.0.2/goldatom-0.0.2-py3-none-any.whl
+Installing collected packages: goldatom
+Successfully installed goldatom-0.0.2
+EXIT_STATUS=0
+
+$ goldatom simulate --json
+{
+  "as_of_tip_hash": "df1ed9dc41a0c72dad35cf3f7ae999e7244a6a90326d218c97c82f37b977c504",
+  "as_of_tip_height": 105,
+  "atom_id": "164b8c2fd964c6a5deed2f16264bedfe2e20ee777c677c250d3f0673a5957417",
+  "burial_blocks": 1,
+  "burial_chainwork": "10000",
+  "challenge_height": 103,
+  "claim_height": 100,
+  "current_title_outpoint": {
+    "txid": "0c2dc53fb853bd864b8b1617ee5da1644b213a64955d16dae38102c6fc71d886",
+    "vout": 0
+  },
+  "expected_local_hashes": 16,
+  "expected_local_work_log2": 4.0,
+  "mint_height": 104,
+  "profile": "goldatom-sim-v0",
+  "target_hex": "0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "title_transfers": 0,
+  "valid": true
+}
+EXIT_STATUS=0
+
+$ python -c import version/economics
+goldatom.__version__ = 0.0.2
+P(at least one gate | p=1/4096, M=10000) = 0.9129875721552416
+EXIT_STATUS=0

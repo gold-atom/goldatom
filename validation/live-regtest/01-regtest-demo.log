@@ -1,0 +1,21 @@
+Mining 101 regtest blocks to create mature wallet funds...
+Claim confirmed at height 102: 4ccc55c2fa683116c609b7dd7097e0cdc948652889d90a4bd7f6f774911fdc95:0
+Challenge fixed by block 105: 52a4334064cf581c8af3f10cf496b8bcac6db638e294c107916041d60fc24216
+Local proof found after 25 attempts: 0dd572dc76c8d3ab561c38156ff53a5147baca218311bcdea07271173312f5d7
+VALID GOLDATOM/0
+
+Profile:                    goldatom-regtest-v0
+Atom ID:                    9dcf1564738e803d3ac036d4f609a123e4efee9ade19101a6e2750cfd1f9b031
+Expected local hashes:      16
+Expected local work:        2^4.0000
+Claim height:               102
+Challenge height:           105
+Mint height:                106
+Bitcoin burial blocks:      1
+Bitcoin burial chainwork:   2
+Title transfers:            0
+Current title:              f1624bb71a62c1c661d940739429a5a3a8f0415cb8390f4f6386a09a9a83506c:0
+Assayed at tip:             107 (21629b8af14352991e77d3d7fcaecbab528f03b26667e593daa88b0776b70950)
+
+Proof bundle written to examples/regtest.goldatom.json
+EXIT_STATUS=0

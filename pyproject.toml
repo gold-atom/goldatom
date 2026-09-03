@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "goldatom"
+version = "0.0.3"
+description = "Experimental verifier-first prototype for Proof-Buried Work"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Jcb" }]
+dependencies = []
+
+[project.scripts]
+goldatom = "goldatom.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["goldatom*"]

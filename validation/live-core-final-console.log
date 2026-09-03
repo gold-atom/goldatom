@@ -1,0 +1,10 @@
+LIVE BITCOIN CORE REGTEST PASS
+Binary:             /mnt/data/goldatom-third-party/test/work/bitcoin/build/bin/bitcoind
+Version:            Bitcoin Core daemon version v31.99.0-031175197f1b bitcoind
+Binary SHA-256:      8e3afd78738ebc6d59787fc232c4f0025b6a3dd1e2c59cee4fd1b5ed1ba3dba4
+Atom ID:            1f703b02a851b5ab42e5dcfb561799b7eca6ddd52246ddace14cd4d0845f6fa6
+Heights:            claim 102 -> challenge 105 -> mint 106 -> tip 107
+Negative checks:    tamper PASS; reorg PASS; restoration PASS
+Proof bundle:       /mnt/data/goldatom-0.0.3/examples/live-core-final-2026-09-02.goldatom.json
+Validation records: /mnt/data/goldatom-0.0.3/validation/live-core-final
+WARNING:            Genuine Bitcoin Core execution, but this binary is a pre-release master build rather than the official 31.1 release binary.

@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Generated local artifacts
+examples/regtest.goldatom.json
+*.whl
+*.tar.gz
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/

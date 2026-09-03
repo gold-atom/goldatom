@@ -1,0 +1,272 @@
+{
+  "assumptions": {
+    "auction_epochs": 20000,
+    "auction_large_search_space_iid_label_approximation": true,
+    "base_gate_probability": 0.000244140625,
+    "equal_resource_budget_except_hardware_advantage": true,
+    "price_prediction": false,
+    "producers": 100,
+    "variant_trials_assumed_independent": true,
+    "winners_per_epoch": 64
+  },
+  "deterministic_seed": 1196379204,
+  "generated_on": "2026-09-02",
+  "proof_intersection_gating": {
+    "claim_variant_amplification": [
+      {
+        "amplification": 1.0,
+        "effective_probability": 0.000244140625,
+        "variants": 1
+      },
+      {
+        "amplification": 9.989020821377366,
+        "effective_probability": 0.0024387257864690835,
+        "variants": 10
+      },
+      {
+        "amplification": 98.80108518242083,
+        "effective_probability": 0.02412135868711446,
+        "variants": 100
+      },
+      {
+        "amplification": 887.3815484804893,
+        "effective_probability": 0.21664588585949446,
+        "variants": 1000
+      },
+      {
+        "amplification": 3739.5970955478697,
+        "effective_probability": 0.9129875721552416,
+        "variants": 10000
+      }
+    ],
+    "gate_windows": [
+      {
+        "coefficient_of_variation": 0.6399218702310463,
+        "epochs": 10000,
+        "expected_gates": 2.44140625,
+        "probability": 0.000244140625,
+        "standard_deviation": 1.5623092534937653
+      },
+      {
+        "coefficient_of_variation": 0.06399218702310462,
+        "epochs": 1000000,
+        "expected_gates": 244.140625,
+        "probability": 0.000244140625,
+        "standard_deviation": 15.623092534937653
+      }
+    ],
+    "one_retry_withholding_thresholds": [
+      {
+        "gate_prize_threshold_in_block_rewards": 77823.99999999999,
+        "miner_share": 0.05
+      },
+      {
+        "gate_prize_threshold_in_block_rewards": 16384.0,
+        "miner_share": 0.2
+      },
+      {
+        "gate_prize_threshold_in_block_rewards": 4096.0,
+        "miner_share": 0.5
+      }
+    ],
+    "source_block_candidate_grinding": [
+      {
+        "amplification": 1.0,
+        "candidate_headers": 1,
+        "effective_probability": 0.000244140625
+      },
+      {
+        "amplification": 1.9997558593750002,
+        "candidate_headers": 2,
+        "effective_probability": 0.00048822164535522466
+      },
+      {
+        "amplification": 15.970736477132101,
+        "candidate_headers": 16,
+        "effective_probability": 0.0038991055852373295
+      },
+      {
+        "amplification": 248.19345604117018,
+        "candidate_headers": 256,
+        "effective_probability": 0.06059410547880131
+      },
+      {
+        "amplification": 2589.349767395958,
+        "candidate_headers": 4096,
+        "effective_probability": 0.6321654705556539
+      }
+    ]
+  },
+  "schema": "goldatom-issuance-stress-0",
+  "sealed_epoch_auction": {
+    "attempts_not_represented_by_winning_atoms_fraction": 0.9999999403953552,
+    "checkpoint_censorship_stress_bound": [
+      {
+        "adversarial_share_bound": 0.2,
+        "censored_rival_fraction": 0.0,
+        "checkpoint_share": 0.2,
+        "native_share": 0.2
+      },
+      {
+        "adversarial_share_bound": 0.24000000000000002,
+        "censored_rival_fraction": 0.25,
+        "checkpoint_share": 0.2,
+        "native_share": 0.2
+      },
+      {
+        "adversarial_share_bound": 0.28,
+        "censored_rival_fraction": 0.5,
+        "checkpoint_share": 0.2,
+        "native_share": 0.2
+      },
+      {
+        "adversarial_share_bound": 0.36000000000000004,
+        "censored_rival_fraction": 1.0,
+        "checkpoint_share": 0.2,
+        "native_share": 0.2
+      }
+    ],
+    "concentration": [
+      {
+        "epochs": 20000,
+        "hardware_advantage": 1,
+        "majority_probability_exact": 1.3417510548533513e-46,
+        "majority_probability_simulated": 0.0,
+        "top_share_expected": 0.01,
+        "top_share_simulated": 0.0100109375,
+        "winners_per_epoch": 64
+      },
+      {
+        "epochs": 20000,
+        "hardware_advantage": 2,
+        "majority_probability_exact": 3.0787430366495547e-37,
+        "majority_probability_simulated": 0.0,
+        "top_share_expected": 0.019801980198019802,
+        "top_share_simulated": 0.01990234375,
+        "winners_per_epoch": 64
+      },
+      {
+        "epochs": 20000,
+        "hardware_advantage": 10,
+        "majority_probability_exact": 5.923425252478902e-17,
+        "majority_probability_simulated": 0.0,
+        "top_share_expected": 0.09174311926605505,
+        "top_share_simulated": 0.09129375,
+        "winners_per_epoch": 64
+      },
+      {
+        "epochs": 20000,
+        "hardware_advantage": 100,
+        "majority_probability_exact": 0.5656044432769348,
+        "majority_probability_simulated": 0.5635,
+        "top_share_expected": 0.5025125628140703,
+        "top_share_simulated": 0.50197109375,
+        "winners_per_epoch": 64
+      },
+      {
+        "epochs": 20000,
+        "hardware_advantage": 10000,
+        "majority_probability_exact": 1.0,
+        "majority_probability_simulated": 1.0,
+        "top_share_expected": 0.9901970492127934,
+        "top_share_simulated": 0.9900859375,
+        "winners_per_epoch": 64
+      }
+    ],
+    "example_attempts_per_epoch": 1073741824,
+    "fixed_winners_per_epoch": 64
+  },
+  "verdict": {
+    "control_branch": "work-weighted bullion",
+    "experimental_branch": "canonical vein auction",
+    "reason": "Canonical intersections can schedule scarce opportunities, but they do not by themselves create exclusive ownership or atom-specific cost. Claim-dependent gates are Sybil-grindable; claim-independent gates still require a separate allocation mechanism.",
+    "rejected_as_standalone": "proof-intersection gating"
+  },
+  "work_weighted_bullion": {
+    "concentration": [
+      {
+        "effective_producers": 100.0,
+        "gini": 0.0,
+        "hardware_advantage": 1,
+        "hhi": 0.01,
+        "top_expected_share": 0.01
+      },
+      {
+        "effective_producers": 99.0388349514563,
+        "gini": 0.009801980198019802,
+        "hardware_advantage": 2,
+        "hhi": 0.010097049308891286,
+        "top_expected_share": 0.019801980198019802
+      },
+      {
+        "effective_producers": 59.703517587939686,
+        "gini": 0.08174311926605504,
+        "hardware_advantage": 10,
+        "hhi": 0.016749431866004548,
+        "top_expected_share": 0.09174311926605505
+      },
+      {
+        "effective_producers": 3.921279334587584,
+        "gini": 0.4925125628140703,
+        "hardware_advantage": 100,
+        "hhi": 0.255018812656246,
+        "top_expected_share": 0.5025125628140703
+      },
+      {
+        "effective_producers": 1.0198970003019696,
+        "gini": 0.9801970492127934,
+        "hardware_advantage": 10000,
+        "hhi": 0.9804911669550175,
+        "top_expected_share": 0.9901970492127934
+      }
+    ],
+    "fixed_target_supply_elasticity": [
+      {
+        "efficiency_multiplier": 1,
+        "relative_atom_or_bullion_output": 1.0
+      },
+      {
+        "efficiency_multiplier": 2,
+        "relative_atom_or_bullion_output": 2.0
+      },
+      {
+        "efficiency_multiplier": 10,
+        "relative_atom_or_bullion_output": 10.0
+      },
+      {
+        "efficiency_multiplier": 100,
+        "relative_atom_or_bullion_output": 100.0
+      }
+    ],
+    "target_granularity": [
+      {
+        "credited_work_relative_stddev": 0.000244140625,
+        "expected_atoms": 16777216.0,
+        "expected_work_per_atom": 65536,
+        "hash_budget": 1099511627776,
+        "unbatched_lifecycle_transactions": 33554432.0
+      },
+      {
+        "credited_work_relative_stddev": 0.00390625,
+        "expected_atoms": 65536.0,
+        "expected_work_per_atom": 16777216,
+        "hash_budget": 1099511627776,
+        "unbatched_lifecycle_transactions": 131072.0
+      },
+      {
+        "credited_work_relative_stddev": 0.0625,
+        "expected_atoms": 256.0,
+        "expected_work_per_atom": 4294967296,
+        "hash_budget": 1099511627776,
+        "unbatched_lifecycle_transactions": 512.0
+      },
+      {
+        "credited_work_relative_stddev": 1.0,
+        "expected_atoms": 1.0,
+        "expected_work_per_atom": 1099511627776,
+        "hash_budget": 1099511627776,
+        "unbatched_lifecycle_transactions": 2.0
+      }
+    ]
+  }
+}

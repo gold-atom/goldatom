@@ -1,0 +1,47 @@
+$ python3 -m compileall -q goldatom scripts simulation tests
+EXIT_STATUS=0
+
+$ python3 -m unittest discover -s tests -v
+test_censorship_bound (test_economics.EconomicsTests.test_censorship_bound) ... ok
+test_equal_producers (test_economics.EconomicsTests.test_equal_producers) ... ok
+test_gate_stats (test_economics.EconomicsTests.test_gate_stats) ... ok
+test_hardware_advantage_share (test_economics.EconomicsTests.test_hardware_advantage_share) ... ok
+test_invalid_inputs (test_economics.EconomicsTests.test_invalid_inputs) ... ok
+test_target_granularity (test_economics.EconomicsTests.test_target_granularity) ... ok
+test_variant_amplification (test_economics.EconomicsTests.test_variant_amplification) ... ok
+test_withholding_threshold (test_economics.EconomicsTests.test_withholding_threshold) ... ok
+test_broken_transfer_ancestry_is_rejected (test_protocol.GoldAtomProtocolTests.test_broken_transfer_ancestry_is_rejected) ... ok
+test_challenge_reorg_is_rejected (test_protocol.GoldAtomProtocolTests.test_challenge_reorg_is_rejected) ... ok
+test_claim_proof_cannot_be_relabelled (test_protocol.GoldAtomProtocolTests.test_claim_proof_cannot_be_relabelled) ... ok
+test_current_title_value_mismatch_is_rejected (test_protocol.GoldAtomProtocolTests.test_current_title_value_mismatch_is_rejected) ... ok
+test_duplicate_json_key_is_rejected (test_protocol.GoldAtomProtocolTests.test_duplicate_json_key_is_rejected) ... ok
+test_eighty_byte_work_header_and_vector (test_protocol.GoldAtomProtocolTests.test_eighty_byte_work_header_and_vector) ... ok
+test_genesis_vector_is_valid (test_protocol.GoldAtomProtocolTests.test_genesis_vector_is_valid) ... ok
+test_mint_outside_window_is_rejected (test_protocol.GoldAtomProtocolTests.test_mint_outside_window_is_rejected) ... ok
+test_missing_current_title_is_rejected (test_protocol.GoldAtomProtocolTests.test_missing_current_title_is_rejected) ... ok
+test_nested_record_must_be_json_object (test_protocol.GoldAtomProtocolTests.test_nested_record_must_be_json_object) ... ok
+test_noncanonical_hex_whitespace_is_rejected (test_protocol.GoldAtomProtocolTests.test_noncanonical_hex_whitespace_is_rejected) ... ok
+test_second_mint_marker_is_rejected (test_protocol.GoldAtomProtocolTests.test_second_mint_marker_is_rejected) ... ok
+test_tampered_nonce_is_rejected (test_protocol.GoldAtomProtocolTests.test_tampered_nonce_is_rejected) ... ok
+test_tampered_work_hash_is_rejected (test_protocol.GoldAtomProtocolTests.test_tampered_work_hash_is_rejected) ... ok
+test_target_above_profile_maximum_is_rejected_first (test_protocol.GoldAtomProtocolTests.test_target_above_profile_maximum_is_rejected_first) ... ok
+test_unconfirmed_current_title_is_rejected (test_protocol.GoldAtomProtocolTests.test_unconfirmed_current_title_is_rejected) ... ok
+test_unsupported_title_script_is_rejected (test_protocol.GoldAtomProtocolTests.test_unsupported_title_script_is_rejected) ... ok
+test_valid_title_transfer (test_protocol.GoldAtomProtocolTests.test_valid_title_transfer) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.004s
+
+OK
+EXIT_STATUS=0
+
+$ python3 scripts/generate_test_vectors.py
+Regenerated examples/genesis.goldatom.json
+Regenerated examples/transferred.goldatom.json
+Regenerated TEST-VECTORS.md
+EXIT_STATUS=0
+
+$ python3 simulation/issuance_regimes.py
+Wrote simulation/results/issuance-regimes.json
+Wrote ISSUANCE-SIMULATION-0.md
+EXIT_STATUS=0

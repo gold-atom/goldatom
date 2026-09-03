@@ -258,3 +258,92 @@ To re-verify an exported regtest bundle:
 goldatom verify examples/regtest.goldatom.json \
   --cookie-file "$HOME/.bitcoin/regtest/.cookie"
 ```
+
+For a fresh isolated end-to-end run—including independent Node.js recomputation, two semantic tamper tests, challenge-block invalidation, and restoration—use:
+
+```bash
+python3 scripts/run_live_core_validation.py \
+  --bitcoind /path/to/bitcoind \
+  --output-dir validation/live-core-local \
+  --bundle examples/live-core-local.goldatom.json
+```
+
+The script starts a temporary isolated regtest node with inbound P2P listening disabled, records provenance and consensus primitives, removes the disposable datadir, and retains only the proof bundle and validation evidence.
+
+The RPC adapter expects the historical claim and mint blocks to remain available. Supplying the block hash avoids requiring a global transaction lookup, but a heavily pruned node may still lack the old block data needed for `getrawtransaction` and `gettxoutproof`.
+
+## Lifecycle at a glance
+
+```text
+claim tx at height h
+  ├─ spendable claim-seal UTXO
+  └─ OP_RETURN GA0C || claim_commitment
+                  │
+                  ▼
+challenge block at h + Δ
+  challenge = H(profile, claim outpoint, claim block,
+                claim commitment, challenge block)
+                  │
+                  ▼
+80-byte local header search
+  SHA256d(GAW0 || challenge || claim_commitment ||
+          extra_nonce || 00000000 || nonce) <= target
+                  │
+                  ▼
+mint tx inside bounded window
+  ├─ spends claim-seal UTXO
+  ├─ creates title UTXO
+  └─ OP_RETURN GA0M || mint_commitment
+                  │
+                  ▼
+subsequent Bitcoin blocks bury mint
+                  │
+                  ▼
+optional title transfer
+  ├─ spends current title UTXO
+  ├─ creates exactly one designated successor title
+  └─ OP_RETURN GA0T || transfer_commitment
+```
+
+## The key accounting distinction
+
+For a target `T`, the successful local hash has expected work:
+
+```text
+E[hashes] = ceil(2^256 / (T + 1))
+```
+
+That expectation is **atom-specific** because the challenge is bound to one claim.
+
+Bitcoin burial is computed separately:
+
+```text
+burial_chainwork = tip.chainwork - mint_block.chainwork
+```
+
+It is not added to local work and is not multiplied by the number of atoms. One Bitcoin block can bury many commitments at once; treating all of its chainwork as exclusive matter inside every commitment would counterfeit scarcity by accounting convention.
+
+## Current design claim
+
+The preserved and freshly repeated 2026-09-02 live runs confirm that GoldAtom/0 has a coherent **object layer** under the tested regtest conditions:
+
+- the proof cannot be transplanted to another claim;
+- the claim can be consumed only once;
+- the mint must occur inside a public time window;
+- ownership is represented by one live title outpoint;
+- a verifier can deterministically reject malformed or reorganized histories.
+
+It does not yet have a coherent **monetary layer**. The first adversarial issuance pass shows why: work-weighted bullion is compute-elastic; a fixed auction converges toward ordinary hashpower competition; and proof intersections do not independently create exclusive ownership. The next specification target is therefore a two-branch comparison between honest compute-elastic bullion and the claimant-independent canonical vein auction specified provisionally in `SPEC-1-CANDIDATE.md`.
+
+## Primary references
+
+- Nick Szabo, “Bit Gold”: https://nakamotoinstitute.org/library/bit-gold/
+- Bitcoin block/header and Merkle-tree reference: https://developer.bitcoin.org/reference/block_chain.html
+- Bitcoin Core 31 `getblockheader`: https://bitcoincore.org/en/doc/31.0.0/rpc/blockchain/getblockheader/
+- Bitcoin Core 31 `gettxoutproof`: https://bitcoincore.org/en/doc/31.0.0/rpc/blockchain/gettxoutproof/
+- Bitcoin Core 31 `verifytxoutproof`: https://bitcoincore.org/en/doc/31.0.0/rpc/blockchain/verifytxoutproof/
+- Bitcoin Core 31 `gettxout`: https://bitcoincore.org/en/doc/31.0.0/rpc/blockchain/gettxout/
+
+## License
+
+MIT. The protocol is experimental and unaudited.

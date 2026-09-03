@@ -1,0 +1,21 @@
+{
+  "claim_verifytxoutproof": [
+    "9e308c3550b7d68192cbf699a3635fed54368a0a8b5cb2443800594c06265587"
+  ],
+  "mint_verifytxoutproof": [
+    "6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6"
+  ],
+  "terminal_utxo": {
+    "bestblock": "72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f",
+    "coinbase": false,
+    "confirmations": 2,
+    "scriptPubKey": {
+      "address": "bcrt1punz27ght9v8rtm0pqhgnscsrckkqkp4ckygec3luk9atupr6dtespnzhwv",
+      "asm": "1 e4c4af22eb2b0e35ede105d1386203c5ac0b06b8b1119c47fcb17abe047a6af3",
+      "desc": "rawtr(e4c4af22eb2b0e35ede105d1386203c5ac0b06b8b1119c47fcb17abe047a6af3)#gld4grud",
+      "hex": "5120e4c4af22eb2b0e35ede105d1386203c5ac0b06b8b1119c47fcb17abe047a6af3",
+      "type": "witness_v1_taproot"
+    },
+    "value": "0.00098000"
+  }
+}

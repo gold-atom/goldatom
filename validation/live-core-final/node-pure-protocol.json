@@ -1,0 +1,18 @@
+{
+  "valid": true,
+  "scope": "pure-protocol commitments only; Bitcoin consensus state not checked",
+  "source": "/mnt/data/goldatom-0.0.3/examples/live-core-final-2026-09-02.goldatom.json",
+  "profile": "goldatom-regtest-v0",
+  "atom_id": "1f703b02a851b5ab42e5dcfb561799b7eca6ddd52246ddace14cd4d0845f6fa6",
+  "claim_commitment": "efcf998cf5da52de050ac176d9b66155ca9f9c51519742cad7efb5018fa64cbb",
+  "challenge_digest": "5e6d59b4e5c5a0adc7f52504832db3134856891eb33ec0a212a8782555b1f4d6",
+  "work_header_hex": "474157305e6d59b4e5c5a0adc7f52504832db3134856891eb33ec0a212a8782555b1f4d6efcf998cf5da52de050ac176d9b66155ca9f9c51519742cad7efb5018fa64cbb000000000000000011000000",
+  "work_hash": "0546ac5ac82d731e83b0a91465127e7bef5713cfa3ea6b04ceabf0fd006d46f4",
+  "expected_local_hashes": "16",
+  "mint_commitment": "1b7054431dff744e72cf4e85c0b5babd618cb897f7fb6954ae4f4a475177b2bf",
+  "title_transfers": 0,
+  "terminal_title_outpoint": {
+    "txid": "6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6",
+    "vout": 0
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "atom": {
+    "block_headers": {
+      "challenge": {
+        "bits": "207fffff",
+        "chainwork": "00000000000000000000000000000000000000000000000000000000000000d4",
+        "confirmations": 3,
+        "difficulty": "4.656542373906925E-10",
+        "hash": "53cb3face777f07d7fccb9fbbc4e70d7df67bc60352778235b5afd831028a866",
+        "height": 105,
+        "mediantime": 1788329731,
+        "merkleroot": "2b226d3a10abfec7d31bd078d655aa6d7bd7ebc5db3bacb30537bcab7597b10e",
+        "nTx": 1,
+        "nextblockhash": "6432da708ac2e0e6bbf64a91babe62921b416137baf8b5bdb587bac0fbebcd18",
+        "nonce": 2,
+        "previousblockhash": "6c234361f0af876a0a943f7f5d339f3f5baa8035491b7a1ed2c016c266ec7b16",
+        "target": "7fffff0000000000000000000000000000000000000000000000000000000000",
+        "time": 1788329732,
+        "version": 536870912,
+        "versionHex": "20000000"
+      },
+      "claim": {
+        "bits": "207fffff",
+        "chainwork": "00000000000000000000000000000000000000000000000000000000000000ce",
+        "confirmations": 6,
+        "difficulty": "4.656542373906925E-10",
+        "hash": "16189c58cb6aa5f10bc445e9504924750f76ad559cdf39543b274d458df2c42d",
+        "height": 102,
+        "mediantime": 1788329730,
+        "merkleroot": "43153f7d668d848fbc0ac13e7b1e22c260c01b16ffe4e9c43d29bad39281d3bc",
+        "nTx": 2,
+        "nextblockhash": "43ceeb29dbddd5d31caf65c4bc10146001f46d0bc2f5c00ac30ee60f676aea3a",
+        "nonce": 2,
+        "previousblockhash": "3a4f7bd92c32ccc4bf6610776fe6afe736f45b349e3a3943bc554228ef5a9d99",
+        "target": "7fffff0000000000000000000000000000000000000000000000000000000000",
+        "time": 1788329731,
+        "version": 536870912,
+        "versionHex": "20000000"
+      },
+      "mint": {
+        "bits": "207fffff",
+        "chainwork": "00000000000000000000000000000000000000000000000000000000000000d6",
+        "confirmations": 2,
+        "difficulty": "4.656542373906925E-10",
+        "hash": "6432da708ac2e0e6bbf64a91babe62921b416137baf8b5bdb587bac0fbebcd18",
+        "height": 106,
+        "mediantime": 1788329731,
+        "merkleroot": "9373fb95347a4428727b119641e4f9c5eb96878ecb142f0897428a43b66be1d0",
+        "nTx": 2,
+        "nextblockhash": "72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f",
+        "nonce": 1,
+        "previousblockhash": "53cb3face777f07d7fccb9fbbc4e70d7df67bc60352778235b5afd831028a866",
+        "target": "7fffff0000000000000000000000000000000000000000000000000000000000",
+        "time": 1788329732,
+        "version": 536870912,
+        "versionHex": "20000000"
+      },
+      "tip": {
+        "bits": "207fffff",
+        "chainwork": "00000000000000000000000000000000000000000000000000000000000000d8",
+        "confirmations": 1,
+        "difficulty": "4.656542373906925E-10",
+        "hash": "72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f",
+        "height": 107,
+        "mediantime": 1788329731,
+        "merkleroot": "c10acfb66227808f096322cd44cee4b62addafe0877f2c7719a5fbf1ed10c0ea",
+        "nTx": 1,
+        "nonce": 4,
+        "previousblockhash": "6432da708ac2e0e6bbf64a91babe62921b416137baf8b5bdb587bac0fbebcd18",
+        "target": "7fffff0000000000000000000000000000000000000000000000000000000000",
+        "time": 1788329732,
+        "version": 536870912,
+        "versionHex": "20000000"
+      }
+    },
+    "bundle_path": "examples/live-core-final-2026-09-02.goldatom.json",
+    "bundle_sha256": "c68dcdd8a9ad1e86ae72042a75eece97c14e72bb666f94e3c91696344f1b36ad",
+    "claim_outpoint": "9e308c3550b7d68192cbf699a3635fed54368a0a8b5cb2443800594c06265587:0",
+    "report": {
+      "as_of_tip_hash": "72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f",
+      "as_of_tip_height": 107,
+      "atom_id": "1f703b02a851b5ab42e5dcfb561799b7eca6ddd52246ddace14cd4d0845f6fa6",
+      "burial_blocks": 1,
+      "burial_chainwork": "2",
+      "challenge_height": 105,
+      "claim_height": 102,
+      "current_title_outpoint": {
+        "txid": "6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6",
+        "vout": 0
+      },
+      "expected_local_hashes": 16,
+      "expected_local_work_log2": 4.0,
+      "mint_height": 106,
+      "profile": "goldatom-regtest-v0",
+      "target_hex": "0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "title_transfers": 0,
+      "valid": true
+    },
+    "work_hash": "0546ac5ac82d731e83b0a91465127e7bef5713cfa3ea6b04ceabf0fd006d46f4"
+  },
+  "bitcoin_core": {
+    "binary_path_used": "/mnt/data/goldatom-third-party/test/work/bitcoin/build/bin/bitcoind",
+    "binary_sha256": "8e3afd78738ebc6d59787fc232c4f0025b6a3dd1e2c59cee4fd1b5ed1ba3dba4",
+    "release_status": "pre-release build",
+    "source_commit_prefix": "031175197f1b",
+    "version_output": [
+      "Bitcoin Core daemon version v31.99.0-031175197f1b bitcoind",
+      "Copyright (C) 2009-2026 The Bitcoin Core developers",
+      "",
+      "Please contribute if you find Bitcoin Core useful. Visit",
+      "<https://bitcoincore.org/> for further information about the software.",
+      "The source code is available from <https://github.com/bitcoin/bitcoin>.",
+      "",
+      "This is experimental software.",
+      "Distributed under the MIT software license, see the accompanying file COPYING",
+      "or <https://opensource.org/license/MIT>"
+    ]
+  },
+  "environment": {
+    "node": "/opt/nvm/versions/node/v22.16.0/bin/node",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "negative_checks": {
+    "challenge_reorg_rejected": true,
+    "reconsider_restored_validity": true,
+    "tampered_challenge_rejected": true,
+    "tampered_work_rejected": true
+  },
+  "node": {
+    "blockchain_info": {
+      "bestblockhash": "72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f",
+      "bits": "207fffff",
+      "blocks": 107,
+      "chain": "regtest",
+      "chainwork": "00000000000000000000000000000000000000000000000000000000000000d8",
+      "difficulty": "4.656542373906925E-10",
+      "headers": 107,
+      "initialblockdownload": false,
+      "mediantime": 1788329731,
+      "pruned": false,
+      "size_on_disk": 33896,
+      "target": "7fffff0000000000000000000000000000000000000000000000000000000000",
+      "time": 1788329732,
+      "verificationprogress": 1,
+      "warnings": [
+        "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+      ]
+    },
+    "network_info": {
+      "connections": 0,
+      "connections_in": 0,
+      "connections_out": 0,
+      "incrementalfee": "0.00000100",
+      "inv_buckets": {
+        "inbound": {
+          "backlog": 0,
+          "count_tok": "418.140742798",
+          "size_tok": "11999740.06114"
+        },
+        "outbound": {
+          "backlog": 0,
+          "count_tok": "418.351856995",
+          "size_tok": "12000041.65285"
+        }
+      },
+      "localaddresses": [],
+      "localrelay": true,
+      "localservices": "0000000000000c09",
+      "localservicesnames": [
+        "NETWORK",
+        "WITNESS",
+        "NETWORK_LIMITED",
+        "P2P_V2"
+      ],
+      "networkactive": true,
+      "networks": [
+        {
+          "limited": false,
+          "name": "ipv4",
+          "proxy": "",
+          "proxy_randomize_credentials": false,
+          "reachable": true
+        },
+        {
+          "limited": false,
+          "name": "ipv6",
+          "proxy": "",
+          "proxy_randomize_credentials": false,
+          "reachable": true
+        },
+        {
+          "limited": true,
+          "name": "onion",
+          "proxy": "",
+          "proxy_randomize_credentials": false,
+          "reachable": false
+        },
+        {
+          "limited": true,
+          "name": "i2p",
+          "proxy": "",
+          "proxy_randomize_credentials": false,
+          "reachable": false
+        },
+        {
+          "limited": true,
+          "name": "cjdns",
+          "proxy": "",
+          "proxy_randomize_credentials": false,
+          "reachable": false
+        }
+      ],
+      "protocolversion": 70017,
+      "relayfee": "0.00000100",
+      "subversion": "/Satoshi:31.99.0/",
+      "timeoffset": 0,
+      "tx_send_rate": 14,
+      "version": 319900,
+      "warnings": [
+        "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+      ]
+    },
+    "wallet_info": {
+      "avoid_reuse": false,
+      "birthtime": 1788329712,
+      "blank": false,
+      "descriptors": true,
+      "external_signer": false,
+      "flags": [
+        "last_hardened_xpub_cached",
+        "descriptor_wallet"
+      ],
+      "format": "sqlite",
+      "keypoolsize": 4000,
+      "keypoolsize_hd_internal": 4000,
+      "lastprocessedblock": {
+        "hash": "72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f",
+        "height": 107
+      },
+      "private_keys_enabled": true,
+      "scanning": false,
+      "txcount": 109,
+      "walletname": "goldatom-live-final",
+      "walletversion": 169900
+    }
+  },
+  "validation_date_utc": "2026-09-02"
+}

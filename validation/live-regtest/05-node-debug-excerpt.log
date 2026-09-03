@@ -1,0 +1,24 @@
+2026-09-02T05:55:44Z Bitcoin Core version v31.99.0-031175197f1b (release build)
+2026-09-02T05:55:44Z Using data directory /mnt/data/goldatom-regtest-node/regtest
+2026-09-02T05:55:44Z Using at most 200 automatic connections (16384 file descriptors available)
+2026-09-02T05:55:55Z [goldatom-demo] AddToWallet 4ccc55c2fa683116c609b7dd7097e0cdc948652889d90a4bd7f6f774911fdc95 new InMempool
+2026-09-02T05:55:55Z UpdateTip: new best=7e6c0e91c4ebf58501532f07d7cc7a26bff2ddd59da0127728f9609aefd4cafe height=102 version=0x20000000 log2_work=7.686501 tx=104 date='2026-09-02T05:56:13Z' progress=1.000000 cache=0.3MiB(104txo)
+2026-09-02T05:55:55Z [goldatom-demo] AddToWallet 4ccc55c2fa683116c609b7dd7097e0cdc948652889d90a4bd7f6f774911fdc95 update Confirmed (block=7e6c0e91c4ebf58501532f07d7cc7a26bff2ddd59da0127728f9609aefd4cafe, height=102, index=1)
+2026-09-02T05:55:55Z UpdateTip: new best=19efd37e2db2c03e082c162d9e18904830f39e0d5ac12b0b3e26bbc5aca6eda1 height=103 version=0x20000000 log2_work=7.700440 tx=105 date='2026-09-02T05:56:13Z' progress=1.000000 cache=0.3MiB(105txo)
+2026-09-02T05:55:55Z UpdateTip: new best=5bede6868322fc88c6c686131012b22b4a9cf02198b46f5982f8ae96763a97c9 height=104 version=0x20000000 log2_work=7.714246 tx=106 date='2026-09-02T05:56:14Z' progress=1.000000 cache=0.3MiB(106txo)
+2026-09-02T05:55:55Z UpdateTip: new best=52a4334064cf581c8af3f10cf496b8bcac6db638e294c107916041d60fc24216 height=105 version=0x20000000 log2_work=7.727920 tx=107 date='2026-09-02T05:56:14Z' progress=1.000000 cache=0.3MiB(107txo)
+2026-09-02T05:55:55Z [goldatom-demo] AddToWallet f1624bb71a62c1c661d940739429a5a3a8f0415cb8390f4f6386a09a9a83506c new InMempool
+2026-09-02T05:55:55Z UpdateTip: new best=364fe86cd01edd84e4171d9dd041179ee2f7287cf9ecbe9dca489cd5f722da46 height=106 version=0x20000000 log2_work=7.741467 tx=109 date='2026-09-02T05:56:14Z' progress=1.000000 cache=0.3MiB(108txo)
+2026-09-02T05:55:55Z [goldatom-demo] AddToWallet f1624bb71a62c1c661d940739429a5a3a8f0415cb8390f4f6386a09a9a83506c update Confirmed (block=364fe86cd01edd84e4171d9dd041179ee2f7287cf9ecbe9dca489cd5f722da46, height=106, index=1)
+2026-09-02T05:55:55Z UpdateTip: new best=21629b8af14352991e77d3d7fcaecbab528f03b26667e593daa88b0776b70950 height=107 version=0x20000000 log2_work=7.754888 tx=110 date='2026-09-02T05:56:14Z' progress=1.000000 cache=0.3MiB(109txo)
+2026-09-02T06:03:05Z Bitcoin Core version v31.99.0-031175197f1b (release build)
+2026-09-02T06:03:05Z Using data directory /mnt/data/goldatom-regtest-node/regtest
+2026-09-02T06:03:05Z Using at most 200 automatic connections (16384 file descriptors available)
+2026-09-02T06:03:33Z UpdateTip: new best=364fe86cd01edd84e4171d9dd041179ee2f7287cf9ecbe9dca489cd5f722da46 height=106 version=0x20000000 log2_work=7.741467 tx=109 date='2026-09-02T05:56:14Z' progress=0.994526 cache=0.3MiB(2txo)
+2026-09-02T06:03:33Z UpdateTip: new best=52a4334064cf581c8af3f10cf496b8bcac6db638e294c107916041d60fc24216 height=105 version=0x20000000 log2_work=7.727920 tx=107 date='2026-09-02T05:56:14Z' progress=0.994424 cache=0.3MiB(4txo)
+2026-09-02T06:03:33Z UpdateTip: new best=5bede6868322fc88c6c686131012b22b4a9cf02198b46f5982f8ae96763a97c9 height=104 version=0x20000000 log2_work=7.714246 tx=106 date='2026-09-02T05:56:14Z' progress=0.994371 cache=0.3MiB(5txo)
+2026-09-02T06:03:33Z InvalidChainFound: invalid block=52a4334064cf581c8af3f10cf496b8bcac6db638e294c107916041d60fc24216 height=105 log2_work=7.727920 date=2026-09-02T05:56:14Z
+2026-09-02T06:03:33Z InvalidChainFound: current best=5bede6868322fc88c6c686131012b22b4a9cf02198b46f5982f8ae96763a97c9 height=104 log2_work=7.714246 date=2026-09-02T05:56:14Z
+2026-09-02T06:03:34Z UpdateTip: new best=52a4334064cf581c8af3f10cf496b8bcac6db638e294c107916041d60fc24216 height=105 version=0x20000000 log2_work=7.727920 tx=107 date='2026-09-02T05:56:14Z' progress=0.988909 cache=0.3MiB(5txo)
+2026-09-02T06:03:34Z UpdateTip: new best=364fe86cd01edd84e4171d9dd041179ee2f7287cf9ecbe9dca489cd5f722da46 height=106 version=0x20000000 log2_work=7.741467 tx=109 date='2026-09-02T05:56:14Z' progress=0.994526 cache=0.3MiB(4txo)
+2026-09-02T06:03:34Z UpdateTip: new best=21629b8af14352991e77d3d7fcaecbab528f03b26667e593daa88b0776b70950 height=107 version=0x20000000 log2_work=7.754888 tx=110 date='2026-09-02T05:56:14Z' progress=1.000000 cache=0.3MiB(4txo)

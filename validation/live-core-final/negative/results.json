@@ -1,0 +1,29 @@
+{
+  "reorg": {
+    "before": {
+      "bestblockhash": "72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f",
+      "blocks": 107
+    },
+    "invalidated_status": 2,
+    "invalidated_stderr": "INVALID: HEADER_LOOKUP: could not load challenge header: Bitcoin Core RPC error -8: Block height out of range\n",
+    "invalidated_tip": {
+      "bestblockhash": "6c234361f0af876a0a943f7f5d339f3f5baa8035491b7a1ed2c016c266ec7b16",
+      "blocks": 104
+    },
+    "restored_status": 0,
+    "restored_tip": {
+      "bestblockhash": "72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f",
+      "blocks": 107
+    }
+  },
+  "tampered_challenge": {
+    "status": 2,
+    "stderr": "INVALID: BAD_CHALLENGE: challenge digest does not recompute from canonical history\n",
+    "stdout": ""
+  },
+  "tampered_work": {
+    "status": 2,
+    "stderr": "INVALID: BAD_WORK_HASH: local-work hash does not recompute\n",
+    "stdout": ""
+  }
+}

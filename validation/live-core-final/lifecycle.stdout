@@ -1,0 +1,16 @@
+VALID GOLDATOM/0
+
+Profile:                    goldatom-regtest-v0
+Atom ID:                    1f703b02a851b5ab42e5dcfb561799b7eca6ddd52246ddace14cd4d0845f6fa6
+Expected local hashes:      16
+Expected local work:        2^4.0000
+Claim height:               102
+Challenge height:           105
+Mint height:                106
+Bitcoin burial blocks:      1
+Bitcoin burial chainwork:   2
+Title transfers:            0
+Current title:              6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6:0
+Assayed at tip:             107 (72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f)
+
+Proof bundle written to /mnt/data/goldatom-0.0.3/examples/live-core-final-2026-09-02.goldatom.json

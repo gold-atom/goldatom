@@ -1,0 +1,514 @@
+2026-09-02T06:15:12Z Bitcoin Core version v31.99.0-031175197f1b (release build)
+2026-09-02T06:15:12Z parameter interaction: -listen=0 -> setting -natpmp=0
+2026-09-02T06:15:12Z parameter interaction: -listen=0 -> setting -discover=0
+2026-09-02T06:15:12Z parameter interaction: -listen=0 -> setting -listenonion=0
+2026-09-02T06:15:12Z parameter interaction: -listen=0 -> setting -i2pacceptincoming=0
+2026-09-02T06:15:12Z Log output may contain privacy-sensitive information. Be cautious when sharing logs.
+2026-09-02T06:15:12Z Using the 'x86_shani(1way;2way)' SHA256 implementation
+2026-09-02T06:15:12Z Using RdSeed as an additional entropy source
+2026-09-02T06:15:12Z Using RdRand as an additional entropy source
+2026-09-02T06:15:12Z Default data directory /home/oai/.bitcoin
+2026-09-02T06:15:12Z Using data directory /tmp/goldatom-live-core-vcjxbnj1/node/regtest
+2026-09-02T06:15:12Z Config file: /tmp/goldatom-live-core-vcjxbnj1/node/bitcoin.conf (not found, skipping)
+2026-09-02T06:15:12Z Command-line arg: datadir="/tmp/goldatom-live-core-vcjxbnj1/node"
+2026-09-02T06:15:12Z Command-line arg: fallbackfee="0.0002"
+2026-09-02T06:15:12Z Command-line arg: listen="0"
+2026-09-02T06:15:12Z Command-line arg: printtoconsole="1"
+2026-09-02T06:15:12Z Command-line arg: regtest=""
+2026-09-02T06:15:12Z Command-line arg: rpcpassword=****
+2026-09-02T06:15:12Z Command-line arg: rpcport="57017"
+2026-09-02T06:15:12Z Command-line arg: rpcuser=****
+2026-09-02T06:15:12Z Command-line arg: server="1"
+2026-09-02T06:15:12Z Command-line arg: txindex="1"
+2026-09-02T06:15:12Z Using at most 200 automatic connections (16384 file descriptors available)
+2026-09-02T06:15:12Z scheduler thread start
+2026-09-02T06:15:12Z Binding RPC on address ::1 port 57017
+2026-09-02T06:15:12Z Binding RPC on address 127.0.0.1 port 57017
+2026-09-02T06:15:12Z Using rpcuser/rpcpassword authentication.
+2026-09-02T06:15:12Z [warning] The use of rpcuser/rpcpassword is less secure, because credentials are configured in plain text. It is recommended that locally-run instances switch to cookie-based auth, or otherwise to use hashed rpcauth credentials. See share/rpcauth in the source directory for more information.
+2026-09-02T06:15:12Z Starting HTTP server with 16 worker threads
+2026-09-02T06:15:12Z http.01 thread start
+2026-09-02T06:15:12Z http.03 thread start
+2026-09-02T06:15:12Z http.02 thread start
+2026-09-02T06:15:12Z http.00 thread start
+2026-09-02T06:15:12Z http.04 thread start
+2026-09-02T06:15:12Z http.06 thread start
+2026-09-02T06:15:12Z http.05 thread start
+2026-09-02T06:15:12Z http.07 thread start
+2026-09-02T06:15:12Z http.08 thread start
+2026-09-02T06:15:12Z http.09 thread start
+2026-09-02T06:15:12Z http.10 thread start
+2026-09-02T06:15:12Z http.11 thread start
+2026-09-02T06:15:12Z http.12 thread start
+2026-09-02T06:15:12Z http.13 thread start
+2026-09-02T06:15:12Z http.14 thread start
+2026-09-02T06:15:12Z http.15 thread start
+2026-09-02T06:15:12Z Using wallet directory /tmp/goldatom-live-core-vcjxbnj1/node/regtest/wallets
+2026-09-02T06:15:12Z Using SQLite Version 3.50.4
+2026-09-02T06:15:12Z init message: Verifying wallet(s)…
+2026-09-02T06:15:12Z http thread start
+2026-09-02T06:15:12Z Using /16 prefix for IP bucketing
+2026-09-02T06:15:12Z init message: Loading P2P addresses…
+2026-09-02T06:15:12Z Creating peers.dat because the file was not found ("/tmp/goldatom-live-core-vcjxbnj1/node/regtest/peers.dat")
+2026-09-02T06:15:12Z init message: Loading banlist…
+2026-09-02T06:15:12Z Recreating the banlist database
+2026-09-02T06:15:12Z SetNetworkActive: true
+2026-09-02T06:15:12Z Cache configuration:
+2026-09-02T06:15:12Z * Using 2.0 MiB for block index database
+2026-09-02T06:15:12Z * Using 102.4 MiB for transaction index database
+2026-09-02T06:15:12Z * Using 8.0 MiB for chain state database
+2026-09-02T06:15:12Z * Using 911.6 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2026-09-02T06:15:12Z Script verification uses 4 additional threads
+2026-09-02T06:15:12Z Using obfuscation key for blocksdir *.dat files (/tmp/goldatom-live-core-vcjxbnj1/node/regtest/blocks): '15299d301abaf68c'
+2026-09-02T06:15:12Z Opening LevelDB in /tmp/goldatom-live-core-vcjxbnj1/node/regtest/blocks/index
+2026-09-02T06:15:12Z Opened LevelDB successfully
+2026-09-02T06:15:12Z Using obfuscation key for /tmp/goldatom-live-core-vcjxbnj1/node/regtest/blocks/index: 0000000000000000
+2026-09-02T06:15:12Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2026-09-02T06:15:12Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2026-09-02T06:15:12Z init message: Loading block index…
+2026-09-02T06:15:12Z Validating signatures for all blocks.
+2026-09-02T06:15:12Z Setting nMinimumChainWork=0000000000000000000000000000000000000000000000000000000000000000
+2026-09-02T06:15:12Z Loading block index db: last block file = 0
+2026-09-02T06:15:12Z Loading block index db: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2026-09-02T06:15:12Z Checking all blk files are present...
+2026-09-02T06:15:12Z Initializing chainstate Chainstate [ibd] @ height -1 (null)
+2026-09-02T06:15:12Z Opening LevelDB in /tmp/goldatom-live-core-vcjxbnj1/node/regtest/chainstate
+2026-09-02T06:15:12Z Opened LevelDB successfully
+2026-09-02T06:15:12Z Wrote new obfuscation key for /tmp/goldatom-live-core-vcjxbnj1/node/regtest/chainstate: bebc206610ed9c45
+2026-09-02T06:15:12Z Using obfuscation key for /tmp/goldatom-live-core-vcjxbnj1/node/regtest/chainstate: bebc206610ed9c45
+2026-09-02T06:15:12Z prevout.00 thread start
+2026-09-02T06:15:12Z prevout.01 thread start
+2026-09-02T06:15:12Z prevout.02 thread start
+2026-09-02T06:15:12Z prevout.03 thread start
+2026-09-02T06:15:12Z prevout.05 thread start
+2026-09-02T06:15:12Z prevout.06 thread start
+2026-09-02T06:15:12Z Block input prevout fetching uses 8 additional threads
+2026-09-02T06:15:12Z init message: Verifying blocks…
+2026-09-02T06:15:12Z Block index and chainstate loaded
+2026-09-02T06:15:12Z prevout.07 thread start
+2026-09-02T06:15:12Z prevout.04 thread start
+2026-09-02T06:15:12Z /tmp/goldatom-live-core-vcjxbnj1/node/regtest/fees/block_policy_estimates.dat is not found. Continue anyway.
+2026-09-02T06:15:12Z Opening LevelDB in /tmp/goldatom-live-core-vcjxbnj1/node/regtest/indexes/txindex
+2026-09-02T06:15:12Z Opened LevelDB successfully
+2026-09-02T06:15:12Z Using obfuscation key for /tmp/goldatom-live-core-vcjxbnj1/node/regtest/indexes/txindex: 0000000000000000
+2026-09-02T06:15:12Z Setting NODE_NETWORK in non-prune mode
+2026-09-02T06:15:12Z initload thread start
+2026-09-02T06:15:12Z UpdateTip: new best=0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206 height=0 version=0x00000001 log2_work=1.000000 tx=1 date='2011-02-02T23:16:42Z' progress=0.000002 cache=0.3MiB(0txo)
+2026-09-02T06:15:12Z block tree size = 1
+2026-09-02T06:15:12Z nBestHeight = 0
+2026-09-02T06:15:12Z 0 block-relay-only anchors will be tried for connections.
+2026-09-02T06:15:12Z Failed to open mempool file. Continuing anyway.
+2026-09-02T06:15:12Z txidx thread start
+2026-09-02T06:15:12Z txindex is enabled at height 0
+2026-09-02T06:15:12Z txidx thread exit
+2026-09-02T06:15:12Z initload thread exit
+2026-09-02T06:15:12Z init message: Starting network threads…
+2026-09-02T06:15:12Z net thread start
+2026-09-02T06:15:12Z dnsseed thread start
+2026-09-02T06:15:12Z Loading addresses from DNS seed dummySeed.invalid.
+2026-09-02T06:15:12Z init message: Done loading
+2026-09-02T06:15:12Z addcon thread start
+2026-09-02T06:15:12Z msghand thread start
+2026-09-02T06:15:12Z opencon thread start
+2026-09-02T06:15:12Z init message: Creating wallet…
+2026-09-02T06:15:13Z [goldatom-live-final] Setting spkMan to active: id = e18c64e22b34fe8966537bbf72cb618fef17088aa308db18ea44e4a900e69451, type = legacy, internal = false
+2026-09-02T06:15:13Z [goldatom-live-final] Setting spkMan to active: id = 4344a887e83d524c07cde3dad701fd6018bc276ba64aabf7cc3e45cc3e3ddef5, type = p2sh-segwit, internal = false
+2026-09-02T06:15:13Z [goldatom-live-final] Setting spkMan to active: id = 7f561a9c106edd857b2eed81a1daf31b38373b065526e4d0840abf7f1f983657, type = bech32, internal = false
+2026-09-02T06:15:13Z [goldatom-live-final] Setting spkMan to active: id = 9e08d7fb610277575ab9a92a2c28a66970e4461aa56417fec846745b6e1ef462, type = bech32m, internal = false
+2026-09-02T06:15:13Z [goldatom-live-final] Setting spkMan to active: id = 5af071706e49983610c9f2fa927927671f36892878f9c2d3249d393a07b658fe, type = legacy, internal = true
+2026-09-02T06:15:13Z [goldatom-live-final] Setting spkMan to active: id = 5e14935592151ffb5ac21cf982f18aeeca9da7f26153fbc1de2b8f78ef626599, type = p2sh-segwit, internal = true
+2026-09-02T06:15:13Z [goldatom-live-final] Setting spkMan to active: id = 86caf719a39a14d0c10d19a84158f6acaf091dd511b5cd3f1a23bc03fd98ae3b, type = bech32, internal = true
+2026-09-02T06:15:13Z [goldatom-live-final] Setting spkMan to active: id = 80a901029e82a300eb532b87ab678015768ef62755036c38a3513f70a3ae351b, type = bech32m, internal = true
+2026-09-02T06:15:13Z [goldatom-live-final] Wallet completed creation in             354ms
+2026-09-02T06:15:13Z [goldatom-live-final] setKeyPool.size() = 8000
+2026-09-02T06:15:13Z [goldatom-live-final] mapWallet.size() = 0
+2026-09-02T06:15:13Z [goldatom-live-final] m_address_book.size() = 0
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z Enabling script verification at block #1 (8825cef2d71f56ee9b97d56ed420d5e452d8e61a77afbdcfc33f9662f0b76961): assumevalid=0 (always verify).
+2026-09-02T06:15:13Z Leaving InitialBlockDownload (latching to false)
+2026-09-02T06:15:13Z UpdateTip: new best=40683af25ecc0c9157b97993eb009e20f2370105c77b182e2f49449a2705277c height=1 version=0x20000000 log2_work=2.000000 tx=2 date='2026-09-02T06:15:13Z' progress=1.000000 cache=0.3MiB(1txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=271f955299d63914449061c5c03849beb2a5c4cca07ee8bfc3c2193e9dc63f83 height=2 version=0x20000000 log2_work=2.584963 tx=3 date='2026-09-02T06:15:14Z' progress=1.000000 cache=0.3MiB(2txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=1dda3d13e775d5584a821fd4f7397654f07d44c6145f1788979727a0391127fa height=3 version=0x20000000 log2_work=3.000000 tx=4 date='2026-09-02T06:15:14Z' progress=1.000000 cache=0.3MiB(3txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=7d1a704cc68a0b70dde27efda5c6befb302e67d85a77a328fa99ae96bf4eae04 height=4 version=0x20000000 log2_work=3.321928 tx=5 date='2026-09-02T06:15:15Z' progress=1.000000 cache=0.3MiB(4txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=3d6f015a21e135bc5ce5b50e1fd2dca87f4e2d95fa4ed0839660e4339c7336c3 height=5 version=0x20000000 log2_work=3.584963 tx=6 date='2026-09-02T06:15:15Z' progress=1.000000 cache=0.3MiB(5txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet d22b4fb9bb6e861e9e1700b0b66fd34b272d6b204a5ced178cd5fb610748ad94 new Confirmed (block=40683af25ecc0c9157b97993eb009e20f2370105c77b182e2f49449a2705277c, height=1, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet ec1ab46fd04c6575a0fd7ac00d47a6bcbc04aaa5aea4ee27fe9b2edb92262b9f new Confirmed (block=271f955299d63914449061c5c03849beb2a5c4cca07ee8bfc3c2193e9dc63f83, height=2, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet fc022429ed2d42e5f9a186a3f03f87b6d46c0785ba79086778c143627c9d6779 new Confirmed (block=1dda3d13e775d5584a821fd4f7397654f07d44c6145f1788979727a0391127fa, height=3, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 311f8eec33af912780000fee47e197d8e327b9e1f1c63a6da5cf43bcd4374b8a new Confirmed (block=7d1a704cc68a0b70dde27efda5c6befb302e67d85a77a328fa99ae96bf4eae04, height=4, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 9e8a3b8036540fdc82de5bb4fc1f70022854385fd974daf102ba91792be41b03 new Confirmed (block=3d6f015a21e135bc5ce5b50e1fd2dca87f4e2d95fa4ed0839660e4339c7336c3, height=5, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=4f0e983d31ffca37886e153c624aed6f59a8c7d754f1f16e50f025bb09ea4539 height=6 version=0x20000000 log2_work=3.807355 tx=7 date='2026-09-02T06:15:15Z' progress=1.000000 cache=0.3MiB(6txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=646ac6a4e2dca06928b35caca0ca2493f8f1ab606361897b9c0075379bea2b55 height=7 version=0x20000000 log2_work=4.000000 tx=8 date='2026-09-02T06:15:15Z' progress=1.000000 cache=0.3MiB(7txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=720e80625b6524f50f48c6675492f79f7cfceea08b4ad5b6b89889e0660cb76a height=8 version=0x20000000 log2_work=4.169925 tx=9 date='2026-09-02T06:15:16Z' progress=1.000000 cache=0.3MiB(8txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=5fb177cdb8f3f5cc621aaa5028c7f9c75e149c05e2fcbbde2b07f3175fac2a43 height=9 version=0x20000000 log2_work=4.321928 tx=10 date='2026-09-02T06:15:16Z' progress=1.000000 cache=0.3MiB(9txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6bf0cadde58be62a9967a28cd64c130043abf13d80e33e0eaed874ff1183ea2a height=10 version=0x20000000 log2_work=4.459432 tx=11 date='2026-09-02T06:15:16Z' progress=1.000000 cache=0.3MiB(10txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet e3a72d5513315886b107b36b6991716bf92e8f433d9bc16f52261fefbe2269a2 new Confirmed (block=4f0e983d31ffca37886e153c624aed6f59a8c7d754f1f16e50f025bb09ea4539, height=6, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 9dd01d6fe9fdfd9d062702ed19134d29461dd03a2adf23f9c9900cea69d9bdff new Confirmed (block=646ac6a4e2dca06928b35caca0ca2493f8f1ab606361897b9c0075379bea2b55, height=7, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 0331036c47e44263f0edb4a12fa2d5a5cc410258ff3c20936ebd9c91575e682d new Confirmed (block=720e80625b6524f50f48c6675492f79f7cfceea08b4ad5b6b89889e0660cb76a, height=8, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet c413ecf0b371b8b594692c00189783d3dcef810f334e67c16a123ac5fc41939e new Confirmed (block=5fb177cdb8f3f5cc621aaa5028c7f9c75e149c05e2fcbbde2b07f3175fac2a43, height=9, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet de88a0cb8159d27a82f80a2ecd0e35eac2583f77532ba99b69116af390ab8da2 new Confirmed (block=6bf0cadde58be62a9967a28cd64c130043abf13d80e33e0eaed874ff1183ea2a, height=10, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=395429263919a8271daa52b0aa2fce84f71fa49397e51eabb853ec8b602896fe height=11 version=0x20000000 log2_work=4.584963 tx=12 date='2026-09-02T06:15:16Z' progress=1.000000 cache=0.3MiB(11txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=680dd3a58914134735b74f954a1652dfc0ec2c3b4d94c1c44211a53797730622 height=12 version=0x20000000 log2_work=4.700440 tx=13 date='2026-09-02T06:15:16Z' progress=1.000000 cache=0.3MiB(12txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=3477a9e1a3a9404d6e345f080df7f97553f52533185f02bab5617fabc197cc5c height=13 version=0x20000000 log2_work=4.807355 tx=14 date='2026-09-02T06:15:16Z' progress=1.000000 cache=0.3MiB(13txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=563c25cec600986b9065d146500f563410a6568e338a9353c11dd0c20de47a1a height=14 version=0x20000000 log2_work=4.906891 tx=15 date='2026-09-02T06:15:17Z' progress=1.000000 cache=0.3MiB(14txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=091d570a8c33ac5cde132a2fab1c5fe74e4c6d0cdcf1deaf300d454439179d01 height=15 version=0x20000000 log2_work=5.000000 tx=16 date='2026-09-02T06:15:17Z' progress=1.000000 cache=0.3MiB(15txo)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 96e2c73a3882bca8dcf4e197736999aa4cc1af3521ff110075d25dd1c2ebc3e2 new Confirmed (block=395429263919a8271daa52b0aa2fce84f71fa49397e51eabb853ec8b602896fe, height=11, index=0)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 357e7d1d5d40c93a94514bfe279d9875806d699c109e5f18079375c19cd729aa new Confirmed (block=680dd3a58914134735b74f954a1652dfc0ec2c3b4d94c1c44211a53797730622, height=12, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet e9d894cf20e54dc5497a2f7a15594553224b24f21fd54ef7097223589df44499 new Confirmed (block=3477a9e1a3a9404d6e345f080df7f97553f52533185f02bab5617fabc197cc5c, height=13, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 99ebb5791a41534f92ca2bba6d2a8210fa77eff8d2d51cf3cb9c3e56fb5174f7 new Confirmed (block=563c25cec600986b9065d146500f563410a6568e338a9353c11dd0c20de47a1a, height=14, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 86e11d2e7bc474bbcf27e21d53f69133c224b055f0165e1e2ef2ab60f4bc61e6 new Confirmed (block=091d570a8c33ac5cde132a2fab1c5fe74e4c6d0cdcf1deaf300d454439179d01, height=15, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=45ff21d99d319ec7dafce04295b6139b3bb67280cb1ccd60fc6d8e00d1429f11 height=16 version=0x20000000 log2_work=5.087463 tx=17 date='2026-09-02T06:15:17Z' progress=1.000000 cache=0.3MiB(16txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6bda9a0a7203dca389c69650140e5cd9658fa45ed967ed6dbcd8d8be4d0e281d height=17 version=0x20000000 log2_work=5.169925 tx=18 date='2026-09-02T06:15:17Z' progress=1.000000 cache=0.3MiB(17txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=0153f2124075d40d5ab1f8f6edc7b3ef456bf2596bb8ef8295c66a0eab0a6d82 height=18 version=0x20000000 log2_work=5.247928 tx=19 date='2026-09-02T06:15:17Z' progress=1.000000 cache=0.3MiB(18txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=44387d2efe549039f6c66a9152e5abe70f46d92dfa8f2864ddea8c10a645ab99 height=19 version=0x20000000 log2_work=5.321928 tx=20 date='2026-09-02T06:15:17Z' progress=1.000000 cache=0.3MiB(19txo)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 26ab93737b1f3c8ec817e93954d22b777965d266c7056eeaee3de47847f08ea3 new Confirmed (block=45ff21d99d319ec7dafce04295b6139b3bb67280cb1ccd60fc6d8e00d1429f11, height=16, index=0)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=4dc0bf67b7c4fcd4975f825ea9ac9c6eb5db9e0510c002cc38f84a4d78247461 height=20 version=0x20000000 log2_work=5.392317 tx=21 date='2026-09-02T06:15:18Z' progress=1.000000 cache=0.3MiB(20txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet e11d63de79effa784a918d94c555397c6dedc97f70f82357227f7520fe7ba1a9 new Confirmed (block=6bda9a0a7203dca389c69650140e5cd9658fa45ed967ed6dbcd8d8be4d0e281d, height=17, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet f93e9f912d024bba3734d275db4ee39bbd118bc417f2af96a6ce4d2ac8d4e522 new Confirmed (block=0153f2124075d40d5ab1f8f6edc7b3ef456bf2596bb8ef8295c66a0eab0a6d82, height=18, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet b5d6936fc17cb7acdc97cc53cd6ec6e31f0bb4193833f0b88e4db5a2286da1fb new Confirmed (block=44387d2efe549039f6c66a9152e5abe70f46d92dfa8f2864ddea8c10a645ab99, height=19, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet e093eef5ae69de27a87d51060cf529f4185cad9955f8e4de4bd664ca9e803c68 new Confirmed (block=4dc0bf67b7c4fcd4975f825ea9ac9c6eb5db9e0510c002cc38f84a4d78247461, height=20, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=41d539e1262e2ab268b6bd58c7e7c7deb4685a0ae7148a5fbfbcbd5204580039 height=21 version=0x20000000 log2_work=5.459432 tx=22 date='2026-09-02T06:15:18Z' progress=1.000000 cache=0.3MiB(21txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=2ed29f271673377a82eefa4cb3f4c36647ed5f38df5a095e91580b048f0ccb81 height=22 version=0x20000000 log2_work=5.523562 tx=23 date='2026-09-02T06:15:18Z' progress=1.000000 cache=0.3MiB(22txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=4f26a69eb4417d8bd28ec75351d4caf86dac016bb888dc904df78452cb51676f height=23 version=0x20000000 log2_work=5.584963 tx=24 date='2026-09-02T06:15:18Z' progress=1.000000 cache=0.3MiB(23txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=7b6e60bda79716e94e8789f53e84fcdcda21b5b1e2a8d2d92896195712eb86ef height=24 version=0x20000000 log2_work=5.643856 tx=25 date='2026-09-02T06:15:18Z' progress=1.000000 cache=0.3MiB(24txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=2251b7c0328cbe17e195f7345312cccc6a3d4ad6eef4b354ef89b7f4529feea4 height=25 version=0x20000000 log2_work=5.700440 tx=26 date='2026-09-02T06:15:18Z' progress=1.000000 cache=0.3MiB(25txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 41c716a3572982a168a7f4ad6006a14f49aed08e79e82c737f830d5478e853dd new Confirmed (block=41d539e1262e2ab268b6bd58c7e7c7deb4685a0ae7148a5fbfbcbd5204580039, height=21, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet b061a62ec96605a11a5d637c42af2e78e4665469b2c1a00810e77772e7a992a0 new Confirmed (block=2ed29f271673377a82eefa4cb3f4c36647ed5f38df5a095e91580b048f0ccb81, height=22, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet e7abd4ee2a35e5c8c0ee2b747ce020c30fea2f2eee41156f1ca34fe145bae847 new Confirmed (block=4f26a69eb4417d8bd28ec75351d4caf86dac016bb888dc904df78452cb51676f, height=23, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet b35161583f513b0b0bea8163276a6d83292fa385e384fb7e510847cc596f82a0 new Confirmed (block=7b6e60bda79716e94e8789f53e84fcdcda21b5b1e2a8d2d92896195712eb86ef, height=24, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 980407f6a3d3bae4e0006f34b32aa6876ad7474a2de1cdb5d12da377c1a0d991 new Confirmed (block=2251b7c0328cbe17e195f7345312cccc6a3d4ad6eef4b354ef89b7f4529feea4, height=25, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=05ff2ac8a794b713e53b67654372c8c47d258ab76b9977614a7058d9ceb49a8a height=26 version=0x20000000 log2_work=5.754888 tx=27 date='2026-09-02T06:15:19Z' progress=1.000000 cache=0.3MiB(26txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6da86cfaf680a17dbaf553d418579a9cb1e0e6d9a14df992c27e520356d707b8 height=27 version=0x20000000 log2_work=5.807355 tx=28 date='2026-09-02T06:15:19Z' progress=1.000000 cache=0.3MiB(27txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=4a58c71136beb526a9fdc114b0f5435449313159f378c4ec25e3d5c530f8d953 height=28 version=0x20000000 log2_work=5.857981 tx=29 date='2026-09-02T06:15:19Z' progress=1.000000 cache=0.3MiB(28txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=335ec3a5858d3fe7bf4ec411d70b92f1d07ffc5b08428a19346bc8a8cb613b1b height=29 version=0x20000000 log2_work=5.906891 tx=30 date='2026-09-02T06:15:19Z' progress=1.000000 cache=0.3MiB(29txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=073827ba35b8a23021634d453c9f70f59b2f01bd7093b8349871cdb945ac72f1 height=30 version=0x20000000 log2_work=5.954196 tx=31 date='2026-09-02T06:15:19Z' progress=1.000000 cache=0.3MiB(30txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 5b5d608a7857d504f51945dc193847198d537cfe344f4361de53dc3fdff356f4 new Confirmed (block=05ff2ac8a794b713e53b67654372c8c47d258ab76b9977614a7058d9ceb49a8a, height=26, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 514d6673d05d75d922de2f2c8c3c6c1264dc43c556acb956abaf45f048f2a029 new Confirmed (block=6da86cfaf680a17dbaf553d418579a9cb1e0e6d9a14df992c27e520356d707b8, height=27, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 94f9e671f3f98a874188ee6cc02ff4a55f1b33a13225bcffd8e37b7e51226b42 new Confirmed (block=4a58c71136beb526a9fdc114b0f5435449313159f378c4ec25e3d5c530f8d953, height=28, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 7fe8c0c301f140df462d7c3736c8d942b3c168997c40c872526277108ab34e24 new Confirmed (block=335ec3a5858d3fe7bf4ec411d70b92f1d07ffc5b08428a19346bc8a8cb613b1b, height=29, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 43e76bb7b09c0db53455c3020482151514fa02ee20c7dc61e731af98fb90bdee new Confirmed (block=073827ba35b8a23021634d453c9f70f59b2f01bd7093b8349871cdb945ac72f1, height=30, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=4b3a452d9ac4f439d86f4e2e257c94f586bc906969f4f262901c5a09d001930e height=31 version=0x20000000 log2_work=6.000000 tx=32 date='2026-09-02T06:15:19Z' progress=1.000000 cache=0.3MiB(31txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=26a07f853637603b79375aa978d8b72276f4db2f672c9089ffd9078310b0639c height=32 version=0x20000000 log2_work=6.044394 tx=33 date='2026-09-02T06:15:20Z' progress=1.000000 cache=0.3MiB(32txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6034979efcbb5ea8f17dd4653c7082569bb2a4520e84891ec04e323b753d8313 height=33 version=0x20000000 log2_work=6.087463 tx=34 date='2026-09-02T06:15:20Z' progress=1.000000 cache=0.3MiB(33txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=530bb671a369933f77d0b2daa2e8d7d6c9714ace79c4383f7e133bea369e1477 height=34 version=0x20000000 log2_work=6.129283 tx=35 date='2026-09-02T06:15:20Z' progress=1.000000 cache=0.3MiB(34txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=0ad068e9801f6d1ae354cc9eeb8b7712bc1b833b445275d8995c26a5f24b3b52 height=35 version=0x20000000 log2_work=6.169925 tx=36 date='2026-09-02T06:15:20Z' progress=1.000000 cache=0.3MiB(35txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 6577e510fb9df4f3128d1db945038ce9bd1cf4ee59c237f70fb1686e2535a156 new Confirmed (block=4b3a452d9ac4f439d86f4e2e257c94f586bc906969f4f262901c5a09d001930e, height=31, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet d05d48498f3f035e9065fce436485c968f720e5132eb5bf68b01623fdd373af3 new Confirmed (block=26a07f853637603b79375aa978d8b72276f4db2f672c9089ffd9078310b0639c, height=32, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet bf2bb9b1e28d5c9757fe8bca871fdfafdd2baae487535c2dc6a49b9f7fc787b9 new Confirmed (block=6034979efcbb5ea8f17dd4653c7082569bb2a4520e84891ec04e323b753d8313, height=33, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet f62af1f3fc9058134c41b5e8b524f9f710f2b932d08980c48ea43615bc059373 new Confirmed (block=530bb671a369933f77d0b2daa2e8d7d6c9714ace79c4383f7e133bea369e1477, height=34, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet f2c411508982afea3cdf3e01b091484e63b4db9ba6cb0fd4da20063c9eda96dd new Confirmed (block=0ad068e9801f6d1ae354cc9eeb8b7712bc1b833b445275d8995c26a5f24b3b52, height=35, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=774c8643a660f0e88927b997cb6a8a26f1880625c2577da019cc53018ee15295 height=36 version=0x20000000 log2_work=6.209453 tx=37 date='2026-09-02T06:15:20Z' progress=1.000000 cache=0.3MiB(36txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=4265d787937bc373b3a677f0ff64add4f790c1467e97d661e55a3df0c8ff163d height=37 version=0x20000000 log2_work=6.247928 tx=38 date='2026-09-02T06:15:20Z' progress=1.000000 cache=0.3MiB(37txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=546079ab0f595e6ad442c352270e9c0d9aa2bb9e26e249252703869cc259402d height=38 version=0x20000000 log2_work=6.285402 tx=39 date='2026-09-02T06:15:21Z' progress=1.000000 cache=0.3MiB(38txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=21edeba178214e2e3a86e925d5dea0631ebab521439736685c3cbab75f6dc28a height=39 version=0x20000000 log2_work=6.321928 tx=40 date='2026-09-02T06:15:21Z' progress=1.000000 cache=0.3MiB(39txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=3fced88824adeb751d925b4af1ea14a09e487ad8c352c0c97a041b895b3d08fd height=40 version=0x20000000 log2_work=6.357552 tx=41 date='2026-09-02T06:15:21Z' progress=1.000000 cache=0.3MiB(40txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 1e3a4d3521058173485a7083eb3b2b2b7b53aff845d2ff7204a1f591209b6f0a new Confirmed (block=774c8643a660f0e88927b997cb6a8a26f1880625c2577da019cc53018ee15295, height=36, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet affc381a6522263a05349c37fb56edfb1c8f6210af24944530ae64662b43491f new Confirmed (block=4265d787937bc373b3a677f0ff64add4f790c1467e97d661e55a3df0c8ff163d, height=37, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet a5d1413e6c138f32e8aaaee2c874186757d7447113f54d69558f398c85fa3413 new Confirmed (block=546079ab0f595e6ad442c352270e9c0d9aa2bb9e26e249252703869cc259402d, height=38, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet f4e55252052fced51a9bbc151181223b1de3a013b794f92cdb5632f72c4751cb new Confirmed (block=21edeba178214e2e3a86e925d5dea0631ebab521439736685c3cbab75f6dc28a, height=39, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet e71455883a3d739c29eeeb13840df07fb6bbd1255408024a87fc340484aad0d4 new Confirmed (block=3fced88824adeb751d925b4af1ea14a09e487ad8c352c0c97a041b895b3d08fd, height=40, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=2ff3f6d5bead9fc0ac93691b92d79bd15a0adb98ada204bcc800a8b98c2d7ffd height=41 version=0x20000000 log2_work=6.392317 tx=42 date='2026-09-02T06:15:21Z' progress=1.000000 cache=0.3MiB(41txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=0b4a9f4e955e26aabf7a3a186883a4f594bd59b40e1f4e1b3829dd09fd62f555 height=42 version=0x20000000 log2_work=6.426265 tx=43 date='2026-09-02T06:15:21Z' progress=1.000000 cache=0.3MiB(42txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=40627b7c20d4a4c4c9bf0512995a64f5275cdb7f9825aaac953f5c3fbf40cf12 height=43 version=0x20000000 log2_work=6.459432 tx=44 date='2026-09-02T06:15:21Z' progress=1.000000 cache=0.3MiB(43txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=291def9b3a9bc18e0538a91872d8c3c2911f8198e6f8b37250eb761af4582875 height=44 version=0x20000000 log2_work=6.491853 tx=45 date='2026-09-02T06:15:22Z' progress=1.000000 cache=0.3MiB(44txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=7a7b6886e8264060d44148ef469ac050e323a47729ac97efd79b596ff49b84f9 height=45 version=0x20000000 log2_work=6.523562 tx=46 date='2026-09-02T06:15:22Z' progress=1.000000 cache=0.3MiB(45txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet edc3e2aa2d124266eb076175dc39730833d0e6f086f796ce981e9f73d22b2415 new Confirmed (block=2ff3f6d5bead9fc0ac93691b92d79bd15a0adb98ada204bcc800a8b98c2d7ffd, height=41, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 84c735b9da23f91ab2b26fd316a64167cfb0f13fa8d61f70171283f02231b171 new Confirmed (block=0b4a9f4e955e26aabf7a3a186883a4f594bd59b40e1f4e1b3829dd09fd62f555, height=42, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 9a332cf47e3b9981fa0232a38dec10e515f5417cf59fb1781b8bd2cc3a6fa616 new Confirmed (block=40627b7c20d4a4c4c9bf0512995a64f5275cdb7f9825aaac953f5c3fbf40cf12, height=43, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 09f8e36d3a3bf5a11eb7bc2b3230171c14b77af5cc13fb22e96adcc0710046ab new Confirmed (block=291def9b3a9bc18e0538a91872d8c3c2911f8198e6f8b37250eb761af4582875, height=44, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet a7772005101ea9fe8d124b4abbd7867e2b6b0b9b8b3e19d0b7e296f3d7818f09 new Confirmed (block=7a7b6886e8264060d44148ef469ac050e323a47729ac97efd79b596ff49b84f9, height=45, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=568b8ba4eb22f25ecb3bc3ed23f175c027c6f785e673befe9955363b2136f982 height=46 version=0x20000000 log2_work=6.554589 tx=47 date='2026-09-02T06:15:22Z' progress=1.000000 cache=0.3MiB(46txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=2e517f1edaf5e0e30da3903392cea53efee3cd65f68748ad3f596ee12b0c047f height=47 version=0x20000000 log2_work=6.584963 tx=48 date='2026-09-02T06:15:22Z' progress=1.000000 cache=0.3MiB(47txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=496cdad66c7053f9ae2b50c9438fe7db447cb67a357b9349bc2456ac12a27bcb height=48 version=0x20000000 log2_work=6.614710 tx=49 date='2026-09-02T06:15:22Z' progress=1.000000 cache=0.3MiB(48txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=7c3bd7b3087710f78f08f2895c0217654b5c6472772c3692ee60bd7ede38bba3 height=49 version=0x20000000 log2_work=6.643856 tx=50 date='2026-09-02T06:15:22Z' progress=1.000000 cache=0.3MiB(49txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=768d8055be080c8821bc5099917fa4e83c5a91e9621db3b86045fee9a0e13b59 height=50 version=0x20000000 log2_work=6.672425 tx=51 date='2026-09-02T06:15:23Z' progress=1.000000 cache=0.3MiB(50txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 6b7767ee9a512b1d3518aa70e77a3c114818684428882696e016e7ace0d38285 new Confirmed (block=568b8ba4eb22f25ecb3bc3ed23f175c027c6f785e673befe9955363b2136f982, height=46, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 8a0275d8d862e2dfd189d0bc2a49316c0e4a84e980c572b6b57989fe0fe6da28 new Confirmed (block=2e517f1edaf5e0e30da3903392cea53efee3cd65f68748ad3f596ee12b0c047f, height=47, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet ece02f4337f45e0e884dc1d1b2d08fef2b3aba29f68257d5217de20c141836ec new Confirmed (block=496cdad66c7053f9ae2b50c9438fe7db447cb67a357b9349bc2456ac12a27bcb, height=48, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 74b6da2495d0ef89dba637bc33f0b87aa71028923d66bcb28d6ddf5e8bf78224 new Confirmed (block=7c3bd7b3087710f78f08f2895c0217654b5c6472772c3692ee60bd7ede38bba3, height=49, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet ed9506d8a431df63c0aa4b5610e641704321db461c511f4ecfee1a4185b64767 new Confirmed (block=768d8055be080c8821bc5099917fa4e83c5a91e9621db3b86045fee9a0e13b59, height=50, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=68ddd0e776d3a18cd1e08d0ac271b237ea1fb57ed7aacef05818d3d49430c1f2 height=51 version=0x20000000 log2_work=6.700440 tx=52 date='2026-09-02T06:15:23Z' progress=1.000000 cache=0.3MiB(51txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6e48e01fcfbcadad2d3a551498248ed187f005861362eca231242e516295c1dd height=52 version=0x20000000 log2_work=6.727920 tx=53 date='2026-09-02T06:15:23Z' progress=1.000000 cache=0.3MiB(52txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6d64aed591e96ad07e7a2f19c5e34e26e70220379c4661d1d5836b789a0a6590 height=53 version=0x20000000 log2_work=6.754888 tx=54 date='2026-09-02T06:15:23Z' progress=1.000000 cache=0.3MiB(53txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=1d1b4cd02b876e61db362abef4964963cccaa7ad2c51e368f6110dae97c7315e height=54 version=0x20000000 log2_work=6.781360 tx=55 date='2026-09-02T06:15:23Z' progress=1.000000 cache=0.3MiB(54txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=07d5bca5cc7b307a6bb74bcb6ee58ffb8814d591005ed2e2dcca54262b011439 height=55 version=0x20000000 log2_work=6.807355 tx=56 date='2026-09-02T06:15:23Z' progress=1.000000 cache=0.3MiB(55txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet ff0b80e0e776a69002f9a9ce03eba076304fbfd5cf29489c4663fe9964b4ccda new Confirmed (block=68ddd0e776d3a18cd1e08d0ac271b237ea1fb57ed7aacef05818d3d49430c1f2, height=51, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 09f1cf2efa5b03d5bbf7f98fc5ae9f5bc653c59dad2e4c5885391a451fdc2a5e new Confirmed (block=6e48e01fcfbcadad2d3a551498248ed187f005861362eca231242e516295c1dd, height=52, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 286eaa34452c05dd52777ffe9c22a248c0177fbd6d9281b794247732d13e8f8c new Confirmed (block=6d64aed591e96ad07e7a2f19c5e34e26e70220379c4661d1d5836b789a0a6590, height=53, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 6b3969b835455eb5f6063e73d49c6ebedbe3e30663c9c25efde0af9ed04a7f2b new Confirmed (block=1d1b4cd02b876e61db362abef4964963cccaa7ad2c51e368f6110dae97c7315e, height=54, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 86d5029bf402ba3e9b484f888562204554f6d3254e1ba4bd7ee51c27eb589843 new Confirmed (block=07d5bca5cc7b307a6bb74bcb6ee58ffb8814d591005ed2e2dcca54262b011439, height=55, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=0a67dd88462f29f30484d4ac7199908240578a06790ffb70330b921f4ab3f33c height=56 version=0x20000000 log2_work=6.832890 tx=57 date='2026-09-02T06:15:24Z' progress=1.000000 cache=0.3MiB(56txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=06c15083bf75186f246844a06fdb2693422c3eafab0ec7506e7e0c4382dc3d03 height=57 version=0x20000000 log2_work=6.857981 tx=58 date='2026-09-02T06:15:24Z' progress=1.000000 cache=0.3MiB(57txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=17d033e2d4c88071a6c5f3d5a3670fabfa682fba6a8da0f754611143bc835d35 height=58 version=0x20000000 log2_work=6.882643 tx=59 date='2026-09-02T06:15:24Z' progress=1.000000 cache=0.3MiB(58txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=7a893e8248efbab8a5d3b3d5a8312e2ecb8230a8f949065a8e30571e8f8e158d height=59 version=0x20000000 log2_work=6.906891 tx=60 date='2026-09-02T06:15:24Z' progress=1.000000 cache=0.3MiB(59txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=76829aae7f72f2619aeb1092a698535c7ff57a8f6439b3ae79b31233cf3a9ef3 height=60 version=0x20000000 log2_work=6.930737 tx=61 date='2026-09-02T06:15:24Z' progress=1.000000 cache=0.3MiB(60txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 414c8c18b74e09434a3aca9c8cd291c27bf4a2eeebf4624992e8236ef139adc2 new Confirmed (block=0a67dd88462f29f30484d4ac7199908240578a06790ffb70330b921f4ab3f33c, height=56, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet bd93de5a72768fad3d01aa7657852fd5343f169ebcd771b4d49f4e41157477e9 new Confirmed (block=06c15083bf75186f246844a06fdb2693422c3eafab0ec7506e7e0c4382dc3d03, height=57, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet d3b0b2f1988051d6be1f430ac1fe9c040c70cb0a2f30636d52c815a71046e307 new Confirmed (block=17d033e2d4c88071a6c5f3d5a3670fabfa682fba6a8da0f754611143bc835d35, height=58, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 0a542c59e21eead2437d8dc7865a982a6b8deb3a05e6d7e00358e6f3a984b898 new Confirmed (block=7a893e8248efbab8a5d3b3d5a8312e2ecb8230a8f949065a8e30571e8f8e158d, height=59, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 65c86bb45485f8cc0f22350782fd915f2d7fb6172e23d5245f4c08aaa6a95722 new Confirmed (block=76829aae7f72f2619aeb1092a698535c7ff57a8f6439b3ae79b31233cf3a9ef3, height=60, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=32fff529d338a8a03069f0ffb826be815c0d2493d6df9563712abc87ee810a8d height=61 version=0x20000000 log2_work=6.954196 tx=62 date='2026-09-02T06:15:24Z' progress=1.000000 cache=0.3MiB(61txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=0c04aec0c722f12965734275d9e0bb5e3c04b6fdd74336bb78200c877184b3b7 height=62 version=0x20000000 log2_work=6.977280 tx=63 date='2026-09-02T06:15:25Z' progress=1.000000 cache=0.3MiB(62txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=269467cb7e9188efbe5fb5489a40757a5b5f358b108643d150e6693eea540238 height=63 version=0x20000000 log2_work=7.000000 tx=64 date='2026-09-02T06:15:25Z' progress=1.000000 cache=0.3MiB(63txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=0eb6ec92dcb545687c2d050c5ecbcfa149e73d01c040e499e8f3e18a63e95d2c height=64 version=0x20000000 log2_work=7.022368 tx=65 date='2026-09-02T06:15:25Z' progress=1.000000 cache=0.3MiB(64txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=2a1042da606c72449c4d07a1ae5f1c5f327cfd4f344ac6c81502510fb3c8f719 height=65 version=0x20000000 log2_work=7.044394 tx=66 date='2026-09-02T06:15:25Z' progress=1.000000 cache=0.3MiB(65txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 5a737c4b609c6017afc7a383ed18284bfbc353c211623c00df00fa1db9b6cca9 new Confirmed (block=32fff529d338a8a03069f0ffb826be815c0d2493d6df9563712abc87ee810a8d, height=61, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 9f696018c4e80051cd0bf61adc99af6a2b92e40d7544fb0597a74daf7fc2e10c new Confirmed (block=0c04aec0c722f12965734275d9e0bb5e3c04b6fdd74336bb78200c877184b3b7, height=62, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet dcbd4726097b2bed2e85deb006adb79a77db1e6532de9fbf2206692abc1ec319 new Confirmed (block=269467cb7e9188efbe5fb5489a40757a5b5f358b108643d150e6693eea540238, height=63, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet c309f5852931684d6cec1df21829bbc09b567821507c72a64df63e72d10cb2ea new Confirmed (block=0eb6ec92dcb545687c2d050c5ecbcfa149e73d01c040e499e8f3e18a63e95d2c, height=64, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet ab9b7cfee30e10b24cadb7be321ee10afaba2a4979101cc60d341a3f1af4b11d new Confirmed (block=2a1042da606c72449c4d07a1ae5f1c5f327cfd4f344ac6c81502510fb3c8f719, height=65, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=17bfac19addd9fd8aba92e83a93e009f09b728f8cb13ccf80a8308dad0f44fd9 height=66 version=0x20000000 log2_work=7.066089 tx=67 date='2026-09-02T06:15:25Z' progress=1.000000 cache=0.3MiB(66txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6808c0729a7d803d0732586e9593f88066866d6857ea5297603765cb7ea1d953 height=67 version=0x20000000 log2_work=7.087463 tx=68 date='2026-09-02T06:15:25Z' progress=1.000000 cache=0.3MiB(67txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=285e6a2c40a48174286eba6c6fcbef2ac6eee8de60336fb040106843bcbc442c height=68 version=0x20000000 log2_work=7.108524 tx=69 date='2026-09-02T06:15:26Z' progress=1.000000 cache=0.3MiB(68txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=5cc594d3636084e8208cb69bccbe7930dd282f7df47905a8ed7b21e505c6f7b7 height=69 version=0x20000000 log2_work=7.129283 tx=70 date='2026-09-02T06:15:26Z' progress=1.000000 cache=0.3MiB(69txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=2f2e0fefecf405f2fb34b07c4f5b5aee239520d66afc8dae8802958fe806de00 height=70 version=0x20000000 log2_work=7.149747 tx=71 date='2026-09-02T06:15:26Z' progress=1.000000 cache=0.3MiB(70txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 34803b5db38154b8c998f5ce9149f3bfac643e82c776e604d181cd941fbbcce9 new Confirmed (block=17bfac19addd9fd8aba92e83a93e009f09b728f8cb13ccf80a8308dad0f44fd9, height=66, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 8de4d06da9d5ec73dcf671069f5318f4199174b819f6240cd91c40328cd331cc new Confirmed (block=6808c0729a7d803d0732586e9593f88066866d6857ea5297603765cb7ea1d953, height=67, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet dd3d8c3adf5eca9716c51275b5515d1bd2174fad64f369f1895aee009333268b new Confirmed (block=285e6a2c40a48174286eba6c6fcbef2ac6eee8de60336fb040106843bcbc442c, height=68, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 11cb2d38bde4a5ee48230edc7dbb57ec2198a7aaf9698cadccf495ccf7cea45e new Confirmed (block=5cc594d3636084e8208cb69bccbe7930dd282f7df47905a8ed7b21e505c6f7b7, height=69, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet e3cc321e5a7a622abb94efb934093eeab27f86873be726d9bba95cb2dd1a81f1 new Confirmed (block=2f2e0fefecf405f2fb34b07c4f5b5aee239520d66afc8dae8802958fe806de00, height=70, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=7919d3f2e2434a9fb5bdb57d6b8168751050c3420c9626fe9a1e299641ab6684 height=71 version=0x20000000 log2_work=7.169925 tx=72 date='2026-09-02T06:15:26Z' progress=1.000000 cache=0.3MiB(71txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=0c4540c44b2426944626f5e3ae9507a859cdc1caf08b526760a8d9781f28d652 height=72 version=0x20000000 log2_work=7.189825 tx=73 date='2026-09-02T06:15:26Z' progress=1.000000 cache=0.3MiB(72txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=4da1d280c8a5a4a917cdbb2e363817a15f19d99fefae026842d982e2fe0b1051 height=73 version=0x20000000 log2_work=7.209453 tx=74 date='2026-09-02T06:15:26Z' progress=1.000000 cache=0.3MiB(73txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=77c6b2f85cabb9c2adf85c64228ccf4104cd04d8d521dad675cfd01247e7abee height=74 version=0x20000000 log2_work=7.228819 tx=75 date='2026-09-02T06:15:27Z' progress=1.000000 cache=0.3MiB(74txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=63ddbeeb34c5fe28138e3aa3fdd3561c79002d30a85a213671a65b211bb7237f height=75 version=0x20000000 log2_work=7.247928 tx=76 date='2026-09-02T06:15:27Z' progress=1.000000 cache=0.3MiB(75txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 89f8d6164bed41b6aedf7f27dab27e42fabc4eabaf493876ae25cdab017ba449 new Confirmed (block=7919d3f2e2434a9fb5bdb57d6b8168751050c3420c9626fe9a1e299641ab6684, height=71, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet cfedaf35fd349e8ac13f7b39ff64bee1b7000ba08b52ff67597a399ff41cd1ff new Confirmed (block=0c4540c44b2426944626f5e3ae9507a859cdc1caf08b526760a8d9781f28d652, height=72, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet dd1b1826f9b8de454fbc42c131d5b918999bf0da5cb5403c57b5e94da13693ae new Confirmed (block=4da1d280c8a5a4a917cdbb2e363817a15f19d99fefae026842d982e2fe0b1051, height=73, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet c69dea0fde7101dd915af664cb23b8a7a8598facd0fc56672fcb903653f5c818 new Confirmed (block=77c6b2f85cabb9c2adf85c64228ccf4104cd04d8d521dad675cfd01247e7abee, height=74, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet d22c4fdaf7bbeac7db48832fd7fb88b9b92d6cb20db5094ce2d0e80fc62f90fa new Confirmed (block=63ddbeeb34c5fe28138e3aa3fdd3561c79002d30a85a213671a65b211bb7237f, height=75, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=44cdb9b47cf5cfe17aabac5bdbe0d44ad0a9d1af5c9a1a00df3f0cf381f008f5 height=76 version=0x20000000 log2_work=7.266787 tx=77 date='2026-09-02T06:15:27Z' progress=1.000000 cache=0.3MiB(76txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=1942c79c3e04245bc065f2ca0bb29e15448ccb695d2b6198c7a9c76499525b04 height=77 version=0x20000000 log2_work=7.285402 tx=78 date='2026-09-02T06:15:27Z' progress=1.000000 cache=0.3MiB(77txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=2efb8a3defe3fcd7ab6b226873f49901b4d1e8d310266068b654bf9359b08c27 height=78 version=0x20000000 log2_work=7.303781 tx=79 date='2026-09-02T06:15:27Z' progress=1.000000 cache=0.3MiB(78txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=4652798aa284f07bc029342d63d020cfb08238908288875a81258a91cbfaf35a height=79 version=0x20000000 log2_work=7.321928 tx=80 date='2026-09-02T06:15:27Z' progress=1.000000 cache=0.3MiB(79txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6cb65483801609aa490427ba8916c91396013282527174072cd912b3d5900654 height=80 version=0x20000000 log2_work=7.339850 tx=81 date='2026-09-02T06:15:28Z' progress=1.000000 cache=0.3MiB(80txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 58039dad4601ef78399a198999686832b17b572b05de955f8d9386d8bbe63f11 new Confirmed (block=44cdb9b47cf5cfe17aabac5bdbe0d44ad0a9d1af5c9a1a00df3f0cf381f008f5, height=76, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 79aabb6ffa3f5bbf1ee7b34859a7d1c29e5e7de5c8f20db55bf9b3978a058a7f new Confirmed (block=1942c79c3e04245bc065f2ca0bb29e15448ccb695d2b6198c7a9c76499525b04, height=77, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 14e62daaf3c9cee03ef62ec5df10e0619408da0ff646e1da504e0e7fa4e56fef new Confirmed (block=2efb8a3defe3fcd7ab6b226873f49901b4d1e8d310266068b654bf9359b08c27, height=78, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 2018646a2c47957fc2d3272fd295fde60ce3fda00337eab4e94c2b5424bec6c7 new Confirmed (block=4652798aa284f07bc029342d63d020cfb08238908288875a81258a91cbfaf35a, height=79, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 420716e3c9bc49ce7256e92827ea17abf0ac86e4b22759d20d2c9f1104ada35a new Confirmed (block=6cb65483801609aa490427ba8916c91396013282527174072cd912b3d5900654, height=80, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=33f3daa98d3b87c9d89aa8bf7ed25e89a3393202e6c6903f5893f8ba2a6d3ddd height=81 version=0x20000000 log2_work=7.357552 tx=82 date='2026-09-02T06:15:28Z' progress=1.000000 cache=0.3MiB(81txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=7f7104d927b51dd6d24d35cf5a612f0abe0cccba57a432db11b2553b55cfcb5c height=82 version=0x20000000 log2_work=7.375039 tx=83 date='2026-09-02T06:15:28Z' progress=1.000000 cache=0.3MiB(82txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=59cdf292c576fcdf7511aa96a1e0e9217350bd71dc20f56c7842803b905ee408 height=83 version=0x20000000 log2_work=7.392317 tx=84 date='2026-09-02T06:15:28Z' progress=1.000000 cache=0.3MiB(83txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=3143544ba068714dae59530d98b883764f1611d9d94ec034d6f53346c2ab9af6 height=84 version=0x20000000 log2_work=7.409391 tx=85 date='2026-09-02T06:15:28Z' progress=1.000000 cache=0.3MiB(84txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=34d48f6c4692bee1fbb6680300281c3c0779ce085e4e61925c582255dd30bde7 height=85 version=0x20000000 log2_work=7.426265 tx=86 date='2026-09-02T06:15:28Z' progress=1.000000 cache=0.3MiB(85txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 76aad4252c6f2edd6102be4d5ed01c6aac487877f9d00017740c0c36ada1dab4 new Confirmed (block=33f3daa98d3b87c9d89aa8bf7ed25e89a3393202e6c6903f5893f8ba2a6d3ddd, height=81, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 7975907b9a123f2aa93c2c66d9412897081c1db5a1e7c8c40d410ce5b6a0f7ce new Confirmed (block=7f7104d927b51dd6d24d35cf5a612f0abe0cccba57a432db11b2553b55cfcb5c, height=82, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 1bdfad64cdb7bd83c71903b41edcd1dc4b66f142e077e8615d1b4802dbb8094a new Confirmed (block=59cdf292c576fcdf7511aa96a1e0e9217350bd71dc20f56c7842803b905ee408, height=83, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet d74d721a67974767b576c8c03a3d64f338688717a38f4174424a4fcd991608cf new Confirmed (block=3143544ba068714dae59530d98b883764f1611d9d94ec034d6f53346c2ab9af6, height=84, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet ae69664162b6909741a0423e3d95720d6edbf0bfdc687b08ef899021e08c1287 new Confirmed (block=34d48f6c4692bee1fbb6680300281c3c0779ce085e4e61925c582255dd30bde7, height=85, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=5cba8c5614307afd2e9a3fb3c7649db9fab8bcd4edf10aa2bb4b44ec5bfd1562 height=86 version=0x20000000 log2_work=7.442943 tx=87 date='2026-09-02T06:15:29Z' progress=1.000000 cache=0.3MiB(86txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=4924999f64f5407abc9890a55da011b3c85fe590a7128464e5cde627fd222dad height=87 version=0x20000000 log2_work=7.459432 tx=88 date='2026-09-02T06:15:29Z' progress=1.000000 cache=0.3MiB(87txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=665afdd72e67bdcda0342f41c9f5f2a17b0a2ba34a72d2ec4fb840e47985254e height=88 version=0x20000000 log2_work=7.475733 tx=89 date='2026-09-02T06:15:29Z' progress=1.000000 cache=0.3MiB(88txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=1ca62aef131a2b1e960667a53a4c92af8c8b275545aeb8895204493bf5a92eca height=89 version=0x20000000 log2_work=7.491853 tx=90 date='2026-09-02T06:15:29Z' progress=1.000000 cache=0.3MiB(89txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6b589fcda45ae84f495c5dbea1a2bfd0d6964de4a84aa33f1e7f008ea70f039c height=90 version=0x20000000 log2_work=7.507795 tx=91 date='2026-09-02T06:15:29Z' progress=1.000000 cache=0.3MiB(90txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 16cd5eba615858f4aa218558a37e68eb6f8c8615828624e0e41c8f81d6eef7ec new Confirmed (block=5cba8c5614307afd2e9a3fb3c7649db9fab8bcd4edf10aa2bb4b44ec5bfd1562, height=86, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 151eaf514b17cdcd1b213733152c3a494743568ef5f39615d9dc3feeff5d3318 new Confirmed (block=4924999f64f5407abc9890a55da011b3c85fe590a7128464e5cde627fd222dad, height=87, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 7a8253d1f1a90b2b93f852a8dc81e31bef262492e576ef7525b56a79b137871a new Confirmed (block=665afdd72e67bdcda0342f41c9f5f2a17b0a2ba34a72d2ec4fb840e47985254e, height=88, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 09fd77f00dc9e624b08afc11ab6752317408298a37551bda254fe6cb3b4e0089 new Confirmed (block=1ca62aef131a2b1e960667a53a4c92af8c8b275545aeb8895204493bf5a92eca, height=89, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet baa0db796132642a757cf5c0ea88cded4c170bf5503f9969cdcbc9b35cf75a4e new Confirmed (block=6b589fcda45ae84f495c5dbea1a2bfd0d6964de4a84aa33f1e7f008ea70f039c, height=90, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=4f1dfb5e29a50c9ed24e676a65dde4d88ec0ec841e54cac5e080b52ae3f67444 height=91 version=0x20000000 log2_work=7.523562 tx=92 date='2026-09-02T06:15:29Z' progress=1.000000 cache=0.3MiB(91txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=008f4c197f77fe729353c33e72497f96f5fbf824f6e4777dc99930c2b3727a9d height=92 version=0x20000000 log2_work=7.539159 tx=93 date='2026-09-02T06:15:30Z' progress=1.000000 cache=0.3MiB(92txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=583cd4199c8026297324956e188d762583cf5c867d73629abe80434f3295eba1 height=93 version=0x20000000 log2_work=7.554589 tx=94 date='2026-09-02T06:15:30Z' progress=1.000000 cache=0.3MiB(93txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=45201c9fd8bdcd9a600b37b30a8a30e2e104d9627f2dae51ce3e3c80378db33c height=94 version=0x20000000 log2_work=7.569856 tx=95 date='2026-09-02T06:15:30Z' progress=1.000000 cache=0.3MiB(94txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=19584c1d72f4cc2fb38803ea7a3692edff7dd65e44a239fc4fc05dbf6af8c751 height=95 version=0x20000000 log2_work=7.584963 tx=96 date='2026-09-02T06:15:30Z' progress=1.000000 cache=0.3MiB(95txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 777a5a9ab2aa406d9fa155693d7282a08e58560382fa268f50491ffa591a7700 new Confirmed (block=4f1dfb5e29a50c9ed24e676a65dde4d88ec0ec841e54cac5e080b52ae3f67444, height=91, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 58528a07518079ae81c23ddad71d08eabbae55f926851198cb330fba4e342edd new Confirmed (block=008f4c197f77fe729353c33e72497f96f5fbf824f6e4777dc99930c2b3727a9d, height=92, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet d524ce32880bfad723ad1f802adbdcfe2ee3c03274c07c0a9ee59517a1bed9d5 new Confirmed (block=583cd4199c8026297324956e188d762583cf5c867d73629abe80434f3295eba1, height=93, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 1a2de4e198af8da5e2875fe61968162fb5fc082867f8edae1bb60fcf017058b1 new Confirmed (block=45201c9fd8bdcd9a600b37b30a8a30e2e104d9627f2dae51ce3e3c80378db33c, height=94, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 7532bdc5db83dec4174909c53f7e5ec47e11de21d9f0842a528d8ebed50ca19e new Confirmed (block=19584c1d72f4cc2fb38803ea7a3692edff7dd65e44a239fc4fc05dbf6af8c751, height=95, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=722b3c8807d6bee8214bd70171a52d2d0cbe908ab022957c333bbd3ff3934eab height=96 version=0x20000000 log2_work=7.599913 tx=97 date='2026-09-02T06:15:30Z' progress=1.000000 cache=0.3MiB(96txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=28dcc3fe20186d9c87916122bffbd4f05f4c016175f34b16600ff45b64d18cae height=97 version=0x20000000 log2_work=7.614710 tx=98 date='2026-09-02T06:15:30Z' progress=1.000000 cache=0.3MiB(97txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=5b3673bfbaee48aa03ed7a901ca00be7eed8d2ef0a2672a149b10b2585549fcf height=98 version=0x20000000 log2_work=7.629357 tx=99 date='2026-09-02T06:15:31Z' progress=1.000000 cache=0.3MiB(98txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=31f9190d382bc15c26bf1912aa4a4f912537810e5d752f32a310ee356903795f height=99 version=0x20000000 log2_work=7.643856 tx=100 date='2026-09-02T06:15:31Z' progress=1.000000 cache=0.3MiB(99txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=016ba35b3e2449a7ff2b35faab0271105a419b5bbcf9fbeac93c1814601224bc height=100 version=0x20000000 log2_work=7.658211 tx=101 date='2026-09-02T06:15:31Z' progress=1.000000 cache=0.3MiB(100txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet e283c7b095a71020cd555ec2c3f49aeb481f366a5ad0b62ad5e45a947f0164e2 new Confirmed (block=722b3c8807d6bee8214bd70171a52d2d0cbe908ab022957c333bbd3ff3934eab, height=96, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 6f2516d805d3b4b3dc3492c4639481a1c0a7543d514dc12889c42100601bbe25 new Confirmed (block=28dcc3fe20186d9c87916122bffbd4f05f4c016175f34b16600ff45b64d18cae, height=97, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet efafbe5d3d34fb4ca02aa500223e362ab4385330abcabfaaa5951133b14d3634 new Confirmed (block=5b3673bfbaee48aa03ed7a901ca00be7eed8d2ef0a2672a149b10b2585549fcf, height=98, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 86034b70c4b11f14fa9da2eed93a1189c4f848701dd7e78ee1f038a721fc77c4 new Confirmed (block=31f9190d382bc15c26bf1912aa4a4f912537810e5d752f32a310ee356903795f, height=99, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet fe95b7180196d162bad02cf8f912a839330f333fec7ef6836032c6b6e50229e3 new Confirmed (block=016ba35b3e2449a7ff2b35faab0271105a419b5bbcf9fbeac93c1814601224bc, height=100, index=0)
+2026-09-02T06:15:13Z UpdateTip: new best=3a4f7bd92c32ccc4bf6610776fe6afe736f45b349e3a3943bc554228ef5a9d99 height=101 version=0x20000000 log2_work=7.672425 tx=102 date='2026-09-02T06:15:31Z' progress=1.000000 cache=0.3MiB(101txo)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 3dbcc33554cfacc7fc1cf93dc7f8e33f0bca296acf3dea35e7ed9b042a5b47ad new Confirmed (block=3a4f7bd92c32ccc4bf6610776fe6afe736f45b349e3a3943bc554228ef5a9d99, height=101, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] Coin Selection: Algorithm:knapsack, Waste Metric Score:101
+2026-09-02T06:15:13Z [goldatom-live-final] Fee Calculation: Fee:202 Bytes:202, Source: User Specified Fee
+2026-09-02T06:15:13Z [goldatom-live-final] Coin Selection: Algorithm:knapsack, Waste Metric Score:101
+2026-09-02T06:15:13Z [goldatom-live-final] Fee Calculation: Fee:202 Bytes:202, Source: User Specified Fee
+2026-09-02T06:15:13Z [goldatom-live-final] Fee non-grouped = 202, grouped = 202, using grouped
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 9e308c3550b7d68192cbf699a3635fed54368a0a8b5cb2443800594c06265587 new InMempool
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 1736 txs: 1 fees: 202 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=16189c58cb6aa5f10bc445e9504924750f76ad559cdf39543b274d458df2c42d height=102 version=0x20000000 log2_work=7.686501 tx=104 date='2026-09-02T06:15:31Z' progress=1.000000 cache=0.3MiB(104txo)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 3b1a36a54482ac53cd574d2c7406bf9b0090f7179560c2a7411f7f6fd9440cc7 new Confirmed (block=16189c58cb6aa5f10bc445e9504924750f76ad559cdf39543b274d458df2c42d, height=102, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 9e308c3550b7d68192cbf699a3635fed54368a0a8b5cb2443800594c06265587 update Confirmed (block=16189c58cb6aa5f10bc445e9504924750f76ad559cdf39543b274d458df2c42d, height=102, index=1)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=43ceeb29dbddd5d31caf65c4bc10146001f46d0bc2f5c00ac30ee60f676aea3a height=103 version=0x20000000 log2_work=7.700440 tx=105 date='2026-09-02T06:15:31Z' progress=1.000000 cache=0.3MiB(105txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6c234361f0af876a0a943f7f5d339f3f5baa8035491b7a1ed2c016c266ec7b16 height=104 version=0x20000000 log2_work=7.714246 tx=106 date='2026-09-02T06:15:32Z' progress=1.000000 cache=0.3MiB(106txo)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=53cb3face777f07d7fccb9fbbc4e70d7df67bc60352778235b5afd831028a866 height=105 version=0x20000000 log2_work=7.727920 tx=107 date='2026-09-02T06:15:32Z' progress=1.000000 cache=0.3MiB(107txo)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 0f5385729d4009a7953d8ed23e067ddae5342390afd321c467ceaaef8fbccd62 new Confirmed (block=43ceeb29dbddd5d31caf65c4bc10146001f46d0bc2f5c00ac30ee60f676aea3a, height=103, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 31440b3ca71b36a51743255387ea638ce9524b5129843025b186abc83b659820 new Confirmed (block=6c234361f0af876a0a943f7f5d339f3f5baa8035491b7a1ed2c016c266ec7b16, height=104, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 2b226d3a10abfec7d31bd078d655aa6d7bd7ebc5db3bacb30537bcab7597b10e new Confirmed (block=53cb3face777f07d7fccb9fbbc4e70d7df67bc60352778235b5afd831028a866, height=105, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6 new InMempool
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 1564 txs: 1 fees: 2000 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=6432da708ac2e0e6bbf64a91babe62921b416137baf8b5bdb587bac0fbebcd18 height=106 version=0x20000000 log2_work=7.741467 tx=109 date='2026-09-02T06:15:32Z' progress=1.000000 cache=0.3MiB(108txo)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet d9d12059ec8f43d3d4dcccf5b486bafba622f2ce6ad1c8b52244c519f10446f7 new Confirmed (block=6432da708ac2e0e6bbf64a91babe62921b416137baf8b5bdb587bac0fbebcd18, height=106, index=0)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet 6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6 update Confirmed (block=6432da708ac2e0e6bbf64a91babe62921b416137baf8b5bdb587bac0fbebcd18, height=106, index=1)
+2026-09-02T06:15:13Z CreateNewBlock(): block weight: 932 txs: 0 fees: 0 sigops 400
+2026-09-02T06:15:13Z UpdateTip: new best=72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f height=107 version=0x20000000 log2_work=7.754888 tx=110 date='2026-09-02T06:15:32Z' progress=1.000000 cache=0.3MiB(109txo)
+2026-09-02T06:15:13Z [goldatom-live-final] AddToWallet c10acfb66227808f096322cd44cee4b62addafe0877f2c7719a5fbf1ed10c0ea new Confirmed (block=72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f, height=107, index=0)
+2026-09-02T06:15:15Z UpdateTip: new best=6432da708ac2e0e6bbf64a91babe62921b416137baf8b5bdb587bac0fbebcd18 height=106 version=0x20000000 log2_work=7.741467 tx=109 date='2026-09-02T06:15:32Z' progress=0.994526 cache=0.3MiB(109txo)
+2026-09-02T06:15:15Z UpdateTip: new best=53cb3face777f07d7fccb9fbbc4e70d7df67bc60352778235b5afd831028a866 height=105 version=0x20000000 log2_work=7.727920 tx=107 date='2026-09-02T06:15:32Z' progress=0.994424 cache=0.3MiB(109txo)
+2026-09-02T06:15:15Z UpdateTip: new best=6c234361f0af876a0a943f7f5d339f3f5baa8035491b7a1ed2c016c266ec7b16 height=104 version=0x20000000 log2_work=7.714246 tx=106 date='2026-09-02T06:15:32Z' progress=0.994371 cache=0.3MiB(109txo)
+2026-09-02T06:15:15Z InvalidChainFound: invalid block=53cb3face777f07d7fccb9fbbc4e70d7df67bc60352778235b5afd831028a866 height=105 log2_work=7.727920 date=2026-09-02T06:15:32Z
+2026-09-02T06:15:15Z InvalidChainFound: current best=6c234361f0af876a0a943f7f5d339f3f5baa8035491b7a1ed2c016c266ec7b16 height=104 log2_work=7.714246 date=2026-09-02T06:15:32Z
+2026-09-02T06:15:15Z [goldatom-live-final] AddToWallet c10acfb66227808f096322cd44cee4b62addafe0877f2c7719a5fbf1ed10c0ea update Inactive (abandoned=1)
+2026-09-02T06:15:15Z [goldatom-live-final] AddToWallet d9d12059ec8f43d3d4dcccf5b486bafba622f2ce6ad1c8b52244c519f10446f7 update Inactive (abandoned=1)
+2026-09-02T06:15:15Z [goldatom-live-final] AddToWallet 6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6 update Inactive (abandoned=0)
+2026-09-02T06:15:15Z [goldatom-live-final] AddToWallet 6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6 update InMempool
+2026-09-02T06:15:15Z [goldatom-live-final] AddToWallet 2b226d3a10abfec7d31bd078d655aa6d7bd7ebc5db3bacb30537bcab7597b10e update Inactive (abandoned=1)
+2026-09-02T06:15:16Z UpdateTip: new best=53cb3face777f07d7fccb9fbbc4e70d7df67bc60352778235b5afd831028a866 height=105 version=0x20000000 log2_work=7.727920 tx=107 date='2026-09-02T06:15:32Z' progress=0.988909 cache=0.3MiB(109txo)
+2026-09-02T06:15:16Z [goldatom-live-final] AddToWallet 2b226d3a10abfec7d31bd078d655aa6d7bd7ebc5db3bacb30537bcab7597b10e update Confirmed (block=53cb3face777f07d7fccb9fbbc4e70d7df67bc60352778235b5afd831028a866, height=105, index=0)
+2026-09-02T06:15:16Z UpdateTip: new best=6432da708ac2e0e6bbf64a91babe62921b416137baf8b5bdb587bac0fbebcd18 height=106 version=0x20000000 log2_work=7.741467 tx=109 date='2026-09-02T06:15:32Z' progress=0.994526 cache=0.3MiB(109txo)
+2026-09-02T06:15:16Z UpdateTip: new best=72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f height=107 version=0x20000000 log2_work=7.754888 tx=110 date='2026-09-02T06:15:32Z' progress=1.000000 cache=0.3MiB(109txo)
+2026-09-02T06:15:16Z [goldatom-live-final] AddToWallet d9d12059ec8f43d3d4dcccf5b486bafba622f2ce6ad1c8b52244c519f10446f7 update Confirmed (block=6432da708ac2e0e6bbf64a91babe62921b416137baf8b5bdb587bac0fbebcd18, height=106, index=0)
+2026-09-02T06:15:16Z [goldatom-live-final] AddToWallet 6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6 update Confirmed (block=6432da708ac2e0e6bbf64a91babe62921b416137baf8b5bdb587bac0fbebcd18, height=106, index=1)
+2026-09-02T06:15:16Z [goldatom-live-final] AddToWallet c10acfb66227808f096322cd44cee4b62addafe0877f2c7719a5fbf1ed10c0ea update Confirmed (block=72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f, height=107, index=0)
+2026-09-02T06:15:17Z http.07 thread exit
+2026-09-02T06:15:17Z http.15 thread exit
+2026-09-02T06:15:17Z http.10 thread exit
+2026-09-02T06:15:17Z http.11 thread exit
+2026-09-02T06:15:17Z http.02 thread exit
+2026-09-02T06:15:17Z http.14 thread exit
+2026-09-02T06:15:17Z http.08 thread exit
+2026-09-02T06:15:17Z http.13 thread exit
+2026-09-02T06:15:17Z http.09 thread exit
+2026-09-02T06:15:17Z http.01 thread exit
+2026-09-02T06:15:17Z Shutdown in progress...
+2026-09-02T06:15:17Z http.12 thread exit
+2026-09-02T06:15:17Z opencon thread exit
+2026-09-02T06:15:17Z http.00 thread exit
+2026-09-02T06:15:17Z net thread exit
+2026-09-02T06:15:17Z addcon thread exit
+2026-09-02T06:15:17Z http.05 thread exit
+2026-09-02T06:15:17Z http.03 thread exit
+2026-09-02T06:15:17Z http.04 thread exit
+2026-09-02T06:15:17Z http.06 thread exit
+2026-09-02T06:15:17Z http thread exit
+2026-09-02T06:15:17Z 0 addresses found from DNS seeds
+2026-09-02T06:15:17Z dnsseed thread exit
+2026-09-02T06:15:17Z [goldatom-live-final] Releasing wallet goldatom-live-final..
+2026-09-02T06:15:17Z msghand thread exit
+2026-09-02T06:15:17Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat started
+2026-09-02T06:15:17Z DumpAnchors: Flush 0 outbound block-relay-only peer addresses to anchors.dat completed (0.00s)
+2026-09-02T06:15:17Z scheduler thread exit
+2026-09-02T06:15:17Z Writing 0 mempool transactions to file...
+2026-09-02T06:15:17Z Writing 0 unbroadcast transactions to file.
+2026-09-02T06:15:17Z Dumped mempool: 0.000s to copy, 0.000s to dump, 27 bytes dumped to file
+2026-09-02T06:15:17Z prevout.01 thread exit
+2026-09-02T06:15:17Z prevout.00 thread exit
+2026-09-02T06:15:17Z prevout.06 thread exit
+2026-09-02T06:15:17Z prevout.03 thread exit
+2026-09-02T06:15:17Z prevout.05 thread exit
+2026-09-02T06:15:17Z prevout.04 thread exit
+2026-09-02T06:15:17Z prevout.02 thread exit
+2026-09-02T06:15:17Z prevout.07 thread exit
+2026-09-02T06:15:17Z Shutdown done

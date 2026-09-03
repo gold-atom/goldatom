@@ -1,0 +1,74 @@
+{
+  "connections": 0,
+  "connections_in": 0,
+  "connections_out": 0,
+  "incrementalfee": "0.00000100",
+  "inv_buckets": {
+    "inbound": {
+      "backlog": 0,
+      "count_tok": 420,
+      "size_tok": 12000000
+    },
+    "outbound": {
+      "backlog": 0,
+      "count_tok": 420,
+      "size_tok": 12000000
+    }
+  },
+  "localaddresses": [],
+  "localrelay": true,
+  "localservices": "0000000000000c09",
+  "localservicesnames": [
+    "NETWORK",
+    "WITNESS",
+    "NETWORK_LIMITED",
+    "P2P_V2"
+  ],
+  "networkactive": true,
+  "networks": [
+    {
+      "limited": false,
+      "name": "ipv4",
+      "proxy": "",
+      "proxy_randomize_credentials": false,
+      "reachable": true
+    },
+    {
+      "limited": false,
+      "name": "ipv6",
+      "proxy": "",
+      "proxy_randomize_credentials": false,
+      "reachable": true
+    },
+    {
+      "limited": true,
+      "name": "onion",
+      "proxy": "",
+      "proxy_randomize_credentials": false,
+      "reachable": false
+    },
+    {
+      "limited": true,
+      "name": "i2p",
+      "proxy": "",
+      "proxy_randomize_credentials": false,
+      "reachable": false
+    },
+    {
+      "limited": true,
+      "name": "cjdns",
+      "proxy": "",
+      "proxy_randomize_credentials": false,
+      "reachable": false
+    }
+  ],
+  "protocolversion": 70017,
+  "relayfee": "0.00000100",
+  "subversion": "/Satoshi:31.99.0/",
+  "timeoffset": 0,
+  "tx_send_rate": 14,
+  "version": 319900,
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}

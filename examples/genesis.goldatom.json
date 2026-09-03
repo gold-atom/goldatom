@@ -1,0 +1,36 @@
+{
+  "claim": {
+    "algorithm": "sha256d-80-v0",
+    "block_hash": "e3120440b0ebb3863574772634d9284e5722c2f11ab12d91810bac9b7f4cb668",
+    "commitment_hex": "099de3199833f190b92a1579fac3e5cfb52cf614f7796c84ff6e1dcb029ee83c",
+    "height": 100,
+    "outpoint": {
+      "txid": "1143fdb9481e1cf8ccfeb248d2fe76a6e6e73ff06dbdcce3bca2ce3a2284bbda",
+      "vout": 0
+    },
+    "seal_script_hex": "5120d6f9bb328bb69a4a4ce756427792951fca5f58f08f664e5fa8f3de698f95eaca",
+    "target_hex": "0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "txout_proof": "7624c17cf2db1eb4f14d39684032c4dc74491c1a547e3ac8902d7a9088e1475c"
+  },
+  "format": "goldatom-proof",
+  "mint": {
+    "block_hash": "d9b24971cb853bfcc70605105963ab00026845cbb3c3f9707d94f214f5a53848",
+    "commitment_hex": "0c90b80b3cf108ce78a366aa9bd6fa4ec8a33652cf36e991e2b81ad249e436d5",
+    "height": 104,
+    "title_script_hex": "512067ee02c3d012114a013d126ef98ecfcb9b1224f49394f6af386333e58d4080f8",
+    "title_vout": 0,
+    "txid": "0c2dc53fb853bd864b8b1617ee5da1644b213a64955d16dae38102c6fc71d886",
+    "txout_proof": "5e2509a48ecb8a767a62204901a067da5a525e02db1a80135d0e103476c06ebd"
+  },
+  "profile": "goldatom-sim-v0",
+  "transfers": [],
+  "version": 0,
+  "work": {
+    "challenge_block_hash": "8bf1d5715aee614933564668092df4d8ae2bec85664e447d3e195f68eaf0f13b",
+    "challenge_digest_hex": "21ba28c83e6d542d4e44e5aecf4ec96238eaaf70bd13ae232b215a76a50a46fc",
+    "challenge_height": 103,
+    "extra_nonce": 0,
+    "nonce": 11,
+    "work_hash_hex": "0557dccf369dde232bc33aa5f83fc1a463254c20ca6f6fb0ef7484ce7776ff3e"
+  }
+}

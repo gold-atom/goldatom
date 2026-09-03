@@ -1,0 +1,20 @@
+{
+  "as_of_tip_hash": "72680cc23bd5b11913f38ddd7548d8f324953b6964883a34a74bebfb2d5ce21f",
+  "as_of_tip_height": 107,
+  "atom_id": "1f703b02a851b5ab42e5dcfb561799b7eca6ddd52246ddace14cd4d0845f6fa6",
+  "burial_blocks": 1,
+  "burial_chainwork": "2",
+  "challenge_height": 105,
+  "claim_height": 102,
+  "current_title_outpoint": {
+    "txid": "6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6",
+    "vout": 0
+  },
+  "expected_local_hashes": 16,
+  "expected_local_work_log2": 4.0,
+  "mint_height": 106,
+  "profile": "goldatom-regtest-v0",
+  "target_hex": "0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "title_transfers": 0,
+  "valid": true
+}
