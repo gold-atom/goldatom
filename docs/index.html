@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GoldAtom</title>
+<style>
+body {
+  margin: 18px auto;
+  padding: 0 12px 40px 12px;
+  max-width: 850px;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  line-height: 1.28;
+}
+a:link { color: #0000ee; }
+a:visited { color: #551a8b; }
+a:active { color: #ff0000; }
+h1 { font-size: 44px; line-height: 1; margin: 12px 0 2px 0; }
+h2 { font-size: 25px; margin: 22px 0 7px 0; }
+h3 { font-size: 20px; margin: 18px 0 5px 0; }
+p { margin: 8px 0; }
+hr { border: 0; border-top: 1px solid #000000; margin: 18px 0; }
+table { border-collapse: collapse; width: 100%; margin: 8px 0 16px 0; }
+th, td { border: 1px solid #000000; padding: 5px 6px; text-align: left; vertical-align: top; }
+th { background: #eeeeee; }
+pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  border: 1px solid #000000;
+  background: #eeeeee;
+  padding: 9px;
+}
+.status { border: 2px solid #000000; padding: 8px 10px; margin: 14px 0; }
+.note { font-size: 15px; }
+.center { text-align: center; }
+.nowrap { white-space: nowrap; }
+@media (max-width: 650px) {
+  body { font-size: 16px; margin-top: 10px; }
+  h1 { font-size: 38px; }
+  table, thead, tbody, th, td, tr { display: block; }
+  thead { display: none; }
+  tr { border: 1px solid #000000; margin: 8px 0; }
+  td { border: 0; border-bottom: 1px dotted #777777; }
+  td:last-child { border-bottom: 0; }
+}
+</style>
+</head>
+<body>
+<div class="center">
+<h1>GOLDATOM</h1>
+<i>proof-buried digital matter</i><br>
+<small>research home page &mdash; September 2, 2026</small>
+</div>
+
+<hr>
+
+<div class="status">
+<b>STATUS:</b> The object layer works in simulation and private Bitcoin Core regtest. The monetary scarcity layer remains experimental. There is no mainnet profile, token sale, presale, ticker, or investment product.
+</div>
+
+<p><b>GoldAtom</b> is an attempt to create an independently assayable digital object whose work, birth, Bitcoin history, and current title can be verified rather than trusted.</p>
+
+<p>A version-zero atom combines:</p>
+
+<pre>Bit-Gold-style local proof of work
+        +
+a claim fixed before a future Bitcoin challenge
+        +
+a mint committed back into Bitcoin
+        +
+subsequent Bitcoin chainwork burial
+        +
+one single-use Bitcoin UTXO title</pre>
+
+<p><b>The compact definition:</b> a GoldAtom is a local proof bound to a pre-existing Bitcoin claim, derived from an unknowable future Bitcoin block, committed back into Bitcoin, buried beneath later chainwork, and transferred through a single-use title seal.</p>
+
+<h2>What has actually run</h2>
+
+<ul>
+<li>31 deterministic, adversarial, RPC, and economic-model tests passed.</li>
+<li>A fresh isolated Bitcoin Core regtest lifecycle completed: claim &rarr; future challenge &rarr; local work &rarr; mint &rarr; burial &rarr; verification.</li>
+<li>An independent Node.js implementation recomputed the portable commitments and obtained the same Atom ID.</li>
+<li>Tampered work and tampered challenge data were rejected.</li>
+<li>Removing the challenge block from active history invalidated the atom; restoring the block restored validity.</li>
+</ul>
+
+<table>
+<tr><th colspan="2">Preserved final validation atom</th></tr>
+<tr><td>Atom ID</td><td><tt>1f703b02a851b5ab42e5dcfb561799b7eca6ddd52246ddace14cd4d0845f6fa6</tt></td></tr>
+<tr><td>Claim height</td><td>102</td></tr>
+<tr><td>Challenge height</td><td>105</td></tr>
+<tr><td>Mint height</td><td>106</td></tr>
+<tr><td>Assay tip</td><td>107</td></tr>
+<tr><td>Work attempts</td><td>18 under a deliberately trivial regtest target</td></tr>
+<tr><td>Current title</td><td><tt>6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6:0</tt></td></tr>
+</table>
+
+<h2>The current monetary direction: Proof-Cast Tickets</h2>
+
+<p>The promising next move is to require proof of work to manufacture a <b>ticket</b> before anybody knows whether an epoch contains a vein or which ticket will win.</p>
+
+<pre>prospector performs PoW
+        &darr;
+ticket is published before the draw
+        &darr;
+future claimant-independent Bitcoin history decides whether ore exists
+        &darr;
+the same future history ranks the already-published tickets
+        &darr;
+one winning ticket may settle one open vein into one title</pre>
+
+<p><b>History controls supply. Work controls allocation. Bitcoin controls chronology and title.</b></p>
+
+<p>More hashing may buy more chances of extracting an existing vein. It must not create more veins. Ten tickets and ten billion tickets can change who wins, but an epoch still produces at most one atom.</p>
+
+<p><a href="PROOF-CAST-TICKETS.md"><b>Read the Proof-Cast Tickets research note.</b></a></p>
+
+<h2>What remains unproven</h2>
+
+<ul>
+<li>A defensible global supply law and production difficulty profile.</li>
+<li>Resistance to source-miner block withholding, censorship, and fee shocks.</li>
+<li>A work function and ticket publication system that do not collapse into hidden hardware advantage or unbounded data volume.</li>
+<li>Mainnet safety, wallet interoperability, privacy, economic adoption, and legal treatment.</li>
+<li>Independent external cryptographic and Bitcoin protocol review.</li>
+</ul>
+
+<p>The accurate claim is: <b>GoldAtom is a legitimate executable protocol-research project. It is not yet proven digital gold.</b></p>
+
+<h2>Observatory</h2>
+
+<p><a href="observatory.html"><b>Open the self-contained GoldAtom Observatory.</b></a></p>
+
+<p class="note">The standalone page is a clearly labelled replay of the preserved September 2, 2026 Bitcoin Core lifecycle. The downloadable Observatory package can also launch a genuinely live, isolated private regtest lab when supplied with a local <tt>bitcoind</tt> binary. It refuses non-regtest operation in lab mode.</p>
+
+<h2>Start here</h2>
+<table>
+<thead><tr><th>File</th><th>Contents</th><th>Size</th><th>SHA-256</th></tr></thead>
+<tbody>
+<tr><td><a href="downloads/goldatom-0.0.3-complete-release.zip">Recommended package</a></td><td>Complete GoldAtom/0 release: code, documents, proof bundle, and validation evidence.</td><td nowrap>357.8 KB</td><td><tt>e9a5b333c6c7...</tt></td></tr>
+<tr><td><a href="downloads/goldatom-0.0.3-source.zip">Source ZIP</a></td><td>GoldAtom/0 Python source repository.</td><td nowrap>175.7 KB</td><td><tt>27dfda9a4683...</tt></td></tr>
+<tr><td><a href="downloads/goldatom-0.0.3-source.tar.gz">Source TAR.GZ</a></td><td>Same source repository in tar.gz format.</td><td nowrap>125.9 KB</td><td><tt>9c57765d792d...</tt></td></tr>
+<tr><td><a href="downloads/goldatom-0.0.3-py3-none-any.whl">Python wheel</a></td><td>Installable GoldAtom/0 command-line package.</td><td nowrap>29.5 KB</td><td><tt>a783a81ebf65...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-0.0.3-SPEC.md">GoldAtom/0 specification</a></td><td>Normative object-layer draft.</td><td nowrap>19.7 KB</td><td><tt>e3a91e38d204...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-0.0.3-SPEC-1-CANDIDATE.md">GoldAtom/1 candidate</a></td><td>Non-normative canonical-vein auction design.</td><td nowrap>15.0 KB</td><td><tt>33fc5744b71f...</tt></td></tr>
+<tr><td><a href="PROOF-CAST-TICKETS.md">Proof-Cast Tickets</a></td><td>Latest research note: costly tickets cast before a claimant-independent future draw.</td><td nowrap>6.6 KB</td><td><tt>1d7672637f4a...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-0.0.3-FINAL-VALIDATION-TRANSCRIPT.md">Final validation transcript</a></td><td>Commands and outputs from the isolated Bitcoin Core regtest lifecycle.</td><td nowrap>22.0 KB</td><td><tt>78b49118b0f9...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-0.0.3-VALIDATION.md">Validation record</a></td><td>What passed, what was rejected, and what remains unproven.</td><td nowrap>8.0 KB</td><td><tt>0dde9dd1ce1d...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-0.0.3-THREAT-MODEL.md">Threat model</a></td><td>Attack surfaces and failure criteria.</td><td nowrap>12.0 KB</td><td><tt>9c4f520c6c1f...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-0.0.3-ISSUANCE-SIMULATION.md">Issuance simulation</a></td><td>Adversarial toy models that killed claimant-controlled proof-intersection gating.</td><td nowrap>10.0 KB</td><td><tt>375df52d163e...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-live-core-final-2026-09-02.goldatom.json">Live proof bundle</a></td><td>Portable proof object from the final preserved Core run.</td><td nowrap>2.0 KB</td><td><tt>c68dcdd8a9ad...</tt></td></tr>
+<tr><td><a href="downloads/goldatom-0.0.3-release-sha256.txt">Release checksums</a></td><td>Checksums supplied with release 0.0.3.</td><td nowrap>1.3 KB</td><td><tt>cb8ed7161dcb...</tt></td></tr>
+<tr><td><a href="downloads/goldatom-0.0.3-source-archive-validation.log">Source validation log</a></td><td>Clean extraction, test, vector, and simulation run.</td><td nowrap>12.2 KB</td><td><tt>c6bebf191337...</tt></td></tr>
+</tbody>
+</table>
+
+<h2>Independent rerun</h2>
+<table>
+<thead><tr><th>File</th><th>Contents</th><th>Size</th><th>SHA-256</th></tr></thead>
+<tbody>
+<tr><td><a href="downloads/GOLDATOM-INDEPENDENT-AUDIT-NOTE-2026-09-02.md">Independent audit note</a></td><td>Boundary and result of the independent rerun.</td><td nowrap>1022 B</td><td><tt>8a02a138771c...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-INDEPENDENT-AUDIT-ATOM-2026-09-02.goldatom.json">Independent audit atom</a></td><td>Fresh atom emitted by the independent isolated run.</td><td nowrap>2.0 KB</td><td><tt>6a8c2ff964b6...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-INDEPENDENT-AUDIT-SUMMARY-2026-09-02.json">Independent audit summary</a></td><td>Machine-readable audit summary.</td><td nowrap>963 B</td><td><tt>ee7216ad3306...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-INDEPENDENT-AUDIT-SHA256-2026-09-02.txt">Independent audit checksums</a></td><td>Hashes for the audit artifacts.</td><td nowrap>382 B</td><td><tt>eece9e4699ab...</tt></td></tr>
+</tbody>
+</table>
+
+<h2>Observatory downloads</h2>
+<table>
+<thead><tr><th>File</th><th>Contents</th><th>Size</th><th>SHA-256</th></tr></thead>
+<tbody>
+<tr><td><a href="observatory.html">Open the Observatory</a></td><td>Self-contained replay of the validated lifecycle; opens directly in a browser.</td><td nowrap>246.2 KB</td><td><tt>6a17146a1533...</tt></td></tr>
+<tr><td><a href="downloads/goldatom-observatory-0.1.0-source.zip">Observatory source ZIP</a></td><td>Local-first server, replay mode, isolated regtest lab, tests, and documentation.</td><td nowrap>4.5 MB</td><td><tt>0dba1a055afa...</tt></td></tr>
+<tr><td><a href="downloads/goldatom_observatory-0.1.0-py3-none-any.whl">Observatory wheel</a></td><td>Installable Python package.</td><td nowrap>130.2 KB</td><td><tt>bbb3ae7faa6d...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-OBSERVATORY-0.1.0-LIVE-TRANSCRIPT.md">Observatory live transcript</a></td><td>Recorded build and live validation evidence.</td><td nowrap>10.0 KB</td><td><tt>6348e90301a3...</tt></td></tr>
+<tr><td><a href="downloads/GOLDATOM-OBSERVATORY-0.1.0-LIVE.png">Observatory screenshot</a></td><td>Reference image of the live Core mode.</td><td nowrap>1.4 MB</td><td><tt>bb42971a3141...</tt></td></tr>
+</tbody>
+</table>
+
+<p><a href="DOWNLOADS-SHA256.txt">Full site download checksum manifest</a></p>
+
+<h2>Run the object-layer simulation</h2>
+
+<pre>unzip goldatom-0.0.3-source.zip
+cd goldatom-0.0.3
+python3 -m unittest discover -s tests -v
+python3 -m goldatom simulate</pre>
+
+<h2>Run the Observatory replay</h2>
+
+<pre>python3 -m pip install goldatom_observatory-0.1.0-py3-none-any.whl
+goldatom-observatory serve
+
+open http://127.0.0.1:8787/</pre>
+
+<p class="note">Python 3.11 or newer is required. The packages have no third-party runtime dependencies. Regtest targets are intentionally trivial and prove the state machine, not economic scarcity. Do not use real funds.</p>
+
+<hr>
+
+<p class="center"><small>GoldAtom &copy; 2026 Jcb. Experimental software. MIT-licensed source.<br>
+This page uses no JavaScript, framework, webfont, analytics, tracker, cookie, or remote asset.<br>
+Best viewed with any browser.</small></p>
+</body>
+</html>

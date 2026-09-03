@@ -1,0 +1,230 @@
+$ unzip goldatom-0.0.3-source.zip into clean directory
+EXIT_STATUS=0
+
+$ python3 -m compileall -q goldatom scripts simulation tests
+EXIT_STATUS=0
+
+$ python3 -m unittest discover -s tests -v
+test_core_error_inside_http_500_preserves_rpc_code (test_core_rpc.JsonRpcClientTests.test_core_error_inside_http_500_preserves_rpc_code) ... ok
+test_malformed_response_is_rejected (test_core_rpc.JsonRpcClientTests.test_malformed_response_is_rejected) ... ok
+test_response_id_mismatch_is_rejected (test_core_rpc.JsonRpcClientTests.test_response_id_mismatch_is_rejected) ... ok
+test_rpc_error_inside_http_200_is_rejected (test_core_rpc.JsonRpcClientTests.test_rpc_error_inside_http_200_is_rejected) ... ok
+test_successful_result_and_request_id (test_core_rpc.JsonRpcClientTests.test_successful_result_and_request_id) ... ok
+test_censorship_bound (test_economics.EconomicsTests.test_censorship_bound) ... ok
+test_equal_producers (test_economics.EconomicsTests.test_equal_producers) ... ok
+test_gate_stats (test_economics.EconomicsTests.test_gate_stats) ... ok
+test_hardware_advantage_share (test_economics.EconomicsTests.test_hardware_advantage_share) ... ok
+test_invalid_inputs (test_economics.EconomicsTests.test_invalid_inputs) ... ok
+test_target_granularity (test_economics.EconomicsTests.test_target_granularity) ... ok
+test_variant_amplification (test_economics.EconomicsTests.test_variant_amplification) ... ok
+test_withholding_threshold (test_economics.EconomicsTests.test_withholding_threshold) ... ok
+test_broken_transfer_ancestry_is_rejected (test_protocol.GoldAtomProtocolTests.test_broken_transfer_ancestry_is_rejected) ... ok
+test_challenge_reorg_is_rejected (test_protocol.GoldAtomProtocolTests.test_challenge_reorg_is_rejected) ... ok
+test_claim_proof_cannot_be_relabelled (test_protocol.GoldAtomProtocolTests.test_claim_proof_cannot_be_relabelled) ... ok
+test_current_title_value_mismatch_is_rejected (test_protocol.GoldAtomProtocolTests.test_current_title_value_mismatch_is_rejected) ... ok
+test_duplicate_json_key_is_rejected (test_protocol.GoldAtomProtocolTests.test_duplicate_json_key_is_rejected) ... ok
+test_eighty_byte_work_header_and_vector (test_protocol.GoldAtomProtocolTests.test_eighty_byte_work_header_and_vector) ... ok
+test_genesis_vector_is_valid (test_protocol.GoldAtomProtocolTests.test_genesis_vector_is_valid) ... ok
+test_mint_outside_window_is_rejected (test_protocol.GoldAtomProtocolTests.test_mint_outside_window_is_rejected) ... ok
+test_missing_current_title_is_rejected (test_protocol.GoldAtomProtocolTests.test_missing_current_title_is_rejected) ... ok
+test_nested_record_must_be_json_object (test_protocol.GoldAtomProtocolTests.test_nested_record_must_be_json_object) ... ok
+test_noncanonical_hex_whitespace_is_rejected (test_protocol.GoldAtomProtocolTests.test_noncanonical_hex_whitespace_is_rejected) ... ok
+test_second_mint_marker_is_rejected (test_protocol.GoldAtomProtocolTests.test_second_mint_marker_is_rejected) ... ok
+test_tampered_nonce_is_rejected (test_protocol.GoldAtomProtocolTests.test_tampered_nonce_is_rejected) ... ok
+test_tampered_work_hash_is_rejected (test_protocol.GoldAtomProtocolTests.test_tampered_work_hash_is_rejected) ... ok
+test_target_above_profile_maximum_is_rejected_first (test_protocol.GoldAtomProtocolTests.test_target_above_profile_maximum_is_rejected_first) ... ok
+test_unconfirmed_current_title_is_rejected (test_protocol.GoldAtomProtocolTests.test_unconfirmed_current_title_is_rejected) ... ok
+test_unsupported_title_script_is_rejected (test_protocol.GoldAtomProtocolTests.test_unsupported_title_script_is_rejected) ... ok
+test_valid_title_transfer (test_protocol.GoldAtomProtocolTests.test_valid_title_transfer) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.005s
+
+OK
+EXIT_STATUS=0
+
+$ python3 scripts/generate_test_vectors.py
+Regenerated examples/genesis.goldatom.json
+Regenerated examples/transferred.goldatom.json
+Regenerated TEST-VECTORS.md
+EXIT_STATUS=0
+
+$ node scripts/verify_vectors.mjs examples/genesis.goldatom.json examples/transferred.goldatom.json examples/live-regtest-2026-09-02.goldatom.json examples/live-core-final-2026-09-02.goldatom.json
+[
+  {
+    "valid": true,
+    "scope": "pure-protocol commitments only; Bitcoin consensus state not checked",
+    "source": "examples/genesis.goldatom.json",
+    "profile": "goldatom-sim-v0",
+    "atom_id": "164b8c2fd964c6a5deed2f16264bedfe2e20ee777c677c250d3f0673a5957417",
+    "claim_commitment": "099de3199833f190b92a1579fac3e5cfb52cf614f7796c84ff6e1dcb029ee83c",
+    "challenge_digest": "21ba28c83e6d542d4e44e5aecf4ec96238eaaf70bd13ae232b215a76a50a46fc",
+    "work_header_hex": "4741573021ba28c83e6d542d4e44e5aecf4ec96238eaaf70bd13ae232b215a76a50a46fc099de3199833f190b92a1579fac3e5cfb52cf614f7796c84ff6e1dcb029ee83c00000000000000000b000000",
+    "work_hash": "0557dccf369dde232bc33aa5f83fc1a463254c20ca6f6fb0ef7484ce7776ff3e",
+    "expected_local_hashes": "16",
+    "mint_commitment": "0c90b80b3cf108ce78a366aa9bd6fa4ec8a33652cf36e991e2b81ad249e436d5",
+    "title_transfers": 0,
+    "terminal_title_outpoint": {
+      "txid": "0c2dc53fb853bd864b8b1617ee5da1644b213a64955d16dae38102c6fc71d886",
+      "vout": 0
+    }
+  },
+  {
+    "valid": true,
+    "scope": "pure-protocol commitments only; Bitcoin consensus state not checked",
+    "source": "examples/transferred.goldatom.json",
+    "profile": "goldatom-sim-v0",
+    "atom_id": "164b8c2fd964c6a5deed2f16264bedfe2e20ee777c677c250d3f0673a5957417",
+    "claim_commitment": "099de3199833f190b92a1579fac3e5cfb52cf614f7796c84ff6e1dcb029ee83c",
+    "challenge_digest": "21ba28c83e6d542d4e44e5aecf4ec96238eaaf70bd13ae232b215a76a50a46fc",
+    "work_header_hex": "4741573021ba28c83e6d542d4e44e5aecf4ec96238eaaf70bd13ae232b215a76a50a46fc099de3199833f190b92a1579fac3e5cfb52cf614f7796c84ff6e1dcb029ee83c00000000000000000b000000",
+    "work_hash": "0557dccf369dde232bc33aa5f83fc1a463254c20ca6f6fb0ef7484ce7776ff3e",
+    "expected_local_hashes": "16",
+    "mint_commitment": "0c90b80b3cf108ce78a366aa9bd6fa4ec8a33652cf36e991e2b81ad249e436d5",
+    "title_transfers": 1,
+    "terminal_title_outpoint": {
+      "txid": "d464145833e4e4402762f67331b79847e84cbbe2240aca80db17e087c210098e",
+      "vout": 0
+    }
+  },
+  {
+    "valid": true,
+    "scope": "pure-protocol commitments only; Bitcoin consensus state not checked",
+    "source": "examples/live-regtest-2026-09-02.goldatom.json",
+    "profile": "goldatom-regtest-v0",
+    "atom_id": "9dcf1564738e803d3ac036d4f609a123e4efee9ade19101a6e2750cfd1f9b031",
+    "claim_commitment": "7af66b0c9ee81b686400a41645373688d7f13a71cccee4592eb8c60b1a5a7e57",
+    "challenge_digest": "2fee6300e3673eb4a239d4da809b35e5d15d69b23d97c391c0e3a94c1611176b",
+    "work_header_hex": "474157302fee6300e3673eb4a239d4da809b35e5d15d69b23d97c391c0e3a94c1611176b7af66b0c9ee81b686400a41645373688d7f13a71cccee4592eb8c60b1a5a7e57000000000000000018000000",
+    "work_hash": "0dd572dc76c8d3ab561c38156ff53a5147baca218311bcdea07271173312f5d7",
+    "expected_local_hashes": "16",
+    "mint_commitment": "dd39784568109a33d958e8d2e89bf8c742815637e691ebf869ff9b61b1723306",
+    "title_transfers": 0,
+    "terminal_title_outpoint": {
+      "txid": "f1624bb71a62c1c661d940739429a5a3a8f0415cb8390f4f6386a09a9a83506c",
+      "vout": 0
+    }
+  },
+  {
+    "valid": true,
+    "scope": "pure-protocol commitments only; Bitcoin consensus state not checked",
+    "source": "examples/live-core-final-2026-09-02.goldatom.json",
+    "profile": "goldatom-regtest-v0",
+    "atom_id": "1f703b02a851b5ab42e5dcfb561799b7eca6ddd52246ddace14cd4d0845f6fa6",
+    "claim_commitment": "efcf998cf5da52de050ac176d9b66155ca9f9c51519742cad7efb5018fa64cbb",
+    "challenge_digest": "5e6d59b4e5c5a0adc7f52504832db3134856891eb33ec0a212a8782555b1f4d6",
+    "work_header_hex": "474157305e6d59b4e5c5a0adc7f52504832db3134856891eb33ec0a212a8782555b1f4d6efcf998cf5da52de050ac176d9b66155ca9f9c51519742cad7efb5018fa64cbb000000000000000011000000",
+    "work_hash": "0546ac5ac82d731e83b0a91465127e7bef5713cfa3ea6b04ceabf0fd006d46f4",
+    "expected_local_hashes": "16",
+    "mint_commitment": "1b7054431dff744e72cf4e85c0b5babd618cb897f7fb6954ae4f4a475177b2bf",
+    "title_transfers": 0,
+    "terminal_title_outpoint": {
+      "txid": "6cbcc67ad14557336d7d8b8ae45a9d453d004879bda5692c4bd70791ab9a4ba6",
+      "vout": 0
+    }
+  }
+]
+EXIT_STATUS=0
+
+$ python3 simulation/issuance_regimes.py --json-output simulation/results/issuance-regimes.json --markdown-output ISSUANCE-SIMULATION-0.md
+Wrote simulation/results/issuance-regimes.json
+Wrote ISSUANCE-SIMULATION-0.md
+EXIT_STATUS=0
+
+$ sha256sum -c ARTIFACT-MANIFEST.sha256
+.gitignore: OK
+CHANGELOG.md: OK
+DESIGN-NOTES.md: OK
+FINAL-VALIDATION-TRANSCRIPT.md: OK
+FINAL-VALIDATION-TRANSCRIPT.txt: OK
+ISSUANCE-SIMULATION-0.md: OK
+LICENSE: OK
+LIVE-REGTEST-TRANSCRIPT.md: OK
+LIVE-REGTEST-TRANSCRIPT.txt: OK
+Makefile: OK
+README.md: OK
+SPEC-0.md: OK
+SPEC-1-CANDIDATE.md: OK
+TEST-VECTORS.md: OK
+THREAT-MODEL.md: OK
+VALIDATION.md: OK
+examples/genesis.goldatom.json: OK
+examples/live-core-final-2026-09-02.goldatom.json: OK
+examples/live-regtest-2026-09-02.goldatom.json: OK
+examples/regtest.goldatom.json: OK
+examples/transferred.goldatom.json: OK
+goldatom/__init__.py: OK
+goldatom/__main__.py: OK
+goldatom/cli.py: OK
+goldatom/core_rpc.py: OK
+goldatom/demo.py: OK
+goldatom/economics.py: OK
+goldatom/encoding.py: OK
+goldatom/models.py: OK
+goldatom/profiles.py: OK
+goldatom/protocol.py: OK
+goldatom/testing.py: OK
+goldatom/verify.py: OK
+goldatom/view.py: OK
+pyproject.toml: OK
+scripts/generate_test_vectors.py: OK
+scripts/regtest_demo.py: OK
+scripts/run_live_core_validation.py: OK
+scripts/verify_vectors.mjs: OK
+simulation/issuance_regimes.py: OK
+simulation/results/issuance-regimes.json: OK
+tests/test_core_rpc.py: OK
+tests/test_economics.py: OK
+tests/test_protocol.py: OK
+validation/05-final-local-validation.log: OK
+validation/06-wheel-install-validation.log: OK
+validation/07-release-0.0.3-local-validation.log: OK
+validation/08-wheel-install-validation.log: OK
+validation/live-core-final-console.log: OK
+validation/live-core-final/consensus-primitives.json: OK
+validation/live-core-final/lifecycle.stderr: OK
+validation/live-core-final/lifecycle.stdout: OK
+validation/live-core-final/negative/results.json: OK
+validation/live-core-final/negative/tampered-challenge.goldatom.json: OK
+validation/live-core-final/negative/tampered-work-hash.goldatom.json: OK
+validation/live-core-final/node-console.log: OK
+validation/live-core-final/node-pure-protocol.json: OK
+validation/live-core-final/node-pure-protocol.stderr: OK
+validation/live-core-final/node-stderr.log: OK
+validation/live-core-final/provenance.json: OK
+validation/live-core-final/summary.json: OK
+validation/live-core-final/verify-baseline.json: OK
+validation/live-core-final/verify-baseline.stderr: OK
+validation/live-core-final/version.txt: OK
+validation/live-negative/00-baseline.status: OK
+validation/live-negative/00-baseline.stderr: OK
+validation/live-negative/00-baseline.stdout: OK
+validation/live-negative/reorg-before.json: OK
+validation/live-negative/reorg-invalidate.stdout: OK
+validation/live-negative/reorg-invalidated-tip.json: OK
+validation/live-negative/reorg-invalidated-verify.status: OK
+validation/live-negative/reorg-invalidated-verify.stderr: OK
+validation/live-negative/reorg-invalidated-verify.stdout: OK
+validation/live-negative/reorg-reconsider.stdout: OK
+validation/live-negative/reorg-restored-tip.json: OK
+validation/live-negative/reorg-restored-verify.status: OK
+validation/live-negative/reorg-restored-verify.stderr: OK
+validation/live-negative/reorg-restored-verify.stdout: OK
+validation/live-negative/tampered-challenge-digest.goldatom.json: OK
+validation/live-negative/tampered-challenge-digest.status: OK
+validation/live-negative/tampered-challenge-digest.stderr: OK
+validation/live-negative/tampered-challenge-digest.stdout: OK
+validation/live-negative/tampered-work-hash.goldatom.json: OK
+validation/live-negative/tampered-work-hash.status: OK
+validation/live-negative/tampered-work-hash.stderr: OK
+validation/live-negative/tampered-work-hash.stdout: OK
+validation/live-regtest/00-provenance.json: OK
+validation/live-regtest/01-regtest-demo.log: OK
+validation/live-regtest/02-independent-verify.json: OK
+validation/live-regtest/03-node-chain-info.json: OK
+validation/live-regtest/04-node-network-info.json: OK
+validation/live-regtest/05-node-debug-excerpt.log: OK
+validation/live-regtest/06-node-stop.log: OK
+EXIT_STATUS=0
+
+SOURCE ARCHIVE VALIDATION PASS

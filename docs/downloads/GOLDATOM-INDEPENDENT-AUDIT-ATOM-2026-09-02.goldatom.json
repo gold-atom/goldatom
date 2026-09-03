@@ -1,0 +1,36 @@
+{
+  "claim": {
+    "algorithm": "sha256d-80-v0",
+    "block_hash": "13cb7c3a377e25bcf05ba50b3dd87050bbc8bc996cb006393da68a66a86955c3",
+    "commitment_hex": "209ba000143364817c35796fd878dc2a8825c57be54aad54daf070f0d2b9f91f",
+    "height": 102,
+    "outpoint": {
+      "txid": "22c33cf880369f8a86e553ac7dd48002e92e949e132e261b0dd72e7a1417b02e",
+      "vout": 0
+    },
+    "seal_script_hex": "51205925fe3d773d87fed96f6b67c3488ccc6a03b596deb37294039da32025658547",
+    "target_hex": "0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "txout_proof": "0000002074d0351c3f7337acb692998f51003175586cce4e3f8920b234881b8abb3a3f67bf45247e2939561bfce40b8996f0f8b03c6abe7ddaeab9a7dbe73b588af27c7f2bcd976affff7f2000000000020000000225405d5634584edc423bc378aff8debe80ad361b6da8d0c5df274fea22526b952eb017147a2ed70d1b262e139e942ee90280d47dac53e5868a9f3680f83cc3220105"
+  },
+  "format": "goldatom-proof",
+  "mint": {
+    "block_hash": "6c6f99b4576e6cafbd49ef5be657390ce45e01d2d9eb22f8c59562c68e66ee2d",
+    "commitment_hex": "fb72417e1fff6cab9c6b5a9839e12cf363a5695b9d0cd79180277c0f17a82c4b",
+    "height": 106,
+    "title_script_hex": "51206d7dcc6e435eb010c2aaf0fa63c0f3fba6cce0a15ef7627d894764be2158faec",
+    "title_vout": 0,
+    "txid": "266ebf979f08de5e630ef0b44f2e8855853fe363ea0560d220bf6edf76b352d2",
+    "txout_proof": "00000020e1391b1dc059e55631f80a9873ddcb36d06582caba0e57a6129126be2246c94e7b24dc79bb19ebf6d259dcff76d2a73d4562fcb76df735612218983e65ba2de72ccd976affff7f2002000000020000000269ef03bbf34c690dddcd26e1817fefa111b2c7a6b54956f5d6304736d7cf29d2d252b376df6ebf20d26005ea63e33f8555882e4fb4f00e635ede089f97bf6e260105"
+  },
+  "profile": "goldatom-regtest-v0",
+  "transfers": [],
+  "version": 0,
+  "work": {
+    "challenge_block_hash": "4ec94622be269112a6570ebaca8265d036cbdd73980af83156e559c01d1b39e1",
+    "challenge_digest_hex": "e4f596ce4aa99942e54b610629b53333a36bc1a161554619c8d360be4eaf52d5",
+    "challenge_height": 105,
+    "extra_nonce": 0,
+    "nonce": 0,
+    "work_hash_hex": "0db5c130d7505d71b31b5cb33925320b87a1bcf9d02f6430357bad5e8844ef98"
+  }
+}
