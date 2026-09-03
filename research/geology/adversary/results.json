@@ -1,0 +1,600 @@
+{
+  "schema": "goldatom-raw-record-miner-adversary-v1",
+  "current_frontier_fixed_state_analytic": [
+    {
+      "alpha": 0.01,
+      "attacker_record_before_honest": 2.5143184892140967e-08,
+      "canonical_deposit_probability": 2.5143184892140967e-06,
+      "delta_vs_honest": 2.5143122306344627e-08,
+      "expected_forfeited_bitcoin_blocks_per_canonical_block": 0.010100984703853646,
+      "break_even_V_GA_over_R_for_attacker_control": 39772207.82278009
+    },
+    {
+      "alpha": 0.1,
+      "attacker_record_before_honest": 2.76574964273796e-07,
+      "canonical_deposit_probability": 2.76574964273796e-06,
+      "delta_vs_honest": 2.765742758302079e-07,
+      "expected_forfeited_bitcoin_blocks_per_canonical_block": 0.11111080380559525,
+      "break_even_V_GA_over_R_for_attacker_control": 3615655.256616372
+    },
+    {
+      "alpha": 0.2,
+      "attacker_record_before_honest": 6.222934544775535e-07,
+      "canonical_deposit_probability": 3.1114672723877675e-06,
+      "delta_vs_honest": 6.222919054800154e-07,
+      "expected_forfeited_bitcoin_blocks_per_canonical_block": 0.2499992221331819,
+      "break_even_V_GA_over_R_for_attacker_control": 1606957.8918294986
+    },
+    {
+      "alpha": 0.3,
+      "attacker_record_before_honest": 1.0667883049219636e-06,
+      "canonical_deposit_probability": 3.5559610164065457e-06,
+      "delta_vs_honest": 1.0667856494987936e-06,
+      "expected_forfeited_bitcoin_blocks_per_canonical_block": 0.4285699045881358,
+      "break_even_V_GA_over_R_for_attacker_control": 937392.1035672075
+    },
+    {
+      "alpha": 0.5,
+      "attacker_record_before_honest": 2.4891691709291676e-06,
+      "canonical_deposit_probability": 4.978338341858335e-06,
+      "delta_vs_honest": 2.489162974950583e-06,
+      "expected_forfeited_bitcoin_blocks_per_canonical_block": 0.9999950216616581,
+      "break_even_V_GA_over_R_for_attacker_control": 401739.47295737464
+    }
+  ],
+  "deep_record_withholding_exact": {
+    "comparison": "withhold found record x versus publish it, compared at the same final canonical height",
+    "criterion": "Asymptotically net-positive iff F/x > e.",
+    "current_frontier_over_target": 2.489175366907752e-06,
+    "rows": [
+      {
+        "found_hash_improvement_factor_F_over_x": 3,
+        "found_hash_improvement_bits": 1.584962500721156,
+        "asymptotic_net_additional_deposits": 0.09861228866810978,
+        "first_positive_horizon_canonical_blocks": 1802163
+      },
+      {
+        "found_hash_improvement_factor_F_over_x": 5,
+        "found_hash_improvement_bits": 2.321928094887362,
+        "asymptotic_net_additional_deposits": 0.6094379124341003,
+        "first_positive_horizon_canonical_blocks": 872473
+      },
+      {
+        "found_hash_improvement_factor_F_over_x": 10,
+        "found_hash_improvement_bits": 3.321928094887362,
+        "asymptotic_net_additional_deposits": 1.302585092994046,
+        "first_positive_horizon_canonical_blocks": 663068
+      },
+      {
+        "found_hash_improvement_factor_F_over_x": 100,
+        "found_hash_improvement_bits": 6.643856189774724,
+        "asymptotic_net_additional_deposits": 3.605170185988092,
+        "first_positive_horizon_canonical_blocks": 550371
+      },
+      {
+        "found_hash_improvement_factor_F_over_x": 1000000,
+        "found_hash_improvement_bits": 19.931568569324174,
+        "asymptotic_net_additional_deposits": 12.815510557964274,
+        "first_positive_horizon_canonical_blocks": 540346
+      }
+    ]
+  },
+  "deep_cutoff_policy_exact": {
+    "constant_target_cutoff_c": 0.1,
+    "rows": [
+      {
+        "alpha": 0.01,
+        "cutoff_c": 0.1,
+        "censorship_opportunity_probability_per_valid_solution": 2.489175366907752e-09,
+        "mean_log_frontier_improvement_per_accepted_record": 0.9976951100170229,
+        "asymptotic_record_count_coefficient_vs_honest": 1.0023102147738678,
+        "relative_count_increase": 0.002310214773867836,
+        "expected_net_extra_records_per_censored_opportunity": 2.3025850929940455,
+        "break_even_V_GA_over_R_if_all_global_count_value_is_captured": 0.43429448190325187
+      },
+      {
+        "alpha": 0.1,
+        "cutoff_c": 0.1,
+        "censorship_opportunity_probability_per_valid_solution": 2.4891753669077525e-08,
+        "mean_log_frontier_improvement_per_accepted_record": 0.9767415647172318,
+        "asymptotic_record_count_coefficient_vs_honest": 1.0238122714573956,
+        "relative_count_increase": 0.023812271457395617,
+        "expected_net_extra_records_per_censored_opportunity": 2.3025850929940455,
+        "break_even_V_GA_over_R_if_all_global_count_value_is_captured": 0.43429448190325187
+      },
+      {
+        "alpha": 0.2,
+        "cutoff_c": 0.1,
+        "censorship_opportunity_probability_per_valid_solution": 4.978350733815505e-08,
+        "mean_log_frontier_improvement_per_accepted_record": 0.9530084674899174,
+        "asymptotic_record_count_coefficient_vs_honest": 1.049308620136242,
+        "relative_count_increase": 0.04930862013624204,
+        "expected_net_extra_records_per_censored_opportunity": 2.3025850929940455,
+        "break_even_V_GA_over_R_if_all_global_count_value_is_captured": 0.43429448190325187
+      },
+      {
+        "alpha": 0.3,
+        "cutoff_c": 0.1,
+        "censorship_opportunity_probability_per_valid_solution": 7.467526100723256e-08,
+        "mean_log_frontier_improvement_per_accepted_record": 0.9287860280517306,
+        "asymptotic_record_count_coefficient_vs_honest": 1.0766742498244202,
+        "relative_count_increase": 0.07667424982442017,
+        "expected_net_extra_records_per_censored_opportunity": 2.3025850929940455,
+        "break_even_V_GA_over_R_if_all_global_count_value_is_captured": 0.43429448190325187
+      },
+      {
+        "alpha": 0.5,
+        "cutoff_c": 0.1,
+        "censorship_opportunity_probability_per_valid_solution": 1.244587683453876e-07,
+        "mean_log_frontier_improvement_per_accepted_record": 0.8788113108950503,
+        "asymptotic_record_count_coefficient_vs_honest": 1.1379006933598996,
+        "relative_count_increase": 0.13790069335989963,
+        "expected_net_extra_records_per_censored_opportunity": 2.3025850929940455,
+        "break_even_V_GA_over_R_if_all_global_count_value_is_captured": 0.43429448190325187
+      }
+    ]
+  },
+  "monte_carlo_stress_test": {
+    "note": "Elevated initial F/T makes strategy differences measurable; this is not a forecast of Bitcoin deposits.",
+    "strategy_aliases": {
+      "selective_publication": "withhold_nonrecord"
+    },
+    "seed": 4669745,
+    "repetitions": 250,
+    "canonical_blocks_per_repetition": 20000,
+    "initial_frontier_over_target": 0.01,
+    "deep_record_cutoff_fraction_of_frontier": 0.1,
+    "results": [
+      {
+        "strategy": "honest",
+        "alpha": 0.01,
+        "mean_canonical_deposits": 5.748,
+        "mean_attacker_deposits": 0.072,
+        "mean_forfeited_bitcoin_blocks": 0.0,
+        "mean_ordinary_pow_solutions": 20000.0,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.0548411912280324e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.0,
+        "delta_95_percent_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "strategy": "withhold_nonrecord",
+        "alpha": 0.01,
+        "mean_canonical_deposits": 5.752,
+        "mean_attacker_deposits": 0.072,
+        "mean_forfeited_bitcoin_blocks": 202.716,
+        "mean_ordinary_pow_solutions": 20202.716,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.0367358594868515e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.004,
+        "delta_95_percent_interval": [
+          -0.0038399999999999997,
+          0.01184
+        ]
+      },
+      {
+        "strategy": "withhold_record",
+        "alpha": 0.01,
+        "mean_canonical_deposits": 5.764,
+        "mean_attacker_deposits": 0.0,
+        "mean_forfeited_bitcoin_blocks": 0.072,
+        "mean_ordinary_pow_solutions": 20000.072,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.0548411912280324e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.016,
+        "delta_95_percent_interval": [
+          -0.04969567633533144,
+          0.08169567633533144
+        ]
+      },
+      {
+        "strategy": "withhold_deep_record",
+        "alpha": 0.01,
+        "mean_canonical_deposits": 5.8,
+        "mean_attacker_deposits": 0.056,
+        "mean_forfeited_bitcoin_blocks": 0.016,
+        "mean_ordinary_pow_solutions": 20000.016,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.0548411912280324e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.052,
+        "delta_95_percent_interval": [
+          -0.006956696163285474,
+          0.11095669616328546
+        ]
+      },
+      {
+        "strategy": "private_fork_search",
+        "alpha": 0.01,
+        "mean_canonical_deposits": 5.84,
+        "mean_attacker_deposits": 0.044,
+        "mean_forfeited_bitcoin_blocks": 98.508,
+        "mean_ordinary_pow_solutions": 20198.748,
+        "mean_orphaned_blocks": 198.748,
+        "mean_terminal_frontier": 4.736158312394645e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.092,
+        "delta_95_percent_interval": [
+          -0.19242549647064042,
+          0.3764254964706404
+        ]
+      },
+      {
+        "strategy": "selective_publication",
+        "alpha": 0.01,
+        "mean_canonical_deposits": 5.752,
+        "mean_attacker_deposits": 0.072,
+        "mean_forfeited_bitcoin_blocks": 202.716,
+        "mean_ordinary_pow_solutions": 20202.716,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.0367358594868515e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.004,
+        "delta_95_percent_interval": [
+          -0.0038399999999999997,
+          0.01184
+        ]
+      },
+      {
+        "strategy": "honest",
+        "alpha": 0.1,
+        "mean_canonical_deposits": 5.748,
+        "mean_attacker_deposits": 0.628,
+        "mean_forfeited_bitcoin_blocks": 0.0,
+        "mean_ordinary_pow_solutions": 20000.0,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.0548411912280324e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.0,
+        "delta_95_percent_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "strategy": "withhold_nonrecord",
+        "alpha": 0.1,
+        "mean_canonical_deposits": 5.848,
+        "mean_attacker_deposits": 0.632,
+        "mean_forfeited_bitcoin_blocks": 2220.808,
+        "mean_ordinary_pow_solutions": 22220.808,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 4.5576231279471633e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.1,
+        "delta_95_percent_interval": [
+          0.06273701406916071,
+          0.1372629859308393
+        ]
+      },
+      {
+        "strategy": "withhold_record",
+        "alpha": 0.1,
+        "mean_canonical_deposits": 5.748,
+        "mean_attacker_deposits": 0.0,
+        "mean_forfeited_bitcoin_blocks": 0.688,
+        "mean_ordinary_pow_solutions": 20000.688,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.3423291127431495e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.0,
+        "delta_95_percent_interval": [
+          -0.143997858083133,
+          0.143997858083133
+        ]
+      },
+      {
+        "strategy": "withhold_deep_record",
+        "alpha": 0.1,
+        "mean_canonical_deposits": 5.932,
+        "mean_attacker_deposits": 0.568,
+        "mean_forfeited_bitcoin_blocks": 0.092,
+        "mean_ordinary_pow_solutions": 20000.092,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.1068051581328875e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.184,
+        "delta_95_percent_interval": [
+          0.07527946015246725,
+          0.29272053984753277
+        ]
+      },
+      {
+        "strategy": "private_fork_search",
+        "alpha": 0.1,
+        "mean_canonical_deposits": 5.76,
+        "mean_attacker_deposits": 0.628,
+        "mean_forfeited_bitcoin_blocks": 893.024,
+        "mean_ordinary_pow_solutions": 21786.476,
+        "mean_orphaned_blocks": 1786.464,
+        "mean_terminal_frontier": 4.8114243512590084e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.012,
+        "delta_95_percent_interval": [
+          -0.2959769694200731,
+          0.31997696942007314
+        ]
+      },
+      {
+        "strategy": "selective_publication",
+        "alpha": 0.1,
+        "mean_canonical_deposits": 5.848,
+        "mean_attacker_deposits": 0.632,
+        "mean_forfeited_bitcoin_blocks": 2220.808,
+        "mean_ordinary_pow_solutions": 22220.808,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 4.5576231279471633e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.1,
+        "delta_95_percent_interval": [
+          0.06273701406916071,
+          0.1372629859308393
+        ]
+      },
+      {
+        "strategy": "honest",
+        "alpha": 0.2,
+        "mean_canonical_deposits": 5.748,
+        "mean_attacker_deposits": 1.152,
+        "mean_forfeited_bitcoin_blocks": 0.0,
+        "mean_ordinary_pow_solutions": 20000.0,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.0548411912280324e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.0,
+        "delta_95_percent_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "strategy": "withhold_nonrecord",
+        "alpha": 0.2,
+        "mean_canonical_deposits": 5.948,
+        "mean_attacker_deposits": 1.184,
+        "mean_forfeited_bitcoin_blocks": 4995.844,
+        "mean_ordinary_pow_solutions": 24995.844,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 4.2003571441155074e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.2,
+        "delta_95_percent_interval": [
+          0.1444516202760167,
+          0.2555483797239833
+        ]
+      },
+      {
+        "strategy": "withhold_record",
+        "alpha": 0.2,
+        "mean_canonical_deposits": 5.696,
+        "mean_attacker_deposits": 0.0,
+        "mean_forfeited_bitcoin_blocks": 1.372,
+        "mean_ordinary_pow_solutions": 20001.372,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 6.094036246835843e-05,
+        "delta_mean_canonical_deposits_vs_honest": -0.052,
+        "delta_95_percent_interval": [
+          -0.22630582358297657,
+          0.12230582358297659
+        ]
+      },
+      {
+        "strategy": "withhold_deep_record",
+        "alpha": 0.2,
+        "mean_canonical_deposits": 6.072,
+        "mean_attacker_deposits": 1.044,
+        "mean_forfeited_bitcoin_blocks": 0.18,
+        "mean_ordinary_pow_solutions": 20000.18,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.3595994124589815e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.324,
+        "delta_95_percent_interval": [
+          0.19473664069879926,
+          0.45326335930120076
+        ]
+      },
+      {
+        "strategy": "private_fork_search",
+        "alpha": 0.2,
+        "mean_canonical_deposits": 5.712,
+        "mean_attacker_deposits": 1.252,
+        "mean_forfeited_bitcoin_blocks": 1537.792,
+        "mean_ordinary_pow_solutions": 23079.38,
+        "mean_orphaned_blocks": 3079.34,
+        "mean_terminal_frontier": 4.4715994916443517e-05,
+        "delta_mean_canonical_deposits_vs_honest": -0.036,
+        "delta_95_percent_interval": [
+          -0.3510798896996961,
+          0.27907988969969616
+        ]
+      },
+      {
+        "strategy": "selective_publication",
+        "alpha": 0.2,
+        "mean_canonical_deposits": 5.948,
+        "mean_attacker_deposits": 1.184,
+        "mean_forfeited_bitcoin_blocks": 4995.844,
+        "mean_ordinary_pow_solutions": 24995.844,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 4.2003571441155074e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.2,
+        "delta_95_percent_interval": [
+          0.1444516202760167,
+          0.2555483797239833
+        ]
+      },
+      {
+        "strategy": "honest",
+        "alpha": 0.3,
+        "mean_canonical_deposits": 5.748,
+        "mean_attacker_deposits": 1.748,
+        "mean_forfeited_bitcoin_blocks": 0.0,
+        "mean_ordinary_pow_solutions": 20000.0,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.0548411912280324e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.0,
+        "delta_95_percent_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "strategy": "withhold_nonrecord",
+        "alpha": 0.3,
+        "mean_canonical_deposits": 6.072,
+        "mean_attacker_deposits": 1.868,
+        "mean_forfeited_bitcoin_blocks": 8558.752,
+        "mean_ordinary_pow_solutions": 28558.752,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 3.623348681312244e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.324,
+        "delta_95_percent_interval": [
+          0.25167780150478886,
+          0.39632219849521116
+        ]
+      },
+      {
+        "strategy": "withhold_record",
+        "alpha": 0.3,
+        "mean_canonical_deposits": 5.504,
+        "mean_attacker_deposits": 0.0,
+        "mean_forfeited_bitcoin_blocks": 2.332,
+        "mean_ordinary_pow_solutions": 20002.332,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 6.989831400854696e-05,
+        "delta_mean_canonical_deposits_vs_honest": -0.244,
+        "delta_95_percent_interval": [
+          -0.4497714732571687,
+          -0.03822852674283128
+        ]
+      },
+      {
+        "strategy": "withhold_deep_record",
+        "alpha": 0.3,
+        "mean_canonical_deposits": 6.14,
+        "mean_attacker_deposits": 1.696,
+        "mean_forfeited_bitcoin_blocks": 0.228,
+        "mean_ordinary_pow_solutions": 20000.228,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.4191841727170064e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.392,
+        "delta_95_percent_interval": [
+          0.2528884014259367,
+          0.5311115985740633
+        ]
+      },
+      {
+        "strategy": "private_fork_search",
+        "alpha": 0.3,
+        "mean_canonical_deposits": 5.664,
+        "mean_attacker_deposits": 1.916,
+        "mean_forfeited_bitcoin_blocks": 1923.268,
+        "mean_ordinary_pow_solutions": 23852.968,
+        "mean_orphaned_blocks": 3852.924,
+        "mean_terminal_frontier": 4.24612050062958e-05,
+        "delta_mean_canonical_deposits_vs_honest": -0.084,
+        "delta_95_percent_interval": [
+          -0.37298357862768927,
+          0.20498357862768923
+        ]
+      },
+      {
+        "strategy": "selective_publication",
+        "alpha": 0.3,
+        "mean_canonical_deposits": 6.072,
+        "mean_attacker_deposits": 1.868,
+        "mean_forfeited_bitcoin_blocks": 8558.752,
+        "mean_ordinary_pow_solutions": 28558.752,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 3.623348681312244e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.324,
+        "delta_95_percent_interval": [
+          0.25167780150478886,
+          0.39632219849521116
+        ]
+      },
+      {
+        "strategy": "honest",
+        "alpha": 0.5,
+        "mean_canonical_deposits": 5.748,
+        "mean_attacker_deposits": 2.92,
+        "mean_forfeited_bitcoin_blocks": 0.0,
+        "mean_ordinary_pow_solutions": 20000.0,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.0548411912280324e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.0,
+        "delta_95_percent_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "strategy": "withhold_nonrecord",
+        "alpha": 0.5,
+        "mean_canonical_deposits": 6.444,
+        "mean_attacker_deposits": 3.268,
+        "mean_forfeited_bitcoin_blocks": 19986.128,
+        "mean_ordinary_pow_solutions": 39986.128,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 2.522976281944933e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.696,
+        "delta_95_percent_interval": [
+          0.5939069741790108,
+          0.7980930258209891
+        ]
+      },
+      {
+        "strategy": "withhold_record",
+        "alpha": 0.5,
+        "mean_canonical_deposits": 5.256,
+        "mean_attacker_deposits": 0.0,
+        "mean_forfeited_bitcoin_blocks": 5.404,
+        "mean_ordinary_pow_solutions": 20005.404,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 9.56216177569078e-05,
+        "delta_mean_canonical_deposits_vs_honest": -0.492,
+        "delta_95_percent_interval": [
+          -0.754724927826053,
+          -0.22927507217394688
+        ]
+      },
+      {
+        "strategy": "withhold_deep_record",
+        "alpha": 0.5,
+        "mean_canonical_deposits": 6.42,
+        "mean_attacker_deposits": 3.08,
+        "mean_forfeited_bitcoin_blocks": 0.384,
+        "mean_ordinary_pow_solutions": 20000.384,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 5.8448337668484116e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.672,
+        "delta_95_percent_interval": [
+          0.49969182709983617,
+          0.8443081729001639
+        ]
+      },
+      {
+        "strategy": "private_fork_search",
+        "alpha": 0.5,
+        "mean_canonical_deposits": 5.884,
+        "mean_attacker_deposits": 3.248,
+        "mean_forfeited_bitcoin_blocks": 1998.996,
+        "mean_ordinary_pow_solutions": 23998.352,
+        "mean_orphaned_blocks": 3998.156,
+        "mean_terminal_frontier": 4.392245599668199e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.136,
+        "delta_95_percent_interval": [
+          -0.17718410976939453,
+          0.44918410976939455
+        ]
+      },
+      {
+        "strategy": "selective_publication",
+        "alpha": 0.5,
+        "mean_canonical_deposits": 6.444,
+        "mean_attacker_deposits": 3.268,
+        "mean_forfeited_bitcoin_blocks": 19986.128,
+        "mean_ordinary_pow_solutions": 39986.128,
+        "mean_orphaned_blocks": 0.0,
+        "mean_terminal_frontier": 2.522976281944933e-05,
+        "delta_mean_canonical_deposits_vs_honest": 0.696,
+        "delta_95_percent_interval": [
+          0.5939069741790108,
+          0.7980930258209891
+        ]
+      }
+    ]
+  }
+}
