@@ -1,0 +1,126 @@
+{
+  "schema": "goldatom-c10-eclip-targeted-confirmations-v1",
+  "seed_base": 3938969631,
+  "repetitions": 65536,
+  "preselected_cases": [
+    "B/100y/alpha=.30 (largest strict-minority decision row)",
+    "B/100y/alpha=.50 (boundary share)",
+    "E/100y/alpha=.50 (retarget-bound stress)"
+  ],
+  "rows": [
+    {
+      "scenario": "B-historical-like-growth",
+      "geology": "c10-eclip",
+      "alpha": 0.3,
+      "policy": "public-lock",
+      "years": 100,
+      "epochs": 2609,
+      "repetitions": 65536,
+      "honest_expected_deposits": 92.57624816894531,
+      "attack_expected_deposits": 92.85124206542969,
+      "delta_N": 0.274993896484375,
+      "delta_N_standard_error": 0.005205100069500307,
+      "delta_N_ci95": [
+        0.2647919003481544,
+        0.2851958926205956
+      ],
+      "relative_supply_elasticity": 0.002970458426685536,
+      "attacker_associated_delta_N": -0.1353607177734375,
+      "attacker_associated_delta_N_standard_error": 0.0032984733448459726,
+      "attacker_associated_delta_N_ci95": [
+        -0.14182572552933562,
+        -0.12889571001753938
+      ],
+      "net_attacker_associated_delta_over_global_delta": -0.4922317167905893,
+      "expected_eligible_attacker_events": 0.3162078857421875,
+      "expected_forfeited_bitcoin_rewards_R": 0.3162078857421875,
+      "expected_net_fixed_height_reward_shortfall_R": 0.22134552001953123,
+      "expected_additional_network_valid_solution_intervals": 0.3162078857421875,
+      "expected_attacker_share_of_additional_hash_intervals": 0.09486236572265624,
+      "expected_zero_cost_all_discoveries_omissions": 0.0,
+      "R_per_expected_extra_deposit": 1.149872378204417,
+      "value_capture_proxy_if_attacker_exits": 0.0,
+      "value_capture_proxy_if_hash_share_maintained": 0.3,
+      "value_capture_upper_bound": 1.0,
+      "gross_budget_cap_R": null,
+      "gross_budget_utilization": null,
+      "purpose": "preselected high-repetition confirmation; not maximum fishing"
+    },
+    {
+      "scenario": "B-historical-like-growth",
+      "geology": "c10-eclip",
+      "alpha": 0.5,
+      "policy": "public-lock",
+      "years": 100,
+      "epochs": 2609,
+      "repetitions": 65536,
+      "honest_expected_deposits": 92.53330993652344,
+      "attack_expected_deposits": 92.96925354003906,
+      "delta_N": 0.435943603515625,
+      "delta_N_standard_error": 0.00641776379200512,
+      "delta_N_ci95": [
+        0.42336478648329495,
+        0.44852242054795505
+      ],
+      "relative_supply_elasticity": 0.004711207281082631,
+      "attacker_associated_delta_N": -0.043121337890625,
+      "attacker_associated_delta_N_standard_error": 0.004877748208198736,
+      "attacker_associated_delta_N_ci95": [
+        -0.05268172437869452,
+        -0.03356095140255548
+      ],
+      "net_attacker_associated_delta_over_global_delta": -0.09891494574728736,
+      "expected_eligible_attacker_events": 0.52716064453125,
+      "expected_forfeited_bitcoin_rewards_R": 0.52716064453125,
+      "expected_net_fixed_height_reward_shortfall_R": 0.263580322265625,
+      "expected_additional_network_valid_solution_intervals": 0.52716064453125,
+      "expected_attacker_share_of_additional_hash_intervals": 0.263580322265625,
+      "expected_zero_cost_all_discoveries_omissions": 0.0,
+      "R_per_expected_extra_deposit": 1.2092404620231012,
+      "value_capture_proxy_if_attacker_exits": 0.0,
+      "value_capture_proxy_if_hash_share_maintained": 0.5,
+      "value_capture_upper_bound": 1.0,
+      "gross_budget_cap_R": null,
+      "gross_budget_utilization": null,
+      "purpose": "preselected high-repetition confirmation; not maximum fishing"
+    },
+    {
+      "scenario": "E-consensus-retarget-sawtooth",
+      "geology": "c10-eclip",
+      "alpha": 0.5,
+      "policy": "public-lock",
+      "years": 100,
+      "epochs": 2609,
+      "repetitions": 65536,
+      "honest_expected_deposits": 11.643692016601562,
+      "attack_expected_deposits": 11.674041748046875,
+      "delta_N": 0.0303497314453125,
+      "delta_N_standard_error": 0.0010545917828408008,
+      "delta_N_ci95": [
+        0.02828273155094453,
+        0.03241673133968047
+      ],
+      "relative_supply_elasticity": 0.0026065384932923243,
+      "attacker_associated_delta_N": -0.004302978515625,
+      "attacker_associated_delta_N_standard_error": 0.0007630652849747383,
+      "attacker_associated_delta_N_ci95": [
+        -0.005798586474175487,
+        -0.0028073705570745133
+      ],
+      "net_attacker_associated_delta_over_global_delta": -0.14177978883861236,
+      "expected_eligible_attacker_events": 0.0381317138671875,
+      "expected_forfeited_bitcoin_rewards_R": 0.0381317138671875,
+      "expected_net_fixed_height_reward_shortfall_R": 0.01906585693359375,
+      "expected_additional_network_valid_solution_intervals": 0.0381317138671875,
+      "expected_attacker_share_of_additional_hash_intervals": 0.01906585693359375,
+      "expected_zero_cost_all_discoveries_omissions": 0.0,
+      "R_per_expected_extra_deposit": 1.2564102564102564,
+      "value_capture_proxy_if_attacker_exits": 0.0,
+      "value_capture_proxy_if_hash_share_maintained": 0.5,
+      "value_capture_upper_bound": 1.0,
+      "gross_budget_cap_R": null,
+      "gross_budget_utilization": null,
+      "purpose": "preselected high-repetition confirmation; not maximum fishing"
+    }
+  ]
+}

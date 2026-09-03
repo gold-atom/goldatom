@@ -1,0 +1,214 @@
+{
+  "schema": "goldatom-c10-eclip-qualifier-selection-v1",
+  "status": "adversarial research; not a specification or forecast",
+  "seed": 3238969631,
+  "numpy_version": "2.3.5",
+  "repetitions": 4096,
+  "bitcoin_blocks_per_epoch": 2016,
+  "calendar_conversion": "round(years * 365.25 / 14)",
+  "horizons": {
+    "1": 26,
+    "4": 104,
+    "10": 261,
+    "25": 652,
+    "50": 1304,
+    "100": 2609
+  },
+  "alphas": [
+    0.01,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1.0
+  ],
+  "threshold_policy": {
+    "illustrative_V_over_R": 100.0,
+    "captured_fraction": "alpha, maintained indefinitely",
+    "rule": "omit iff alpha*(V/R)*rare-event potential tightening > 1",
+    "warning": "Myopic constant-target infinite-horizon proxy; not a solved finite-horizon dynamic economic optimum."
+  },
+  "matched_control_budget": {
+    "gross_cap_R_per_path": 1,
+    "meaning": "Same ex-ante cap for raw, unclipped C10, and C10-eclip; realized spend differs when a strategy finds no opportunity."
+  },
+  "scenario_rate_calibration": {
+    "lookback_years": 8,
+    "lookback_epochs": 209,
+    "first_epoch": 268,
+    "last_epoch": 477,
+    "target_ratio": 0.05506124236634613,
+    "target_multiplier_per_epoch": 0.9862234839641667,
+    "implied_difficulty_growth_per_year": 0.43608148425341864
+  },
+  "scenario_definitions": {
+    "A-constant-target": "tip target for every future epoch",
+    "B-historical-like-growth": "8-year observed geometric target multiplier continued",
+    "C-four-year-growth-then-plateau": "same multiplier for 104 epochs, then constant",
+    "D-difficulty-decline": "reciprocal multiplier until Bitcoin powLimit",
+    "E-consensus-retarget-sawtooth": "alternate Bitcoin min/max clamped actual-timespan inputs using exact integer and compact-target rounding; hostile, not a forecast"
+  },
+  "model": {
+    "unit": "one independently found Bitcoin-valid header",
+    "hash": "continuous uniform on [0,target]",
+    "ownership": "independent Bernoulli(alpha) for each found valid header",
+    "canonicalization": "suppressed valid header does not advance height; next valid discovery competes for the same height",
+    "publication_races": "published valid headers are treated as canonical; propagation/orphan risk is omitted, favoring the attacker",
+    "forecast_epoch_boundary": "future scenarios restart at a full 2016-block epoch boundary from the completed-epoch-477 state; they are not conditioned on the 417 blocks remaining after snapshot height 965246"
+  },
+  "live_ownership_analytics": [
+    {
+      "alpha": 0.01,
+      "p_first_qualifier_attacker": 0.00023984888228803858,
+      "p_at_least_two_attacker_qualifiers": 2.9449437678882254E-8,
+      "p_mixed_honest_and_attacker_qualifiers": 0.000005761770529355559,
+      "p_attacker_first_then_later_deeper_attacker": 1.4569025422225112E-8,
+      "p_public_qualifier_then_later_deeper_attacker": 0.000001456902542222511,
+      "p_state_effective_public_qualifier_then_later_deeper_attacker": 0.0000013052935204005193,
+      "p_later_attacker_unique_min_including_clip_neutral": 0.0000014337742289416226,
+      "p_strategically_suppressible_state_effective_later_attacker_unique_min": 0.0000012821659072563595,
+      "state_effective_unique_min_quadrature_grid_points": 500001,
+      "expected_public_lock_suppressions_per_epoch": 0.0000014569418095968096,
+      "expected_first-attacker-lock_suppressions_lower_bound_per_epoch": 1.4569418095968096E-8,
+      "ex_post_ownership_respecting_upper_bound": 0.0000028982239316930476
+    },
+    {
+      "alpha": 0.1,
+      "p_first_qualifier_attacker": 0.002398488822880386,
+      "p_at_least_two_attacker_qualifiers": 0.000002940659260695401,
+      "p_mixed_honest_and_attacker_qualifiers": 0.000052379526523926856,
+      "p_attacker_first_then_later_deeper_attacker": 0.0000014565491893889696,
+      "p_public_qualifier_then_later_deeper_attacker": 0.000014565491893889694,
+      "p_state_effective_public_qualifier_then_later_deeper_attacker": 0.000013050265889648754,
+      "p_later_attacker_unique_min_including_clip_neutral": 0.000014334363003967462,
+      "p_strategically_suppressible_state_effective_later_attacker_unique_min": 0.000012819143942680594,
+      "state_effective_unique_min_quadrature_grid_points": 500001,
+      "expected_public_lock_suppressions_per_epoch": 0.000014569418095968095,
+      "expected_first-attacker-lock_suppressions_lower_bound_per_epoch": 0.0000014569418095968098,
+      "ex_post_ownership_respecting_upper_bound": 0.000028982239316930478
+    },
+    {
+      "alpha": 0.2,
+      "p_first_qualifier_attacker": 0.004796977645760772,
+      "p_at_least_two_attacker_qualifiers": 0.0000117436394454426,
+      "p_mixed_honest_and_attacker_qualifiers": 0.00009311883891149897,
+      "p_attacker_first_then_later_deeper_attacker": 0.000005824626752504937,
+      "p_public_qualifier_then_later_deeper_attacker": 0.000029123133762524683,
+      "p_state_effective_public_qualifier_then_later_deeper_attacker": 0.000026094601354237458,
+      "p_later_attacker_unique_min_including_clip_neutral": 0.00002866121856364841,
+      "p_strategically_suppressible_state_effective_later_attacker_unique_min": 0.000025632699950542366,
+      "state_effective_unique_min_quadrature_grid_points": 500001,
+      "expected_public_lock_suppressions_per_epoch": 0.00002913883619193619,
+      "expected_first-attacker-lock_suppressions_lower_bound_per_epoch": 0.000005827767238387239,
+      "ex_post_ownership_respecting_upper_bound": 0.000057964478633860955
+    },
+    {
+      "alpha": 0.3,
+      "p_first_qualifier_attacker": 0.0071954664686411565,
+      "p_at_least_two_attacker_qualifiers": 0.000026380521703992833,
+      "p_mixed_honest_and_attacker_qualifiers": 0.00012221817645607924,
+      "p_attacker_first_then_later_deeper_attacker": 0.000013101878751966302,
+      "p_public_qualifier_then_later_deeper_attacker": 0.000043672929173221,
+      "p_state_effective_public_qualifier_then_later_deeper_attacker": 0.00003913300857952292,
+      "p_later_attacker_unique_min_including_clip_neutral": 0.00004298056996068999,
+      "p_strategically_suppressible_state_effective_later_attacker_unique_min": 0.000038440669959868484,
+      "state_effective_unique_min_quadrature_grid_points": 500001,
+      "expected_public_lock_suppressions_per_epoch": 0.00004370825428790429,
+      "expected_first-attacker-lock_suppressions_lower_bound_per_epoch": 0.000013112476286371285,
+      "ex_post_ownership_respecting_upper_bound": 0.00008694671795079142
+    },
+    {
+      "alpha": 0.5,
+      "p_first_qualifier_attacker": 0.011992444114401929,
+      "p_at_least_two_attacker_qualifiers": 0.00007304283487320241,
+      "p_mixed_honest_and_attacker_qualifiers": 0.00014549754424186823,
+      "p_attacker_first_then_later_deeper_attacker": 0.00003637449744157433,
+      "p_public_qualifier_then_later_deeper_attacker": 0.00007274899488314866,
+      "p_state_effective_public_qualifier_then_later_deeper_attacker": 0.00006519204705186775,
+      "p_later_attacker_unique_min_including_clip_neutral": 0.00007159677338737736,
+      "p_strategically_suppressible_state_effective_later_attacker_unique_min": 0.00006403985972180816,
+      "state_effective_unique_min_quadrature_grid_points": 500001,
+      "expected_public_lock_suppressions_per_epoch": 0.00007284709047984049,
+      "expected_first-attacker-lock_suppressions_lower_bound_per_epoch": 0.000036423545239920243,
+      "ex_post_ownership_respecting_upper_bound": 0.00014491119658465237
+    },
+    {
+      "alpha": 1.0,
+      "p_first_qualifier_attacker": 0.023984888228803857,
+      "p_at_least_two_attacker_qualifiers": 0.00028982239316930475,
+      "p_mixed_honest_and_attacker_qualifiers": 0.0,
+      "p_attacker_first_then_later_deeper_attacker": 0.0001453020955901153,
+      "p_public_qualifier_then_later_deeper_attacker": 0.0001453020955901153,
+      "p_state_effective_public_qualifier_then_later_deeper_attacker": 0.00013023605191920585,
+      "p_later_attacker_unique_min_including_clip_neutral": 0.00014300618858975372,
+      "p_strategically_suppressible_state_effective_later_attacker_unique_min": 0.0001279402145254488,
+      "state_effective_unique_min_quadrature_grid_points": 500001,
+      "expected_public_lock_suppressions_per_epoch": 0.00014569418095968097,
+      "expected_first-attacker-lock_suppressions_lower_bound_per_epoch": 0.00014569418095968097,
+      "ex_post_ownership_respecting_upper_bound": 0.00028982239316930475
+    }
+  ],
+  "unavailable-prior-stress-and-equivalent-baseline": {
+    "prior_setup_recoverable": false,
+    "reason": "The referenced /workspace/goldatom-assay/c10-clip-attack.md and its code/seeds were absent from the repository and workspace.",
+    "equivalent_baseline": "Actual historical maximum-lambda pre-state (epoch 37), constant target, alpha=1, public-lock policy, 800 epochs; selected before observing output.",
+    "initial_historical_epoch": 37,
+    "initial_lambda": 2.873978787078197,
+    "repetitions": 32768,
+    "honest_expected_deposits": 15.764892578125,
+    "attack_expected_deposits": 17.19879150390625,
+    "delta_N": {
+      "mean": 1.43389892578125,
+      "standard_error": 0.0099236131258686,
+      "ci95": [
+        1.4144486440545476,
+        1.4533492075079524
+      ]
+    },
+    "extra_strategically_omitted_hashes": {
+      "mean": 2.506134033203125,
+      "standard_error": 0.012114501303687086,
+      "ci95": [
+        2.4823896106478984,
+        2.5298784557583516
+      ]
+    }
+  },
+  "row_count": 1800,
+  "rows_file": "simulation-results.csv",
+  "row_fields": [
+    "scenario",
+    "geology",
+    "alpha",
+    "policy",
+    "years",
+    "epochs",
+    "repetitions",
+    "honest_expected_deposits",
+    "attack_expected_deposits",
+    "delta_N",
+    "delta_N_standard_error",
+    "delta_N_ci95",
+    "relative_supply_elasticity",
+    "attacker_associated_delta_N",
+    "attacker_associated_delta_N_standard_error",
+    "attacker_associated_delta_N_ci95",
+    "net_attacker_associated_delta_over_global_delta",
+    "expected_eligible_attacker_events",
+    "expected_forfeited_bitcoin_rewards_R",
+    "expected_net_fixed_height_reward_shortfall_R",
+    "expected_additional_network_valid_solution_intervals",
+    "expected_attacker_share_of_additional_hash_intervals",
+    "expected_zero_cost_all_discoveries_omissions",
+    "R_per_expected_extra_deposit",
+    "value_capture_proxy_if_attacker_exits",
+    "value_capture_proxy_if_hash_share_maintained",
+    "value_capture_upper_bound",
+    "gross_budget_cap_R",
+    "gross_budget_utilization",
+    "threshold_value_over_R",
+    "threshold_capture_fraction_assumption",
+    "warning",
+    "matched_control_budget"
+  ]
+}

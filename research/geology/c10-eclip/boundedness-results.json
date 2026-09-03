@@ -1,0 +1,88 @@
+{
+  "schema": "goldatom-c10-eclip-single-omission-bounds-v1",
+  "status": "adversarial research; continuous approximation, not consensus code",
+  "log_coordinate_nonexpansion": {
+    "maximum_initial_coordinate_separation_nats": 1.0,
+    "statement": "A qualifier-selection outcome differs by at most one nat in each frontier coordinate, and common clipped transitions do not enlarge it."
+  },
+  "direct_maximal_pair_monte_carlo": {
+    "model": "rare-crossing fixed-target maximal e-separated state pair",
+    "initial_loose_g1_g2": [
+      0.36787944117144233,
+      1.0
+    ],
+    "initial_tight_g1_g2": [
+      0.1353352832366127,
+      0.36787944117144233
+    ],
+    "repetitions": 1000000,
+    "seed": 3238726269,
+    "mean_extra_future_deposits": 2.579366,
+    "standard_error": 0.0017487573005411858,
+    "ci95": [
+      2.575938435690939,
+      2.5827935643090605
+    ],
+    "maximum_sample": 20,
+    "maximum_embedded_crossings_until_all_coalesced": 44
+  },
+  "fixed_target_rare_limit_analytic": {
+    "potential_weight_e_over_e_minus_1": 1.5819767068693265,
+    "single_omission_supremum_expected_extra_deposits": 2.5819767068693267,
+    "scope": "continuous rare-crossing, constant-target limit"
+  },
+  "refuted_4_300_boundary_calculation": {
+    "delta": 1.0,
+    "steps": 200000,
+    "V_delta": 4.300258535328926,
+    "equation": "(e^-1-e^(-2-d))V(d)=1-e^-d+integral_0^d[e^(r-1-d)+e^(-2-r)]V(r)dr",
+    "interpretation": "Refuted boundary-state calculation retained for provenance; it is neither an upper bound nor a realistic attack estimate.",
+    "valid_upper_bound": false,
+    "reason": "Boundary-state reset does not dominate every interior paired state; the calculation is retained as falsified evidence, not used in verdict.",
+    "counterexample_log_states": {
+      "loose": [
+        0.0,
+        0.6249070258
+      ],
+      "tight": [
+        0.4431755803,
+        0.8199775082
+      ],
+      "observation_relative_log_depth": 1.3677044043
+    }
+  },
+  "target_uniform_continuous_model_bound": {
+    "middle_band_probability_e_minus_1_minus_e_minus_2": 0.23254415793482963,
+    "lyapunov_coefficient": 5.300258535328371,
+    "single_omission_expected_extra_deposit_bound": 5.300258535328371,
+    "lyapunov": "C*delta_G1_log + max(delta_G2_log-delta_G1_log,0)",
+    "scope": "continuous uniform-PoW epoch-min model, including a common target chosen adaptively before each epoch; divergent counterfactual target paths and exact integer/discrete lift remain open",
+    "proof_method": "piecewise-affine transition case split plus conditional log-depth density ratio f_p(q+t)/f_p(q)>=exp(-t)"
+  },
+  "adaptive_policy_stress": {
+    "model": "state-adaptive rare-tail/deep-reset embedded-event stress",
+    "repetitions": 1000000,
+    "seed": 20260903,
+    "mean_extra_future_deposits": 4.82114,
+    "standard_error": 0.003767608166366468,
+    "ci95": [
+      4.813755487993921,
+      4.828524512006078
+    ],
+    "maximum_sample": 42,
+    "maximum_policy_steps_until_all_coalesced": 148
+  },
+  "pathwise_bound": {
+    "exists": false,
+    "note": "Arbitrarily long positive-probability reward/reset paths exist; the finite bound is in expectation, matching the task's criterion."
+  },
+  "control_classification": {
+    "raw-record": "D-unbounded-from-one-event",
+    "c10-unclipped": "D-unbounded-from-one-event",
+    "c10-eclip": "A-uniformly-bounded-single-event-model"
+  },
+  "long_run_classification": {
+    "constant_or_eventual_plateau": "asymptotic order-statistic model: lambda=O(1/n), multiple-qualifier opportunities O(1/n^2) and summable; simulations are finite-horizon",
+    "target_path_sustaining_positive_crossing_intensity": "B-per-opportunity-bounded-but-cumulatively-linear"
+  }
+}

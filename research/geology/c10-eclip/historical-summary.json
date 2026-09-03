@@ -1,0 +1,231 @@
+{
+  "schema": "goldatom-c10-eclip-historical-v1",
+  "status": "adversarial research; not a specification",
+  "source": {
+    "headers_file": "bitcoin-mainnet-headers.bin",
+    "headers_sha256": "6d5775640085f29bae0882e4ec3c99f752ad4546f7589650adb9be1d4fd392af",
+    "headers_bytes": 77219760,
+    "header_count": 965247,
+    "tip_height": 965246,
+    "tip_hash": "00000000000000000000b96ab4c27a88f0394225bce8d8f8f92027f28563be1b",
+    "complete_difficulty_epochs": 478,
+    "evaluated_post_initialization_epochs": 476,
+    "partial_epoch": {
+      "epoch": 478,
+      "blocks_observed": 1599,
+      "blocks_remaining": 417,
+      "first_height": 963648,
+      "tip_position_zero_based": 1598,
+      "crossings_of_live_pre_epoch_g2_observed": 0,
+      "warning": "Future simulations restart at a complete epoch boundary and do not condition on this partial epoch."
+    },
+    "dataset_provenance": {
+      "kind": "canonical Bitcoin mainnet header snapshot",
+      "archival_source": "https://github.com/bitcoincc/headers",
+      "archival_source_commit": "b53315ec4991e0ca06eabae0d17774afea7bf4b5",
+      "archival_tip_height": 926039,
+      "suffix_source": "https://mempool.space/api/v1/blocks/{height}",
+      "captured_tip_height": 965246,
+      "captured_tip_hash": "00000000000000000000b96ab4c27a88f0394225bce8d8f8f92027f28563be1b",
+      "retrieved_utc": "2026-09-03",
+      "validation": "Every advertised hash was recomputed from its serialized 80-byte header. The combined chain was checked from genesis through the captured tip for height continuity, previous-hash linkage, proof of work, constant intra-period bits, and Bitcoin retarget transitions.",
+      "trust_boundary": "Header consensus checks establish an internally valid linked proof-of-work chain. The captured tip was independently compared with Blockstream; selected record blocks were cross-checked separately."
+    }
+  },
+  "initialization": {
+    "epoch_0_minimum": "3857338712755543345253973973591186299193617950513887497584803401",
+    "epoch_1_minimum": "22196314501187840792218844525263652093585624848119336967297003374",
+    "unclipped_g2_over_g1": 5.754307867180167,
+    "clipped_state": {
+      "g1": "8165567774762564395586499251453268775359881340032553143329137868",
+      "g2": "22196314501187840792218844525263652093585624848119336967297003374",
+      "g1_hex": "000000000013d971ff470b70c76872df2074e12620d3d95479db6f32e4e4a4cc",
+      "g2_hex": "000000000035f4cce8ac52847b6618f8bd3f53d501dc6a006839a0963a8f6f6e",
+      "g2_over_g1": 2.718281828459045
+    }
+  },
+  "invariant": {
+    "e_series_terms": 180,
+    "all_reachable_historical_states_g2_over_g1_at_most_e": true,
+    "maximum_historical_clipped_g2_over_g1": 2.718281828459045,
+    "maximum_historical_unclipped_g2_over_g1": 55.92747492913752,
+    "new_second_a0_max_ln_ratio_minus_one": 0.0
+  },
+  "historical": {
+    "deposits": 82,
+    "transition_counts": {
+      "unique-min": 53,
+      "new-second": 29,
+      "neither": 394
+    },
+    "lambda": {
+      "minimum": 0.012370485998270897,
+      "median": 0.1204155848858127,
+      "mean": 0.2605222466642247,
+      "p90": 0.7648144299586287,
+      "p95": 1.071713547919737,
+      "p99": 1.675672094165975,
+      "maximum": 2.873978787078197
+    },
+    "epochs_k_ge_1": 82,
+    "crossing_count_distribution": {
+      "0": 394,
+      "1": 59,
+      "2": 15,
+      "3": 5,
+      "4": 3
+    },
+    "fraction_epochs_k_ge_1": 0.1722689075630252,
+    "epochs_k_ge_2": 23,
+    "fraction_epochs_k_ge_2": 0.04831932773109244,
+    "empirical_p_k_ge_2_given_k_ge_1": 0.2804878048780488,
+    "finite_binomial_expected_epochs_k_ge_1": 89.32247978555931,
+    "finite_binomial_expected_epochs_k_ge_2": 23.780787340554202,
+    "finite_binomial_aggregate_p_k_ge_2_given_k_ge_1": 0.2662351895922041,
+    "epochs_with_monopoly_qualifier_selection_opportunity": 10,
+    "worst_historical_opportunity_by_hash_depth_ratio": {
+      "epoch": 134,
+      "first_crossing_height": 270387,
+      "first_crossing_hash": "000000000000000001480bf37765db8beb84651395cc36e76e2c4e36fbb51026",
+      "deepest_later_height": 271381,
+      "deepest_later_hash": "0000000000000000002ad5e428b2c6bcf8056213c27361b222122f492b3176ed",
+      "shallow_over_deep": 7.658287790442304,
+      "crossing_count": 3
+    },
+    "worst_historical_opportunity_by_rare_limit_potential": {
+      "epoch": 134,
+      "first_crossing_height": 270387,
+      "first_crossing_hash": "000000000000000001480bf37765db8beb84651395cc36e76e2c4e36fbb51026",
+      "deepest_later_height": 271381,
+      "deepest_later_hash": "0000000000000000002ad5e428b2c6bcf8056213c27361b222122f492b3176ed",
+      "shallow_over_deep": 7.658287790442304,
+      "crossing_count": 3,
+      "rare_limit_constant_target_potential_gap": 2.286380806263594
+    },
+    "random_owner_label_model": {
+      "warning": "Actual historical miner ownership was not inferred. Values randomly label fixed observed headers Bernoulli(alpha); they are not attacked histories.",
+      "rows": [
+        {
+          "alpha": 0.01,
+          "expected_first_qualifier_attacker_epochs": 0.8200000000000005,
+          "expected_epochs_with_at_least_two_attacker_qualifiers": 0.004766090000000981,
+          "expected_state_effective_public_lock_opportunities": 0.10000000000000009,
+          "expected_attacker_first_then_effective_later_attacker_opportunities": 0.0010000000000000007,
+          "expected_state_effective_later_attacker_unique_min_opportunities": 0.050000000000000044,
+          "expected_mixed_owner_qualifier_epochs": 0.5637119400000004
+        },
+        {
+          "alpha": 0.1,
+          "expected_first_qualifier_attacker_epochs": 8.199999999999987,
+          "expected_epochs_with_at_least_two_attacker_qualifiers": 0.4468999999999975,
+          "expected_state_effective_public_lock_opportunities": 0.9999999999999998,
+          "expected_attacker_first_then_effective_later_attacker_opportunities": 0.09999999999999996,
+          "expected_state_effective_later_attacker_unique_min_opportunities": 0.4999999999999999,
+          "expected_mixed_owner_qualifier_epochs": 5.081399999999997
+        },
+        {
+          "alpha": 0.2,
+          "expected_first_qualifier_attacker_epochs": 16.399999999999974,
+          "expected_epochs_with_at_least_two_attacker_qualifiers": 1.662399999999995,
+          "expected_state_effective_public_lock_opportunities": 1.9999999999999996,
+          "expected_attacker_first_then_effective_later_attacker_opportunities": 0.39999999999999986,
+          "expected_state_effective_later_attacker_unique_min_opportunities": 0.9999999999999998,
+          "expected_mixed_owner_qualifier_epochs": 8.966399999999998
+        },
+        {
+          "alpha": 0.3,
+          "expected_first_qualifier_attacker_epochs": 24.600000000000037,
+          "expected_epochs_with_at_least_two_attacker_qualifiers": 3.4749000000000008,
+          "expected_state_effective_public_lock_opportunities": 3.0,
+          "expected_attacker_first_then_effective_later_attacker_opportunities": 0.8999999999999999,
+          "expected_state_effective_later_attacker_unique_min_opportunities": 1.5000000000000002,
+          "expected_mixed_owner_qualifier_epochs": 11.705400000000001
+        },
+        {
+          "alpha": 0.5,
+          "expected_first_qualifier_attacker_epochs": 41.0,
+          "expected_epochs_with_at_least_two_attacker_qualifiers": 8.3125,
+          "expected_state_effective_public_lock_opportunities": 5.0,
+          "expected_attacker_first_then_effective_later_attacker_opportunities": 2.5,
+          "expected_state_effective_later_attacker_unique_min_opportunities": 2.5,
+          "expected_mixed_owner_qualifier_epochs": 13.875
+        },
+        {
+          "alpha": 1.0,
+          "expected_first_qualifier_attacker_epochs": 82.0,
+          "expected_epochs_with_at_least_two_attacker_qualifiers": 23.0,
+          "expected_state_effective_public_lock_opportunities": 10.0,
+          "expected_attacker_first_then_effective_later_attacker_opportunities": 10.0,
+          "expected_state_effective_later_attacker_unique_min_opportunities": 5.0,
+          "expected_mixed_owner_qualifier_epochs": 0.0
+        }
+      ]
+    }
+  },
+  "live_c10_eclip": {
+    "state": {
+      "g1": "2254640379176521218445219994660972651329674190988",
+      "g2": "2580554000060355442454944565354521997722846080764",
+      "g1_hex": "0000000000000000000000018aed923c250162fe3f058d6af0f3932d9d9aa08c",
+      "g2_hex": "000000000000000000000001c4040b1ea831f0378f473e7412a7f9a13b35aefc",
+      "g2_over_g1": 1.1445523746908455
+    },
+    "target": "214292677573643640381615288597024997757051109113856000",
+    "target_hex": "000000000000000000023cc10000000000000000000000000000000000000000",
+    "p_per_valid_block": 1.204219401838182e-05,
+    "lambda_prompt_W_G2_over_T": 0.02427706314105775,
+    "lambda_exact_discrete_W_G2_over_T_plus_1": 0.024277063141057747,
+    "finite_binomial": {
+      "p": 1.204219401838182e-05,
+      "trials": 2016,
+      "lambda": 0.024277063141057747,
+      "p_k_ge_1": 0.023984888228803857,
+      "p_k_ge_2": 0.0002898223931279212,
+      "p_k_ge_2_given_k_ge_1": 0.012083541535118291
+    },
+    "finite_binomial_exact_decimal": {
+      "p": "0.0000120421940183818200543021124978223782886499113797834072701539113502147960517793224337569145",
+      "lambda": "0.0242770631410577492294730587956099146299182213416433490566302852820330288403871140264539396",
+      "p_k_ge_1": "0.023984888228803856744119124677741774477186272236745764803843129763624829089634733973837401",
+      "p_k_ge_2": "0.0002898223931279199683534236711677410366621503548991699039790931348668408259969068067104833",
+      "p_k_ge_2_given_k_ge_1": "0.0120835415351182403682942571525801461420146258105064548865733709060466253240276337466388704"
+    },
+    "poisson_cross_check": {
+      "lambda": 0.024277063141057747,
+      "p_k_ge_1": 0.023984745559076082,
+      "p_k_ge_2": 0.0002899616003782281,
+      "p_k_ge_2_given_k_ge_1": 0.012089417403408874
+    }
+  },
+  "live_unclipped_c10_control": {
+    "state": {
+      "g1": "533412054325019065460326457635714671597350485263",
+      "g2": "1442666950038720453045673653632059615314050489779",
+      "g2_over_g1": 2.7046013271377505
+    },
+    "p_per_valid_block": 6.732227000817304e-06,
+    "lambda_prompt_W_G2_over_T": 0.013572169633647685,
+    "lambda_exact_discrete_W_G2_over_T_plus_1": 0.013572169633647685,
+    "finite_binomial": {
+      "p": 6.732227000817304e-06,
+      "trials": 2016,
+      "lambda": 0.013572169633647685,
+      "p_k_ge_1": 0.013480528073381423,
+      "p_k_ge_2": 9.122831369145698e-05,
+      "p_k_ge_2_given_k_ge_1": 0.006767413946609103
+    },
+    "finite_binomial_exact_decimal": {
+      "p": "0.00000673222700081730393624898203515506097903193690762706898113688943168210526922175136531643060",
+      "lambda": "0.0135721696336476847354779477828726029337283848057761710659719690942711242227510507524779241",
+      "p_k_ge_1": "0.013480528073381423580875173139884471833643471656252161983134868813932985145536862852580327",
+      "p_k_ge_2": "0.0000912283136914571089758921706156900526771688366384301281412410311410370423584794075682112",
+      "p_k_ge_2_given_k_ge_1": "0.00676741394660911201791552660465601823971901114230925908533404523329725193595005837126071673"
+    },
+    "poisson_cross_check": {
+      "lambda": 0.013572169633647685,
+      "p_k_ge_1": 0.013480483003578852,
+      "p_k_ge_2": 9.127277199924393e-05,
+      "p_k_ge_2_given_k_ge_1": 0.006770734548236326
+    }
+  }
+}
