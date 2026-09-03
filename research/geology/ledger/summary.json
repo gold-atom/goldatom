@@ -1,0 +1,121 @@
+{
+  "schema": "goldatom-bitcoin-record-geology-v1",
+  "terminology": "Historical records are deposits/specimens, not GoldAtoms.",
+  "source": {
+    "kind": "canonical Bitcoin mainnet header snapshot",
+    "archival_source": "https://github.com/bitcoincc/headers",
+    "archival_source_commit": "b53315ec4991e0ca06eabae0d17774afea7bf4b5",
+    "archival_tip_height": 926039,
+    "suffix_source": "https://mempool.space/api/v1/blocks/{height}",
+    "captured_tip_height": 965246,
+    "captured_tip_hash": "00000000000000000000b96ab4c27a88f0394225bce8d8f8f92027f28563be1b",
+    "retrieved_utc": "2026-09-03",
+    "validation": "Every advertised hash was recomputed from its serialized 80-byte header. The combined chain was checked from genesis through the captured tip for height continuity, previous-hash linkage, proof of work, constant intra-period bits, and Bitcoin retarget transitions.",
+    "trust_boundary": "Header consensus checks establish an internally valid linked proof-of-work chain. The captured tip was independently compared with Blockstream; selected record blocks were cross-checked separately."
+  },
+  "tip": {
+    "height": 965246,
+    "hash": "00000000000000000000b96ab4c27a88f0394225bce8d8f8f92027f28563be1b",
+    "utc": "2026-09-03T02:05:17Z",
+    "bits": "17023cc1"
+  },
+  "hash_convention": {
+    "display": "SHA256d(header)[::-1].hex()",
+    "integer": "int.from_bytes(SHA256d(header), 'little'), equivalent to int(display_hash, 16)"
+  },
+  "raw_record_count": 30,
+  "normalized_record_count": 8,
+  "deposits_by_year": {
+    "2009": 3,
+    "2010": 7,
+    "2011": 3,
+    "2012": 1,
+    "2013": 4,
+    "2014": 4,
+    "2015": 1,
+    "2017": 2,
+    "2018": 1,
+    "2019": 1,
+    "2020": 1,
+    "2022": 2
+  },
+  "deposits_by_halving_era": {
+    "halving-0 (0-209999)": 14,
+    "halving-1 (210000-419999)": 9,
+    "halving-2 (420000-629999)": 4,
+    "halving-3 (630000-839999)": 3
+  },
+  "shortest_raw_interval_blocks": 1028,
+  "longest_completed_raw_interval_blocks": 107193,
+  "median_raw_interval_blocks": 12717,
+  "shortest_raw_interval_seconds": 543658,
+  "longest_completed_raw_interval_seconds": 63800730,
+  "current_frontier": "0000000000000000000000005d6f06154c8685146aa7bc3dc9843876c9cefd0f",
+  "current_target": "000000000000000000023cc10000000000000000000000000000000000000000",
+  "current_gap_bits": 18.615900694949076,
+  "conditional_next_block_probability": 2.489175366907752e-06,
+  "one_in_n": 401739.47295737464,
+  "near_retarget_definition": "retarget_position <= 12",
+  "near_retarget_raw_records": [
+    0
+  ],
+  "adjacent_raw_records": [],
+  "deposits_by_difficulty_era": {
+    "retarget-0 (0-2015)": 2,
+    "retarget-5 (10080-12095)": 1,
+    "retarget-21 (42336-44351)": 1,
+    "retarget-27 (54432-56447)": 1,
+    "retarget-29 (58464-60479)": 1,
+    "retarget-30 (60480-62495)": 1,
+    "retarget-36 (72576-74591)": 1,
+    "retarget-44 (88704-90719)": 1,
+    "retarget-45 (90720-92735)": 1,
+    "retarget-50 (100800-102815)": 1,
+    "retarget-56 (112896-114911)": 1,
+    "retarget-62 (124992-127007)": 1,
+    "retarget-102 (205632-207647)": 1,
+    "retarget-118 (237888-239903)": 1,
+    "retarget-121 (243936-245951)": 1,
+    "retarget-128 (258048-260063)": 1,
+    "retarget-132 (266112-268127)": 1,
+    "retarget-155 (312480-314495)": 1,
+    "retarget-161 (324576-326591)": 1,
+    "retarget-164 (330624-332639)": 1,
+    "retarget-165 (332640-334655)": 1,
+    "retarget-182 (366912-368927)": 1,
+    "retarget-227 (457632-459647)": 1,
+    "retarget-248 (499968-501983)": 1,
+    "retarget-255 (514080-516095)": 1,
+    "retarget-290 (584640-586655)": 1,
+    "retarget-314 (633024-635039)": 1,
+    "retarget-368 (741888-743903)": 1,
+    "retarget-375 (756000-758015)": 1
+  },
+  "current_raw_interval_blocks": 208295,
+  "current_raw_interval_seconds": 123554224,
+  "best_normalized_score": 6.204889752448108e-07,
+  "conditional_next_block_normalized_record_probability": 6.204889752448108e-07,
+  "normalized_one_in_n": 1611632.1802582473,
+  "automatic_record_retargets": [],
+  "raw_records_in_falling_difficulty_periods": [
+    334261,
+    634842,
+    742035,
+    756951
+  ],
+  "manual_cross_checks": {
+    "sources": [
+      "https://mempool.space/api/block-height/{height}",
+      "https://blockstream.info/api/block-height/{height}"
+    ],
+    "heights": [
+      0,
+      125552,
+      313338,
+      585774,
+      756951,
+      965246
+    ],
+    "result": "Both sources exactly matched the scanner at every checked height."
+  }
+}

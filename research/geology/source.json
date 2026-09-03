@@ -1,0 +1,12 @@
+{
+  "kind": "canonical Bitcoin mainnet header snapshot",
+  "archival_source": "https://github.com/bitcoincc/headers",
+  "archival_source_commit": "b53315ec4991e0ca06eabae0d17774afea7bf4b5",
+  "archival_tip_height": 926039,
+  "suffix_source": "https://mempool.space/api/v1/blocks/{height}",
+  "captured_tip_height": 965246,
+  "captured_tip_hash": "00000000000000000000b96ab4c27a88f0394225bce8d8f8f92027f28563be1b",
+  "retrieved_utc": "2026-09-03",
+  "validation": "Every advertised hash was recomputed from its serialized 80-byte header. The combined chain was checked from genesis through the captured tip for height continuity, previous-hash linkage, proof of work, constant intra-period bits, and Bitcoin retarget transitions.",
+  "trust_boundary": "Header consensus checks establish an internally valid linked proof-of-work chain. The captured tip was independently compared with Blockstream; selected record blocks were cross-checked separately."
+}
