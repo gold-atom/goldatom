@@ -1,0 +1,711 @@
+{
+  "historical": [
+    {
+      "attacked_state": [
+        9.372515482488941e-05,
+        0.00017994324866431625
+      ],
+      "ci95_normal": [
+        0.3162595172499406,
+        0.3233004827500594
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 9,
+      "honest_state": [
+        9.372515482488941e-05,
+        0.00012340660196196948
+      ],
+      "label": "historical-epoch-9",
+      "maximum": 6,
+      "maximum_relevant_events_to_reconvergence": 7,
+      "mean": 0.31978,
+      "mean_relevant_events_to_reconvergence": 1.31978,
+      "median": 0,
+      "p90": 1,
+      "p95": 1,
+      "p99": 2,
+      "seed": 46876317226383647046469366082812905622,
+      "standard_error": 0.001796164668397639,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        6.427273653083214e-05,
+        7.805290095904057e-05
+      ],
+      "ci95_normal": [
+        0.31254862118344273,
+        0.31987137881655725
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 18,
+      "honest_state": [
+        5.2353325155900575e-05,
+        7.805290095904057e-05
+      ],
+      "label": "historical-epoch-18",
+      "maximum": 6,
+      "maximum_relevant_events_to_reconvergence": 32,
+      "mean": 0.31621,
+      "mean_relevant_events_to_reconvergence": 4.25944,
+      "median": 0,
+      "p90": 1,
+      "p95": 1,
+      "p99": 2,
+      "seed": 246349870090427727206874470269774805037,
+      "standard_error": 0.001868050416610858,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        8.719115858714634e-05,
+        0.00015647011851550787
+      ],
+      "ci95_normal": [
+        0.4839401924420885,
+        0.49261980755791146
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 24,
+      "honest_state": [
+        8.719115858714634e-05,
+        8.999794194663602e-05
+      ],
+      "label": "historical-epoch-24",
+      "maximum": 7,
+      "maximum_relevant_events_to_reconvergence": 8,
+      "mean": 0.48828,
+      "mean_relevant_events_to_reconvergence": 1.48828,
+      "median": 0,
+      "p90": 1,
+      "p95": 2,
+      "p99": 3,
+      "seed": 77817031527896318437770881219555885876,
+      "standard_error": 0.0022141875295466733,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.00017956688687044672,
+        0.00018173165790971152
+      ],
+      "ci95_normal": [
+        0.19318923866315427,
+        0.19889076133684572
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 29,
+      "honest_state": [
+        0.00015812128482602014,
+        0.00017956688687044672
+      ],
+      "label": "historical-epoch-29",
+      "maximum": 5,
+      "maximum_relevant_events_to_reconvergence": 37,
+      "mean": 0.19604,
+      "mean_relevant_events_to_reconvergence": 3.79877,
+      "median": 0,
+      "p90": 1,
+      "p95": 1,
+      "p99": 2,
+      "seed": 158967636220661821831371516600954134368,
+      "standard_error": 0.0014544700698192452,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0006136499358430715,
+        0.000635432036760502
+      ],
+      "ci95_normal": [
+        0.1660870596570147,
+        0.17143294034298528
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 34,
+      "honest_state": [
+        0.0005372320171139842,
+        0.000635432036760502
+      ],
+      "label": "historical-epoch-34",
+      "maximum": 5,
+      "maximum_relevant_events_to_reconvergence": 32,
+      "mean": 0.16876,
+      "mean_relevant_events_to_reconvergence": 4.03008,
+      "median": 0,
+      "p90": 1,
+      "p95": 1,
+      "p99": 2,
+      "seed": 1028819453873543441972042945494565630,
+      "standard_error": 0.0013637450729516863,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.00036686291988336867,
+        0.0009809722534376275
+      ],
+      "ci95_normal": [
+        0.021250124117636337,
+        0.02310987588236366
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 36,
+      "honest_state": [
+        0.0003608795243993249,
+        0.0009809722534376275
+      ],
+      "label": "historical-epoch-36",
+      "maximum": 2,
+      "maximum_relevant_events_to_reconvergence": 32,
+      "mean": 0.02218,
+      "mean_relevant_events_to_reconvergence": 3.9346,
+      "median": 0,
+      "p90": 0,
+      "p95": 0,
+      "p99": 1,
+      "seed": 18652163394879505009494909637778662748,
+      "standard_error": 0.0004744264705937054,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0005244433085956878,
+        0.0010055772494397123
+      ],
+      "ci95_normal": [
+        1.647470039628166,
+        1.6658299603718338
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 37,
+      "honest_state": [
+        0.0001929319112922839,
+        0.0005244433085956878
+      ],
+      "label": "historical-epoch-37",
+      "maximum": 14,
+      "maximum_relevant_events_to_reconvergence": 34,
+      "mean": 1.65665,
+      "mean_relevant_events_to_reconvergence": 7.46619,
+      "median": 1,
+      "p90": 4,
+      "p95": 4,
+      "p99": 6,
+      "seed": 316987473431326716283175728023602784646,
+      "standard_error": 0.0046836532509356415,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0002350087091097881,
+        0.0005711010588116286
+      ],
+      "ci95_normal": [
+        0.12123649047213034,
+        0.12560350952786967
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 38,
+      "honest_state": [
+        0.0002350087091097881,
+        0.0004597613077472542
+      ],
+      "label": "historical-epoch-38",
+      "maximum": 4,
+      "maximum_relevant_events_to_reconvergence": 5,
+      "mean": 0.12342,
+      "mean_relevant_events_to_reconvergence": 1.12342,
+      "median": 0,
+      "p90": 1,
+      "p95": 1,
+      "p99": 1,
+      "seed": 76011144679138154930659308607804882416,
+      "standard_error": 0.0011140354734028894,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.00015773926313561792,
+        0.0004287797726160699
+      ],
+      "ci95_normal": [
+        0.0,
+        0.0
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 44,
+      "honest_state": [
+        0.00015773926313561792,
+        0.0004287797726160699
+      ],
+      "label": "historical-epoch-44",
+      "maximum": 0,
+      "maximum_relevant_events_to_reconvergence": 0,
+      "mean": 0.0,
+      "mean_relevant_events_to_reconvergence": 0.0,
+      "median": 0,
+      "p90": 0,
+      "p95": 0,
+      "p99": 0,
+      "seed": 36789265054711035129465128385403422772,
+      "standard_error": 0.0,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.00023144307520185314,
+        0.00039908574838288955
+      ],
+      "ci95_normal": [
+        1.869976845940195,
+        1.889123154059805
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 45,
+      "honest_state": [
+        8.514314916825783e-05,
+        0.00023144307520185314
+      ],
+      "label": "historical-epoch-45",
+      "maximum": 15,
+      "maximum_relevant_events_to_reconvergence": 42,
+      "mean": 1.87955,
+      "mean_relevant_events_to_reconvergence": 7.64953,
+      "median": 2,
+      "p90": 4,
+      "p95": 5,
+      "p99": 7,
+      "seed": 26806175866366724110749093535605670968,
+      "standard_error": 0.0048842622754106885,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0002972831291346103,
+        0.0003060751559990589
+      ],
+      "ci95_normal": [
+        1.40446414659756,
+        1.4215558534024402
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 50,
+      "honest_state": [
+        0.00011259875734539582,
+        0.0003060751559990589
+      ],
+      "label": "historical-epoch-50",
+      "maximum": 14,
+      "maximum_relevant_events_to_reconvergence": 35,
+      "mean": 1.41301,
+      "mean_relevant_events_to_reconvergence": 7.1556,
+      "median": 1,
+      "p90": 3,
+      "p95": 4,
+      "p99": 6,
+      "seed": 26874293132906783789521350658996055996,
+      "standard_error": 0.004360129286959275,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0002517466113245916,
+        0.0005226371023387663
+      ],
+      "ci95_normal": [
+        0.3405470664936058,
+        0.3478129335063942
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 54,
+      "honest_state": [
+        0.0002517466113245916,
+        0.00030597322711088096
+      ],
+      "label": "historical-epoch-54",
+      "maximum": 6,
+      "maximum_relevant_events_to_reconvergence": 7,
+      "mean": 0.34418,
+      "mean_relevant_events_to_reconvergence": 1.34418,
+      "median": 0,
+      "p90": 1,
+      "p95": 1,
+      "p99": 2,
+      "seed": 271124191332481583847572228210192723279,
+      "standard_error": 0.001853537503262343,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0004378847475700741,
+        0.0006200744414290708
+      ],
+      "ci95_normal": [
+        0.8953360285548486,
+        0.9088239714451514
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 62,
+      "honest_state": [
+        0.0002281126389976208,
+        0.0006200744414290708
+      ],
+      "label": "historical-epoch-62",
+      "maximum": 13,
+      "maximum_relevant_events_to_reconvergence": 37,
+      "mean": 0.90208,
+      "mean_relevant_events_to_reconvergence": 6.10649,
+      "median": 1,
+      "p90": 2,
+      "p95": 3,
+      "p99": 4,
+      "seed": 273963337381161590525692958965593970710,
+      "standard_error": 0.003440801757730311,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0002963784809924019,
+        0.0004063739278528815
+      ],
+      "ci95_normal": [
+        0.9754813200233758,
+        0.9894386799766242
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 63,
+      "honest_state": [
+        0.00014949661348516208,
+        0.0004063739278528815
+      ],
+      "label": "historical-epoch-63",
+      "maximum": 13,
+      "maximum_relevant_events_to_reconvergence": 38,
+      "mean": 0.98246,
+      "mean_relevant_events_to_reconvergence": 6.24084,
+      "median": 1,
+      "p90": 2,
+      "p95": 3,
+      "p99": 5,
+      "seed": 244299157914588458266544397706302082415,
+      "standard_error": 0.0035605510084816927,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.00017002963492900174,
+        0.00020293776297697783
+      ],
+      "ci95_normal": [
+        1.2220227274045328,
+        1.2377172725954673
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 68,
+      "honest_state": [
+        7.465663083655321e-05,
+        0.00020293776297697783
+      ],
+      "label": "historical-epoch-68",
+      "maximum": 11,
+      "maximum_relevant_events_to_reconvergence": 42,
+      "mean": 1.22987,
+      "mean_relevant_events_to_reconvergence": 6.70885,
+      "median": 1,
+      "p90": 3,
+      "p95": 4,
+      "p99": 5,
+      "seed": 217605700849514330430015071265837889805,
+      "standard_error": 0.004003710507891398,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0001764113986099993,
+        0.00047953589917460636
+      ],
+      "ci95_normal": [
+        0.0,
+        0.0
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 128,
+      "honest_state": [
+        0.0001764113986099993,
+        0.00047953589917460636
+      ],
+      "label": "historical-epoch-128",
+      "maximum": 0,
+      "maximum_relevant_events_to_reconvergence": 0,
+      "mean": 0.0,
+      "mean_relevant_events_to_reconvergence": 0.0,
+      "median": 0,
+      "p90": 0,
+      "p95": 0,
+      "p99": 0,
+      "seed": 165936626820983870453834495348857258715,
+      "standard_error": 0.0,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0002330972341249899,
+        0.0006272246489764211
+      ],
+      "ci95_normal": [
+        0.4593605174644777,
+        0.4677994825355223
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 129,
+      "honest_state": [
+        0.0002330972341249899,
+        0.00029801983093182135
+      ],
+      "label": "historical-epoch-129",
+      "maximum": 5,
+      "maximum_relevant_events_to_reconvergence": 6,
+      "mean": 0.46358,
+      "mean_relevant_events_to_reconvergence": 1.46358,
+      "median": 0,
+      "p90": 1,
+      "p95": 2,
+      "p99": 3,
+      "seed": 195894663367121688270214026897125738168,
+      "standard_error": 0.0021527972120011676,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0005364146199911894,
+        0.0006123162821572641
+      ],
+      "ci95_normal": [
+        1.1727614064304694,
+        1.1885385935695305
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 132,
+      "honest_state": [
+        0.0002252585717001895,
+        0.0006123162821572641
+      ],
+      "label": "historical-epoch-132",
+      "maximum": 12,
+      "maximum_relevant_events_to_reconvergence": 38,
+      "mean": 1.18065,
+      "mean_relevant_events_to_reconvergence": 6.76419,
+      "median": 1,
+      "p90": 3,
+      "p95": 4,
+      "p99": 5,
+      "seed": 272223941915606095307475939725775451378,
+      "standard_error": 0.004024792637515627,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.0003511923457393372,
+        0.0007103360488685188
+      ],
+      "ci95_normal": [
+        1.8282396758567585,
+        1.8472203241432417
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 134,
+      "honest_state": [
+        0.00012919644389427533,
+        0.0003511923457393372
+      ],
+      "label": "historical-epoch-134",
+      "maximum": 14,
+      "maximum_relevant_events_to_reconvergence": 34,
+      "mean": 1.83773,
+      "mean_relevant_events_to_reconvergence": 7.62686,
+      "median": 2,
+      "p90": 4,
+      "p95": 5,
+      "p99": 7,
+      "seed": 119721504937249939183257181388003525779,
+      "standard_error": 0.004842002113898754,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.00019254969026627402,
+        0.00035184167103825516
+      ],
+      "ci95_normal": [
+        1.945255183696268,
+        1.9646048163037322
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 136,
+      "honest_state": [
+        7.08350724528912e-05,
+        0.00019254969026627402
+      ],
+      "label": "historical-epoch-136",
+      "maximum": 14,
+      "maximum_relevant_events_to_reconvergence": 37,
+      "mean": 1.95493,
+      "mean_relevant_events_to_reconvergence": 7.73172,
+      "median": 2,
+      "p90": 4,
+      "p95": 5,
+      "p99": 7,
+      "seed": 249109759937843947894704125474135298439,
+      "standard_error": 0.004936130767210284,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        0.00010308249577455703,
+        0.000244208745891108
+      ],
+      "ci95_normal": [
+        0.7001116911488848,
+        0.7104883088511152
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 156,
+      "honest_state": [
+        0.00010308249577455703,
+        0.00010567648426810951
+      ],
+      "label": "historical-epoch-156",
+      "maximum": 6,
+      "maximum_relevant_events_to_reconvergence": 7,
+      "mean": 0.7053,
+      "mean_relevant_events_to_reconvergence": 1.7053,
+      "median": 1,
+      "p90": 2,
+      "p95": 2,
+      "p99": 3,
+      "seed": 171037370236768752414529312923771307285,
+      "standard_error": 0.0026470963526097797,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        7.050777689199273e-05,
+        0.00013199946976513035
+      ],
+      "ci95_normal": [
+        0.851202210476465,
+        0.862837789523535
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 164,
+      "honest_state": [
+        5.828516217757834e-05,
+        7.050777689199273e-05
+      ],
+      "label": "historical-epoch-164",
+      "maximum": 8,
+      "maximum_relevant_events_to_reconvergence": 33,
+      "mean": 0.85702,
+      "mean_relevant_events_to_reconvergence": 4.57532,
+      "median": 1,
+      "p90": 2,
+      "p95": 3,
+      "p99": 4,
+      "seed": 113409434148966147143361890556557387354,
+      "standard_error": 0.0029682599609872446,
+      "trials": 100000
+    },
+    {
+      "attacked_state": [
+        3.823747815810335e-05,
+        6.000243994613774e-05
+      ],
+      "ci95_normal": [
+        0.2515527212792267,
+        0.25780727872077336
+      ],
+      "conditional_sampler": "exact minimum-of-2016 CDF",
+      "epoch": 200,
+      "honest_state": [
+        3.823747815810335e-05,
+        4.576344203017877e-05
+      ],
+      "label": "historical-epoch-200",
+      "maximum": 4,
+      "maximum_relevant_events_to_reconvergence": 5,
+      "mean": 0.25468,
+      "mean_relevant_events_to_reconvergence": 1.25468,
+      "median": 0,
+      "p90": 1,
+      "p95": 1,
+      "p99": 2,
+      "seed": 95883902598956284702642215483078179552,
+      "standard_error": 0.0015955503677414888,
+      "trials": 100000
+    }
+  ],
+  "largest_historical_mean": {
+    "attacked_state": [
+      0.00019254969026627402,
+      0.00035184167103825516
+    ],
+    "ci95_normal": [
+      1.945255183696268,
+      1.9646048163037322
+    ],
+    "conditional_sampler": "exact minimum-of-2016 CDF",
+    "epoch": 136,
+    "honest_state": [
+      7.08350724528912e-05,
+      0.00019254969026627402
+    ],
+    "label": "historical-epoch-136",
+    "maximum": 14,
+    "maximum_relevant_events_to_reconvergence": 37,
+    "mean": 1.95493,
+    "mean_relevant_events_to_reconvergence": 7.73172,
+    "median": 2,
+    "p90": 4,
+    "p95": 5,
+    "p99": 7,
+    "seed": 249109759937843947894704125474135298439,
+    "standard_error": 0.004936130767210284,
+    "trials": 100000
+  },
+  "limiting_extreme": {
+    "attacked_state": [
+      0.36787944117144233,
+      1.0
+    ],
+    "ci95_normal": [
+      2.579433244016902,
+      2.5842877559830977
+    ],
+    "conditional_sampler": "small-q scale limit",
+    "honest_state": [
+      0.1353352832366127,
+      0.36787944117144233
+    ],
+    "label": "limiting-extreme",
+    "maximum": 18,
+    "maximum_relevant_events_to_reconvergence": 44,
+    "mean": 2.5818605,
+    "mean_relevant_events_to_reconvergence": 8.331838,
+    "median": 2,
+    "p90": 5,
+    "p95": 6,
+    "p99": 8,
+    "seed": 211324799563762091666212888485544356578,
+    "standard_error": 0.0012383959097436795,
+    "trials": 2000000
+  },
+  "master_seed": 1269070838,
+  "semantics": {
+    "bar_only_bound": "log(attacked_G2/honest_G2) <= 1 when the bar ratio is <= e",
+    "complete_state_claim_tested": "the claimed <=2 bound for both coordinates",
+    "delta": "future attacked deposits minus future honest deposits; current epoch excluded",
+    "exact_historical": "T=1 normalization with F(x)=1-(1-x)^2016",
+    "scale_limit": "T=1 and G2->0, so a relevant epoch minimum is uniform below the larger live bar"
+  }
+}
