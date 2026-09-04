@@ -1,8 +1,9 @@
 # C10-eclip independent GitHub REDTEAM analysis
 
-Status: **Phase A blind result lock (pre-comparison)**
+Status: **Final; Phase B comparison appended after remote Phase A blind lock**
 Branch: `research/c10-eclip-github-redteam`
 Preregistration: `9aca39cd7d06a9cd7444024dd518a58d011bbfb0`
+Remote Phase A lock: `1da71b2493a4cba752aa02ebdc0698f500d842ee`
 
 This is an independent deposit-count analysis. It neither proposes a repair nor
 changes the candidate. Phase A was derived and saved without opening the three
@@ -618,6 +619,33 @@ python research/geology/c10-eclip/github-redteam/control_sim.py \
 
 ## 15. Phase B disagreement audit
 
-Phase B begins only after the Phase A files, code, and results are committed.
+Phase B began only after the blind result tree
+`8a9924c736f2c9e7f4af93661cf5c2152162803d` was committed and remotely locked
+at `1da71b2493a4cba752aa02ebdc0698f500d842ee`. The three specified full-note
+paths—`/workspace/goldatom-assay/c10-clip-attack.md`,
+`c10-eclip-qualifier-selection.md`, and `c10-gap-history.md`—were unavailable:
+each returned `ENOENT`, and an exact-filename search under `/workspace` found
+no substitute. Consequently, no full note file was read and no unseen note
+content is inferred. This audit is limited to the eight verbatim reported
+claims supplied in the task context.
 
-<!-- PHASE_B_DISAGREEMENT_AUDIT -->
+| reported claim | independent agreement audit | scope / source of any difference |
+|---|---|---|
+| clipped live lambda is about `0.02428` | **Agree.** Independently derived `0.02427706314105775`. | Clipped clock and clipped initialization; do not substitute the vanilla state. |
+| the older `0.01357` value belongs to vanilla C10 | **Agree.** Independent vanilla replay gives `0.0135721696`. | Clipped-versus-vanilla clock/state distinction, not a numerical discrepancy. |
+| the historical epoch-45 `prefer_second` fork produced realized `Delta=+5` | **Agree.** The canonical deletion replay gives future delta and maximum prefix delta `+5`; it reconverges at epoch 66. | Realized pathwise, single canonical-history deletion; it does not prove latent withheld-block ownership. |
+| several worst historical forks reconverged to the same terminal state | **Agree and strengthen.** All 23 canonical deletion forks reconverged and all reached the honest terminal state. | Canonical history and pathwise reconvergence, not a guarantee for a repeated minority-owned policy. |
+| the last canonical historical `K>=2` epoch was epoch 200 | **Agree.** The 23-event independent replay has last event 200. | Canonical accepted hashes only; says nothing about unobserved suppressed discoveries or miner ownership. |
+| one-intervention expected influence is at most one on the live bar and at most two including the `G1` residual | **Split.** Agree with the live-bar `<=1` expectation under the stated fixed-target, one-coordinate semantics. **Disagree** with `<=2` as a uniform complete-state expectation: the limiting coupled sampler estimates `2.5818605` (SE `0.0012384`, 95% interval `[2.5794332,2.5842878]`; max path `18`). | Expected is not pathwise; one intervention is not a repeated policy; fixed target is not variable target. The `>2` finding is strong numerical evidence, not a certified proof, and review found no implementation error explaining it. |
+| repeated selection is finite-total under a constant target | **Qualified agreement, not independently proved.** Local drift, exact conditional binomial scaling, and simulations support finite total, conditional on an attacked-process second-moment bound that remains open. | Repeated policy under fixed target; the claim does not extend uniformly to variable-target relaxations. The qualification is a missing proof premise, not a state-initialization or arithmetic error. |
+| only finitely many selectable epochs occur almost surely in that model | **Qualified / unresolved as a theorem.** Borel--Cantelli I gives this if the required unconditional attacked-process summability is proved; this audit did not prove that premise. | Fixed-target repeated process. Canonical historical finiteness is finite-sample evidence, not an almost-sure theorem; minority ownership only reduces feasible events but does not supply the missing bound. |
+
+Thus the sole direct disagreement among the eight available claims is the
+complete-state two-unit expectation. The two constant-target asymptotic claims
+are supported but retain a proof qualification; the other five claims agree
+with the independent results. A file-level agreement/disagreement assessment
+beyond these eight claims remains blocked by the missing note files.
+
+The post-comparison gate reran the same 23 red-team, 31 package, seven geology,
+six adversary, and 19 C10-eclip tests: 85 passed and the same one optional test
+was skipped.
