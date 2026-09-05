@@ -1,0 +1,86 @@
+{
+  "repository": "gold-atom/goldatom",
+  "startingBranch": "copilot/research-audit-variable-difficulty",
+  "startingCommit": "fc75ea3c75cabd87d45fe037d9c886ab9987cf1e",
+  "sourceBranch": "research/variable-difficulty-impossibility",
+  "pinnedCommit": "187874d11c3432d2fa41eb22febb0ef452f4bc4f",
+  "reportPath": "research/geology/VARIABLE-DIFFICULTY-IMPOSSIBILITY.md",
+  "reportSha256": "f4789ab3281bb14e8d9482ba347a54a3faf0d91793d83b0372678d04feb456aa",
+  "reportExportPath": "research/reviews/copilot-first-pass/VARIABLE-DIFFICULTY-IMPOSSIBILITY.pinned-187874d11c3432d2fa41eb22febb0ef452f4bc4f.md",
+  "laterErrataLocated": [],
+  "relevantFiles": [
+    "README.md",
+    "Makefile",
+    "VALIDATION.md",
+    "research/geology/VARIABLE-DIFFICULTY-IMPOSSIBILITY.md",
+    "research/geology/adversary/README.md",
+    "research/geology/adversary/test_simulate.py",
+    "research/geology/c10-eclip/QUALIFIER-SELECTION-ANALYSIS.md",
+    "research/geology/c10-eclip/requirements.txt",
+    "research/geology/c10-eclip/test_c10_eclip.py"
+  ],
+  "relevantTests": [
+    "python3 -m unittest discover -s tests -v",
+    "python3 -m unittest discover -s research/geology/adversary -v",
+    "python3 -m unittest discover -s research/geology/c10-eclip -p 'test_*.py' -v",
+    "python3 -m unittest discover -s research/reviews/copilot-first-pass -p 'test_*.py' -v"
+  ],
+  "environment": {
+    "python": "Python 3.12.3",
+    "node": "v22.23.2"
+  },
+  "baselineRuns": [
+    {
+      "cwd": "/tmp/goldatom-pinned-audit",
+      "command": "python3 -m unittest discover -s tests -v",
+      "exitCode": 0,
+      "passed": 31,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "cwd": "/tmp/goldatom-pinned-audit",
+      "command": "python3 -m unittest discover -s research/geology/adversary -v",
+      "exitCode": 0,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "cwd": "/tmp/goldatom-pinned-audit",
+      "command": "python3 -m unittest discover -s research/geology/c10-eclip -p 'test_*.py' -v",
+      "exitCode": 1,
+      "passed": 0,
+      "failed": 0,
+      "errors": 1,
+      "skipped": 0,
+      "notes": "Initial clean-checkout run failed with ModuleNotFoundError: No module named 'numpy'."
+    },
+    {
+      "cwd": "/tmp/goldatom-pinned-audit",
+      "command": "python3 -m pip install -r research/geology/c10-eclip/requirements.txt",
+      "exitCode": 0,
+      "notes": "Installed declared dependency numpy>=2.0,<3."
+    },
+    {
+      "cwd": "/tmp/goldatom-pinned-audit",
+      "command": "python3 -m unittest discover -s research/geology/c10-eclip -p 'test_*.py' -v",
+      "exitCode": 0,
+      "passed": 18,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 1,
+      "skippedReasons": [
+        "external header snapshot not configured"
+      ]
+    }
+  ],
+  "ciInspection": {
+    "workflowRunId": 33706723835,
+    "workflowName": "Bitcoin record geology",
+    "conclusion": "failure",
+    "notes": "Inspected via GitHub Actions logs as required; failure was unrelated research automation and not reused as evidence for the pinned-source audit."
+  }
+}
