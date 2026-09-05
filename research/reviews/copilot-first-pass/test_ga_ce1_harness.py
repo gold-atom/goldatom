@@ -38,12 +38,10 @@ def run_synthetic_sequence(targets, hashes):
 def exact_deposit_probability(previous_target: int, current_target: int) -> Fraction:
     if current_target >= previous_target:
         return Fraction(0, 1)
-    successes = 0
-    total = (previous_target + 1) * (current_target + 1)
-    for previous_hash in range(previous_target + 1):
-        for current_hash in range(current_target + 1):
-            successes += int(current_hash < previous_hash)
-    return Fraction(successes, total)
+    return Fraction(
+        2 * previous_target - current_target,
+        2 * (previous_target + 1),
+    )
 
 
 class GACE1SyntheticTests(unittest.TestCase):
